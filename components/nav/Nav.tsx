@@ -7,7 +7,7 @@ import NavLink from "./NavLink";
 const Nav = () => {
   const pathname = usePathname();
   return (
-    <nav className="w-full px-5 lg:px-10 shadow-xl flex justify-between items-center">
+    <nav className="w-full px-5 lg:px-10 py-2 shadow-xl flex justify-between items-center fixed top-0 left-0">
       <Logo />
       <ul className="hidden lg:flex justify-between items-end space-x-10">
         <li>
