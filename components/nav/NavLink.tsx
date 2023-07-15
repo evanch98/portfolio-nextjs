@@ -1,3 +1,5 @@
+"use client"
+
 interface NavLinkProps {
   href: string;
   name: string;
