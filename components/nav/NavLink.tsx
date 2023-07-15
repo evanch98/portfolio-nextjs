@@ -34,6 +34,22 @@ const NavLink: React.FC<NavLinkProps> = ({ href, name, isActive }) => {
         ></motion.div>
       )}
       <p>{name}</p>
+      <div className="w-full">
+        <svg
+          viewBox="0 0 10 10"
+          xmlns="http://www.w3.org/2000/svg"
+          width="100%"
+          height={10}
+          preserveAspectRatio="xMinyMin"
+        >
+          <path
+            strokeWidth={5}
+            d="M0 0 L100 -10"
+            stroke="#3F3A27"
+            strokeLinecap="round"
+          />
+        </svg>
+      </div>
     </Link>
   );
 };
