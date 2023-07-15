@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #fcd968;
+  @apply text-[#3F3A27] bg-[#fcd968];
 }
 
 .logo {
