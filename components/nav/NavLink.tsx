@@ -1,6 +1,7 @@
-"use client"
+"use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface NavLinkProps {
   href: string;
@@ -23,7 +24,7 @@ const circleVariants = {
 
 const NavLink: React.FC<NavLinkProps> = ({ href, name, isActive }) => {
   return (
-    <a href={href} className="flex flex-col items-center justify-center">
+    <Link href={href} className="flex flex-col items-center justify-center">
       {isActive && (
         <motion.div
           className="w-2 h-2 rounded-full bg-[#8C6196]"
@@ -33,7 +34,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, name, isActive }) => {
         ></motion.div>
       )}
       <p>{name}</p>
-    </a>
+    </Link>
   );
 };
 
