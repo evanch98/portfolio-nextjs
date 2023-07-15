@@ -22,6 +22,27 @@ const circleVariants = {
   },
 };
 
+const pathVariants = {
+  hidden: {
+    pathLength: 0,
+  },
+  visible: {
+    pathLength: 1,
+    transition: {
+      duration: 2,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const svgVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 1 },
+  },
+};
+
 const NavLink: React.FC<NavLinkProps> = ({ href, name, isActive }) => {
   return (
     <Link href={href} className="flex flex-col items-center justify-center">
@@ -33,22 +54,39 @@ const NavLink: React.FC<NavLinkProps> = ({ href, name, isActive }) => {
           animate="visible"
         ></motion.div>
       )}
-      <p>{name}</p>
+      <motion.p
+        whileHover={{
+          scale: 1.2,
+          type: "linear",
+          transition: {
+            duration: 0.3,
+            ease: "easeIn",
+          },
+        }}
+      >
+        {name}
+      </motion.p>
       <div className="w-full">
-        <svg
+        <motion.svg
           viewBox="0 0 10 10"
           xmlns="http://www.w3.org/2000/svg"
           width="100%"
           height={10}
           preserveAspectRatio="xMinyMin"
+          variants={svgVariants}
+          initial="hidden"
+          animate="visible"
         >
-          <path
+          <motion.path
             strokeWidth={5}
             d="M0 0 L100 -10"
             stroke="#3F3A27"
             strokeLinecap="round"
+            variants={pathVariants}
+            initial="hidden"
+            animate="visible"
           />
-        </svg>
+        </motion.svg>
       </div>
     </Link>
   );
