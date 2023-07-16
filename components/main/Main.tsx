@@ -28,6 +28,10 @@ const Main = () => {
                 key={index}
                 whileHover={{
                   color: "#8C6196",
+                  transition: {
+                    duration: 0.5,
+                    ease: "easeIn"
+                  }
                 }}
               >
                 {text}
