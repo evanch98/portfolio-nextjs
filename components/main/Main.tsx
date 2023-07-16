@@ -1,20 +1,43 @@
 "use client";
 
+import { motion } from "framer-motion";
+
+const text: string =
+  "HEY!+ I'm+ Kyaw+ Thu+, An+ Aspiring+ Front-end+ developer+ based+ in+ Taiwan";
+
 const Main = () => {
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center">
-      <div className="w-full px-2 lg:px-0 lg:max-w-[1240px] flex items-center justify-between">
+    <div
+      className="w-full h-screen flex flex-col items-center justify-center"
+      aria-label="Home Screen"
+    >
+      <div
+        className="w-full px-2 lg:px-0 lg:max-w-[1240px] flex items-center justify-between"
+        aria-label="Main Section"
+      >
         <section
           className="lg:w-[380px] h-full"
           aria-label="Introduction section"
         >
           <h1
-            className="text-2xl text-center lg:text-left lg:text-4xl font-bold lg:leading-[60px] uppercase"
+            className="text-2xl text-center lg:text-left lg:text-4xl font-bold lg:leading-[60px] uppercase cursor-default"
             aria-label="Introduction Title"
           >
-            HEY! I'm Kyaw Thu, AN ASPIRING FRONT-END DEVELOPER BASED IN TAIWAN
+            {text.split("+").map((text, index) => (
+              <motion.span
+                key={index}
+                whileHover={{
+                  color: "#8C6196",
+                }}
+              >
+                {text}
+              </motion.span>
+            ))}
           </h1>
-          <p className="opacity-70" aria-label="Introduction Paragraph">
+          <p
+            className="opacity-70 text-center lg:text-left"
+            aria-label="Introduction Paragraph"
+          >
             I am currently pursuing a Bachelor of Science in Computer Science at
             the University of the People.
           </p>
