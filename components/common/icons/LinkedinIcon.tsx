@@ -55,7 +55,12 @@ const LinkedinIcon: React.FC<LinkedinIconProps> = ({ className }) => {
             d="m16,8a6,6 0 0 1 6,6l0,7l-4,0l0,-7a2,2 0 0 0 -2,-2a2,2 0 0 0 -2,2l0,7l-4,0l0,-7a6,6 0 0 1 6,-6z"
             variants={pathVariants}
           />
-          <rect id="svg_2" height="12" width="4" y="9" x="2" />
+          <motion.path
+            id="svg_2"
+            d="m2,9l4,0l0,12l-4,0l0,-12z"
+            opacity="undefined"
+            variants={pathVariants}
+          />
           <motion.path
             id="svg_3"
             d="m4,6c-1.10497,0 -2,-0.89503 -2,-2c0,-1.10497 0.89503,-2 2,-2c1.10497,0 2,0.89503 2,2c0,1.10497 -0.89503,2 -2,2z"
