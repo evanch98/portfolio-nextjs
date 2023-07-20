@@ -4,7 +4,6 @@ import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 import NavLink from "./NavLink";
 import { usePathname } from "next/navigation";
-import { FiGithub, FiLinkedin, FiMail, FiUser } from "react-icons/fi";
 import GitHubIcon from "../common/icons/GitHubIcon";
 import LinkedinIcon from "../common/icons/LinkedinIcon";
 import MailIcon from "../common/icons/MailIcon";
@@ -16,27 +15,6 @@ const sidebarVariants = {
     x: 0,
     transition: {
       duration: 0.5,
-    },
-  },
-};
-
-const svgVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { delay: 0.5, duration: 1 },
-  },
-};
-
-const pathVariants = {
-  hidden: {
-    pathLength: 0,
-  },
-  visible: {
-    pathLength: 1,
-    transition: {
-      duration: 2,
-      ease: "easeInOut",
     },
   },
 };
