@@ -43,7 +43,6 @@ const GitHubIcon: React.FC<GitHubIconProps> = ({ className }) => {
         stroke-width="2"
         stroke="currentColor"
         fill="none"
-        preserveAspectRatio="none"
         variants={svgVariants}
         initial="hidden"
         animate="visible"
