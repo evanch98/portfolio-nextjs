@@ -32,7 +32,7 @@ const GitHubIcon: React.FC<GitHubIconProps> = ({ className }) => {
       href="https://github.com/evanch98"
       target="_blank"
       rel="noreferrer"
-      className={twMerge("w-16 h-auto", className)}
+      className={twMerge("w-14 h-auto", className)}
     >
       <motion.svg
         width="100%"
