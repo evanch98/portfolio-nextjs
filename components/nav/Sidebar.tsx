@@ -8,6 +8,7 @@ import { FiGithub, FiLinkedin, FiMail, FiUser } from "react-icons/fi";
 import GitHubIcon from "../common/icons/GitHubIcon";
 import LinkedinIcon from "../common/icons/LinkedinIcon";
 import MailIcon from "../common/icons/MailIcon";
+import ResumeIcon from "../common/icons/ResumeIcon";
 
 const sidebarVariants = {
   hidden: { x: "150vw", transition: { duration: 0.5 } },
@@ -121,13 +122,7 @@ const Sidebar = () => {
             <GitHubIcon />
             <LinkedinIcon />
             <MailIcon />
-            <a
-              href="https://drive.google.com/file/d/10mhxA0iDtQLDJPP7a3Ndiyl9RjExcT9o/view?usp=drive_link"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FiUser className="w-8 h-auto" />
-            </a>
+            <ResumeIcon />
           </div>
         </section>
       </div>
