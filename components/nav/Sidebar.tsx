@@ -2,6 +2,7 @@ import useSidebar from "@/hooks/useSidebar";
 import Logo from "./Logo";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
+import NavLink from "./NavLink";
 
 const sidebarVariants = {
   hidden: { x: "150vw", transition: { duration: 0.5 } },
@@ -27,6 +28,9 @@ const Sidebar = () => {
         <section className="flex items-center justify-between">
           <Logo />
           <AiOutlineClose className="w-9 h-auto" onClick={sidebar.onClose} />
+        </section>
+        <section className="flex flex-col mt-5">
+          <NavLink href="/" name="Home" isActive={true} />
         </section>
       </div>
     </motion.aside>
