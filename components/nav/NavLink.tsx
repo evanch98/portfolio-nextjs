@@ -7,6 +7,8 @@ interface NavLinkProps {
   href: string;
   name: string;
   isActive: boolean;
+  className?: string;
+  onClick?: () => void;
 }
 
 const circleVariants = {
@@ -43,9 +45,19 @@ const svgVariants = {
   },
 };
 
-const NavLink: React.FC<NavLinkProps> = ({ href, name, isActive }) => {
+const NavLink: React.FC<NavLinkProps> = ({
+  href,
+  name,
+  isActive,
+  className,
+  onClick,
+}) => {
   return (
-    <Link href={href} className="flex flex-col items-center justify-center">
+    <Link
+      href={href}
+      className="flex flex-col items-center justify-center"
+      onClick={onClick}
+    >
       {isActive && (
         <motion.div
           className="w-2 h-2 rounded-full bg-[#8C6196]"
@@ -55,6 +67,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, name, isActive }) => {
         ></motion.div>
       )}
       <motion.p
+        className={className}
         whileHover={{
           scale: 1.2,
           type: "linear",
