@@ -4,9 +4,11 @@ import { usePathname } from "next/navigation";
 import { AiOutlineMenu } from "react-icons/ai";
 import Logo from "./Logo";
 import NavLink from "./NavLink";
+import useSidebar from "@/hooks/useSidebar";
 
 const Nav = () => {
   const pathname = usePathname();
+  const sidebar = useSidebar();
   return (
     <nav className="w-full px-5 lg:px-10 py-2 shadow-xl flex justify-between items-center fixed top-0 left-0">
       <Logo />
@@ -37,7 +39,7 @@ const Nav = () => {
         </li>
       </ul>
       <button className="hidden lg:flex btn btn-primary">Contact Me</button>
-      <AiOutlineMenu className="lg:hidden w-9 h-auto" />
+      <AiOutlineMenu className="lg:hidden w-9 h-auto" onClick={sidebar.onOpen} />
     </nav>
   );
 };
