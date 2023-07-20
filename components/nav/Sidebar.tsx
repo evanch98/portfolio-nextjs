@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 const sidebarVariants = {
-  hidden: { x: "150vw" },
+  hidden: { x: "150vw", transition: { duration: 0.5 } },
   visible: {
     x: 0,
     transition: {
@@ -21,6 +21,7 @@ const Sidebar = () => {
       variants={sidebarVariants}
       initial="hidden"
       animate="visible"
+      exit="hidden"
     >
       <div className="flex flex-col p-5">
         <section className="flex items-center justify-between">
