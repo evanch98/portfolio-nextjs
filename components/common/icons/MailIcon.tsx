@@ -29,9 +29,7 @@ interface MailIconProps {
 const MailIcon: React.FC<MailIconProps> = ({ className }) => {
   return (
     <a
-      href="https://github.com/evanch98"
-      target="_blank"
-      rel="noreferrer"
+      href="mailto:evanch98@gmail.com"
       className={twMerge("w-14 h-auto", className)}
     >
       <motion.svg
