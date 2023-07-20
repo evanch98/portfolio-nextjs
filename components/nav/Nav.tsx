@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { AiOutlineMenu } from "react-icons/ai";
 import Logo from "./Logo";
 import NavLink from "./NavLink";
 
@@ -36,6 +37,7 @@ const Nav = () => {
         </li>
       </ul>
       <button className="hidden lg:flex btn btn-primary">Contact Me</button>
+      <AiOutlineMenu className="lg:hidden w-9 h-auto" />
     </nav>
   );
 };
