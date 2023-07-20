@@ -5,6 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import Logo from "./Logo";
 import NavLink from "./NavLink";
 import useSidebar from "@/hooks/useSidebar";
+import Sidebar from "./Sidebar";
 
 const Nav = () => {
   const pathname = usePathname();
@@ -45,6 +46,7 @@ const Nav = () => {
           onClick={sidebar.onOpen}
         />
       </nav>
+      {sidebar.isOpen && <Sidebar />}
     </>
   );
 };
