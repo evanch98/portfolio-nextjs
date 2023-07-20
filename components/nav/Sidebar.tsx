@@ -6,6 +6,7 @@ import NavLink from "./NavLink";
 import { usePathname } from "next/navigation";
 import { FiGithub, FiLinkedin, FiMail, FiUser } from "react-icons/fi";
 import GitHubIcon from "../common/icons/GitHubIcon";
+import LinkedinIcon from "../common/icons/LinkedinIcon";
 
 const sidebarVariants = {
   hidden: { x: "150vw", transition: { duration: 0.5 } },
@@ -117,13 +118,7 @@ const Sidebar = () => {
           </h1>
           <div className="flex items-center justify-between gap-x-2 mt-2 w-2/3">
             <GitHubIcon />
-            <a
-              href="https://www.linkedin.com/in/kyaw-thu-0b3956212/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FiLinkedin className="w-8 h-auto" />
-            </a>
+            <LinkedinIcon />
             <a href="mailto:evanch98@gmail.com">
               <FiMail className="w-8 h-auto" />
             </a>
