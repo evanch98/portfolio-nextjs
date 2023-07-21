@@ -13,7 +13,7 @@ const Main = () => {
       aria-label="Home Screen"
     >
       <div
-        className="w-full px-2 lg:px-0 lg:max-w-[1240px] flex flex-col lg:flex-row items-center justify-center gap-5"
+        className="w-full px-2 lg:px-0 lg:max-w-[1240px] flex flex-col-reverse lg:flex-row items-center justify-center gap-5"
         aria-label="Main Section"
       >
         <section
