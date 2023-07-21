@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { timeProvider } from "@/utils/dateProvider";
 import Nav from "./Nav";
 import useTerminalHelp from "@/hooks/useTerminalHelp";
@@ -26,7 +26,9 @@ const Body = () => {
         <p>Last login: {timeProvider()}</p>
         <p>kyawthu ~ %</p>
       </div>
-      {terminalHelp.isOpen && <TerminalHelp />}
+      <AnimatePresence>
+        {terminalHelp.isOpen && <TerminalHelp />}
+      </AnimatePresence>
     </motion.div>
   );
 };
