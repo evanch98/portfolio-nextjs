@@ -2,7 +2,7 @@
 
 import useSidebar from "@/hooks/useSidebar";
 import Logo from "./Logo";
-import { AiOutlineClose } from "react-icons/ai";
+import { FiXCircle } from "react-icons/fi";
 import { motion } from "framer-motion";
 import NavLink from "./NavLink";
 import { usePathname } from "next/navigation";
@@ -42,7 +42,7 @@ const Sidebar = () => {
           aria-label="Logo and Close Button Section"
         >
           <Logo />
-          <AiOutlineClose
+          <FiXCircle
             className="w-9 h-auto"
             onClick={sidebar.onClose}
             aria-label="Close the Sidebar"
