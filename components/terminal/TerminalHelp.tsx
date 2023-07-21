@@ -5,7 +5,7 @@ import { FiHelpCircle, FiXCircle } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const variants = {
-  hidden: { x: 200, transition: { duration: 0.5 } },
+  hidden: { x: 500, transition: { duration: 0.5 } },
   visible: { x: 0, transition: { duration: 0.5 } },
 };
 
