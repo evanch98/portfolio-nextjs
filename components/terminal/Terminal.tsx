@@ -4,7 +4,7 @@ import Body from "./Body";
 
 const Terminal = () => {
   return (
-    <div>
+    <div className="w-full h-full">
       <Body />
     </div>
   );
