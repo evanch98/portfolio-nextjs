@@ -17,11 +17,11 @@ const Main = () => {
         aria-label="Main Section"
       >
         <section
-          className="lg:max-w-[380px] h-full"
+          className="w-full h-full"
           aria-label="Introduction section"
         >
           <h1
-            className="text-2xl text-center lg:text-left lg:text-4xl font-bold lg:leading-[60px] uppercase cursor-default"
+            className="text-2xl text-center lg:text-4xl font-bold lg:leading-[60px] uppercase cursor-default"
             aria-label="Introduction Title"
           >
             {text.split("+").map((text, index) => (
@@ -40,14 +40,14 @@ const Main = () => {
             ))}
           </h1>
           <p
-            className="opacity-70 text-center lg:text-left mt-5"
+            className="opacity-70 text-center mt-5"
             aria-label="Introduction Paragraph"
           >
             I am currently pursuing a Bachelor of Science in Computer Science at
             the University of the People.
           </p>
         </section>
-        <section className="w-full flex items-center justify-center">
+        <section className="w-full h-full flex items-center justify-center">
           <Terminal />
         </section>
       </div>
