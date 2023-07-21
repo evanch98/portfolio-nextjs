@@ -1,11 +1,11 @@
 "use client";
 
-import Nav from "./Nav";
+import Body from "./Body";
 
 const Terminal = () => {
   return (
     <div>
-      <Nav />
+      <Body />
     </div>
   );
 };
