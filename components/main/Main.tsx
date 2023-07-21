@@ -13,11 +13,11 @@ const Main = () => {
       aria-label="Home Screen"
     >
       <div
-        className="w-full px-2 lg:px-0 lg:max-w-[1240px] flex flex-col-reverse lg:flex-row items-center justify-center gap-5"
+        className="w-full px-2 lg:px-0 lg:max-w-[1240px] flex flex-col lg:flex-row items-center justify-center gap-5"
         aria-label="Main Section"
       >
         <section
-          className="w-full h-full"
+          className="w-full"
           aria-label="Introduction section"
         >
           <h1
@@ -47,8 +47,9 @@ const Main = () => {
             the University of the People.
           </p>
         </section>
-        <section className="w-full h-full flex items-center justify-center">
+        <section className="w-full h-full flex flex-col items-center justify-center">
           <Terminal />
+          <p className="text-lg text-center lg:text-xl tracking-widest">Let's Build Something Legendary Together</p>
         </section>
       </div>
     </div>
