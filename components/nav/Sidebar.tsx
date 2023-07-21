@@ -1,3 +1,5 @@
+"use client";
+
 import useSidebar from "@/hooks/useSidebar";
 import Logo from "./Logo";
 import { AiOutlineClose } from "react-icons/ai";
