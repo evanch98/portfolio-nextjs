@@ -13,6 +13,12 @@ const variants = {
 
 const Body = () => {
   const terminalHelp = useTerminalHelp();
+
+  const handleSubmit = (event: any) => {
+    console.log("handleSubmit ran");
+    event.preventDefault();
+  };
+
   return (
     <motion.div
       className="w-full lg:w-[550px] h-[320px] bg-black rounded-lg overflow-hidden terminal-shadow relative"
@@ -26,7 +32,7 @@ const Body = () => {
         <p>Last login: {timeProvider()}</p>
         <div className="flex w-full items-start justify-start">
           <p className="w-2/5 md:w-[120px]">kyawthu ~ %</p>
-          <form className="w-full">
+          <form className="w-full" onSubmit={handleSubmit}>
             <input
               type="text"
               name="text"
