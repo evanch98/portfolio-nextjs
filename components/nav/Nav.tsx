@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { AiOutlineMenu } from "react-icons/ai";
+import { FiMenu } from "react-icons/fi";
 import Logo from "./Logo";
 import NavLink from "./NavLink";
 import useSidebar from "@/hooks/useSidebar";
@@ -42,7 +42,7 @@ const Nav = () => {
           </li>
         </ul>
         <button className="hidden lg:flex btn btn-primary">Contact Me</button>
-        <AiOutlineMenu
+        <FiMenu
           className="lg:hidden w-9 h-auto"
           onClick={sidebar.onOpen}
         />
