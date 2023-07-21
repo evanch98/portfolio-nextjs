@@ -24,7 +24,19 @@ const Body = () => {
       <Nav />
       <div className="w-full p-2 terminal text-sm text-white">
         <p>Last login: {timeProvider()}</p>
-        <p>kyawthu ~ %</p>
+        <div className="flex w-full items-start justify-start">
+          <p className="w-2/5 md:w-[120px]">kyawthu ~ %</p>
+          <form className="w-full">
+            <input
+              type="text"
+              name="text"
+              id="text"
+              autoFocus
+              className="border-none bg-transparent w-full focus:outline-none"
+              placeholder="ls"
+            />
+          </form>
+        </div>
       </div>
       <AnimatePresence>
         {terminalHelp.isOpen && <TerminalHelp />}
