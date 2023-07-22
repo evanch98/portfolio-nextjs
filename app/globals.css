@@ -24,6 +24,10 @@ body {
   @apply bg-[#8C6196] text-white;
 }
 
+.btn-secondary {
+  @apply bg-[#9FB1EF]
+}
+
 .terminal {
   font-family: "Fira Code", monospace;
 }
