@@ -8,8 +8,15 @@ interface ButtonProps {
   children?: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = ({ className }) => {
-  return <div className={twMerge("w-3 h-3 rounded-full", className)}></div>;
+const Button: React.FC<ButtonProps> = ({ className, onclick, children }) => {
+  return (
+    <div
+      onClick={onclick}
+      className={twMerge("w-3 h-3 rounded-full", className)}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default Button;
