@@ -33,6 +33,17 @@ const Body = () => {
             </div>
           );
           break;
+        case "info":
+          setOutputContent(
+            <div className="flex flex-col">
+              <p>{"{"}</p>
+              <p className="ml-5">{'name: "Kyaw Thu",'}</p>
+              <p className="ml-5">{'email: "evanch98@gmail.com",'}</p>
+              <p className="ml-5">{'phone: "+886 958437425",'}</p>
+              <p>{"}"}</p>
+            </div>
+          );
+          break;
         case "clear":
           setOutputContent(<div></div>);
           break;
