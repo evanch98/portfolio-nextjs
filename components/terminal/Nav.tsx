@@ -13,7 +13,7 @@ const Nav = () => {
       <div className="flex gap-1">
         <Button
           className="bg-red-600 cursor-pointer flex flex-col items-center justify-center"
-          children={<FiX className="w-2 h-2" />}
+          children={<FiX className="w-3 h-3 text-black" />}
           onclick={terminal.onClose}
         />
         <Button className="bg-yellow-600" />
