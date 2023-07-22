@@ -24,7 +24,7 @@ const Body = () => {
       switch (text.toLowerCase()) {
         case "ls":
           setOutputContent(
-            <div className="grid grid-cols-4 text-sm text-white terminal">
+            <div className="grid grid-cols-4">
               <p>home</p>
               <p>projects</p>
               <p>about</p>
@@ -38,7 +38,7 @@ const Body = () => {
           break;
         default:
           setOutputContent(
-            <p className="text-sm text-red-600 terminal">Invalid command</p>
+            <p className="text-red-600">{`${text}: command not found`}</p>
           );
       }
     }
@@ -74,7 +74,7 @@ const Body = () => {
           </form>
         </div>
       </div>
-      <div className="px-2">{outputContent}</div>
+      <div className="px-2 text-sm text-white terminal">{outputContent}</div>
       <AnimatePresence>
         {terminalHelp.isOpen && <TerminalHelp />}
       </AnimatePresence>
