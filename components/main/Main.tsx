@@ -49,7 +49,6 @@ const Main = () => {
           </p>
         </section>
         <section className="w-full h-full flex flex-col items-center justify-center">
-          <Terminal />
           <p className="text-lg text-center lg:text-xl tracking-widest mt-5">
             Let's Build Something Legendary Together
           </p>
