@@ -30,6 +30,7 @@ const TerminalHelp = () => {
       <div className="flex flex-col text-sm">
         <h2 className="font-semibold text-lg">Commands</h2>
         <p>ls: List all the available pages</p>
+        <p>info: My Info</p>
         <p>cd {"<page name>"}: Go to the page</p>
         <p>clear: Clear</p>
       </div>
