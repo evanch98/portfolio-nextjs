@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({ className, onclick, children }) => {
   return (
     <div
       onClick={onclick}
-      className={twMerge("w-3 h-3 rounded-full", className)}
+      className={twMerge("w-[14px] h-[14px] rounded-full", className)}
     >
       {children}
     </div>
