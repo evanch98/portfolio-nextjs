@@ -1,7 +1,7 @@
 "use client";
 
 const RecentProjects = () => {
-  return <div>Recent Projects</div>;
+  return <div className="w-full h-screen">Recent Projects</div>;
 };
 
 export default RecentProjects;
