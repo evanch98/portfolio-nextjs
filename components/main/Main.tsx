@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Terminal from "../terminal/Terminal";
 import GitHubIcon from "../common/icons/GitHubIcon";
 import LinkedinIcon from "../common/icons/LinkedinIcon";
 import MailIcon from "../common/icons/MailIcon";
@@ -17,7 +16,7 @@ const Main = () => {
       aria-label="Home Screen"
     >
       <div
-        className="w-full px-2 lg:px-0 lg:max-w-[1240px] flex flex-col lg:flex-row items-center justify-center gap-5"
+        className="w-full px-2 lg:px-0 lg:max-w-[1240px] flex flex-col items-center justify-center gap-5"
         aria-label="Main Section"
       >
         <section className="w-full" aria-label="Introduction section">
