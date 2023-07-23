@@ -51,8 +51,10 @@ const Main = () => {
             className="opacity-70 text-center mt-5"
             aria-label="Introduction Paragraph"
           >
-            I am currently pursuing a Bachelor of Science in Computer Science at
-            the University of the People.
+            I'm an aspiring front-end web developer with a willingness to explore and
+            learn. Currently, I'm focused on building responsive front-end web
+            applications. I am currently pursuing a Bachelor of Science in
+            Computer Science at the University of the People.
           </p>
         </section>
         <section className="w-full h-full flex flex-col items-center justify-center">
