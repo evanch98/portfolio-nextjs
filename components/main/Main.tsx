@@ -9,11 +9,19 @@ import ResumeIcon from "../common/icons/ResumeIcon";
 const text: string =
   "HEY!+ I'm+ Kyaw+ Thu,+ An+ Aspiring+ Front-end+ developer+ based+ in+ Taiwan+";
 
+const mainVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 2 } },
+};
+
 const Main = () => {
   return (
-    <div
+    <motion.div
       className="w-full h-screen flex flex-col items-center justify-center pt-20"
       aria-label="Home Screen"
+      variants={mainVariants}
+      initial="hidden"
+      animate="visible"
     >
       <div
         className="w-full px-2 lg:px-0 lg:max-w-[1240px] flex flex-col items-center justify-center gap-5"
@@ -59,7 +67,7 @@ const Main = () => {
           </div>
         </section>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
