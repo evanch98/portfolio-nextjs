@@ -1,5 +1,6 @@
 "use client";
 
+import { FiArrowDown } from "react-icons/fi";
 import { motion } from "framer-motion";
 import GitHubIcon from "../common/icons/GitHubIcon";
 import LinkedinIcon from "../common/icons/LinkedinIcon";
@@ -17,7 +18,7 @@ const mainVariants = {
 const Main = () => {
   return (
     <motion.div
-      className="w-full h-screen flex flex-col items-center justify-center pt-20"
+      className="relative w-full h-screen flex flex-col items-center justify-center pt-20"
       aria-label="Home Screen"
       variants={mainVariants}
       initial="hidden"
@@ -51,10 +52,10 @@ const Main = () => {
             className="opacity-70 text-center mt-5"
             aria-label="Introduction Paragraph"
           >
-            I'm an aspiring front-end web developer with a willingness to explore and
-            learn. Currently, I'm focused on building responsive front-end web
-            applications. I am currently pursuing a Bachelor of Science in
-            Computer Science at the University of the People.
+            I'm an aspiring front-end web developer with a willingness to
+            explore and learn. Currently, I'm focused on building responsive
+            front-end web applications. I am currently pursuing a Bachelor of
+            Science in Computer Science at the University of the People.
           </p>
         </section>
         <section className="w-full h-full flex flex-col items-center justify-center">
@@ -68,6 +69,10 @@ const Main = () => {
             <ResumeIcon className="hover:scale-110 duration-200 ease-in" />
           </div>
         </section>
+      </div>
+      <div className="group absolute bottom-5 left-1/2 -translate-x-1/2 uppercase text-sm lg:text-base flex flex-col items-center justify-center cursor-pointer">
+        <p>See my recent projects</p>
+        <FiArrowDown className="group-hover:animate-bounce" />
       </div>
     </motion.div>
   );
