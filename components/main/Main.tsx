@@ -75,7 +75,6 @@ const Main = () => {
         <p>See my recent projects</p>
         <FiArrowDown className="group-hover:animate-bounce" />
       </div>
-      <RecentProjects />
     </motion.div>
   );
 };
