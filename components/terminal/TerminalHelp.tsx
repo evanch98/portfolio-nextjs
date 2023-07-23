@@ -24,7 +24,7 @@ const TerminalHelp = () => {
           <h1 className="font-bold">Help</h1>
           <FiHelpCircle />
         </div>
-        <FiXCircle onClick={terminalHelp.onClose} />
+        <FiXCircle className="cursor-pointer" onClick={terminalHelp.onClose} />
       </div>
       {/* TODO: Divider */}
       <div className="flex flex-col text-sm">

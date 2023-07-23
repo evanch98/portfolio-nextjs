@@ -20,7 +20,7 @@ const Nav = () => {
         <Button className="bg-green-600" />
       </div>
       <p className="text-sm">kyawthu</p>
-      <FiHelpCircle onClick={terminalHelp.onOpen} />
+      <FiHelpCircle className="cursor-pointer" onClick={terminalHelp.onOpen} />
     </div>
   );
 };
