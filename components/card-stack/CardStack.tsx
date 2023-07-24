@@ -1,7 +1,13 @@
 "use client";
 
+import ProjectCard from "./ProjectCard";
+
 const CardStack = () => {
-  return <div>Card Stack</div>;
+  return (
+    <div>
+      <ProjectCard />
+    </div>
+  );
 };
 
 export default CardStack;
