@@ -8,7 +8,7 @@ const RecentProjects = () => {
     <Element
       name="recent-projects"
       id="recent-projects"
-      className="w-full h-screen flex flex-col justify-center items-center"
+      className="w-full h-screen flex flex-col justify-center items-center bg-white"
     >
       <CardStack />
     </Element>
