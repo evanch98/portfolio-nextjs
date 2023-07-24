@@ -1,6 +1,7 @@
 "use client";
 
 import { Element } from "react-scroll";
+import CardStack from "../card-stack/CardStack";
 
 const RecentProjects = () => {
   return (
@@ -9,7 +10,7 @@ const RecentProjects = () => {
       id="recent-projects"
       className="w-full h-screen flex flex-col justify-center items-center"
     >
-      Recent Projects
+      <CardStack />
     </Element>
   );
 };
