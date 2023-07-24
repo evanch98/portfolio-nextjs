@@ -6,7 +6,6 @@ import GitHubIcon from "../common/icons/GitHubIcon";
 import LinkedinIcon from "../common/icons/LinkedinIcon";
 import MailIcon from "../common/icons/MailIcon";
 import ResumeIcon from "../common/icons/ResumeIcon";
-import RecentProjects from "../recent-projects/RecentProjects";
 
 const text: string =
   "HEY!+ I'm+ Kyaw+ Thu,+ An+ Aspiring+ Front-end+ developer+ based+ in+ Taiwan+";
