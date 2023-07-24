@@ -6,6 +6,7 @@ import GitHubIcon from "../common/icons/GitHubIcon";
 import LinkedinIcon from "../common/icons/LinkedinIcon";
 import MailIcon from "../common/icons/MailIcon";
 import ResumeIcon from "../common/icons/ResumeIcon";
+import { Link } from "react-scroll";
 
 const text: string =
   "HEY!+ I'm+ Kyaw+ Thu,+ An+ Aspiring+ Front-end+ developer+ based+ in+ Taiwan+";
@@ -70,10 +71,15 @@ const Main = () => {
           </div>
         </section>
       </div>
-      <div className="group absolute bottom-5 left-1/2 -translate-x-1/2 uppercase text-sm lg:text-base flex flex-col items-center justify-center cursor-pointer">
+      <Link
+        to="recent-projects"
+        smooth={true}
+        duration={500}
+        className="group absolute bottom-5 left-1/2 -translate-x-1/2 uppercase text-sm lg:text-base flex flex-col items-center justify-center cursor-pointer"
+      >
         <p>See my recent projects</p>
         <FiArrowDown className="group-hover:animate-bounce" />
-      </div>
+      </Link>
     </motion.div>
   );
 };
