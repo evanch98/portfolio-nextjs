@@ -40,6 +40,10 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.project-card-shadow {
+  box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -49,7 +53,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #3F3A27;
+  background-color: #3f3a27;
   border-radius: 10px;
 }
 
@@ -58,5 +62,5 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #7D6A2C;
+  background-color: #7d6a2c;
 }
