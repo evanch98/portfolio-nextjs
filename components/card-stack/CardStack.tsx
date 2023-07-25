@@ -4,14 +4,17 @@ import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 
 const firstCardVariants = {
+  initial: { x: "-50%", y: "-50%" },
   hover: { rotate: -20 },
 };
 
 const secondCardVariants = {
-  hover: { y: -200 },
+  initial: { x: "-50%", y: "-50%" },
+  hover: { y: -300 },
 };
 
 const thirdCardVariants = {
+  initial: { x: "-50%", y: "-50%" },
   hover: { rotate: 20 },
 };
 
@@ -31,23 +34,23 @@ const CardStack: React.FC<CardStackProps> = ({
       initial="initial"
       animate="animate"
       whileHover="hover"
-      className="relative cursor-pointer"
+      className="relative cursor-pointer w-[300px] h-[300px]"
     >
       <ProjectCard
         projectCardVariants={firstCardVariants}
-        className="absolute top-0 left-0 bg-[#FCD968] z-50"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#FCD968] z-50"
       >
         {firstCardChildren}
       </ProjectCard>
       <ProjectCard
         projectCardVariants={secondCardVariants}
-        className="absolute top-0 left-0 bg-[#9FB1EF] z-40"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#9FB1EF] z-40"
       >
         {secondCardChildren}
       </ProjectCard>
       <ProjectCard
         projectCardVariants={thirdCardVariants}
-        className="absolute top-0 left-0 bg-[#8C6196] z-30"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#8C6196] z-30"
       >
         {thirdCardChildren}
       </ProjectCard>
