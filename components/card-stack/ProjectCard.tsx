@@ -9,7 +9,10 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ className }) => {
   return (
     <div
-      className={twMerge("w-[200px] h-[250px] bg-black rounded-2xl", className)}
+      className={twMerge(
+        "w-[200px] h-[250px] bg-black rounded-2xl project-card-shadow",
+        className
+      )}
     >
       Project Card
     </div>
