@@ -9,7 +9,7 @@ body {
 }
 
 .outer-container {
-  @apply w-full px-2 lg:px-0 lg:max-w-[1240px] flex flex-col items-center justify-center gap-5;
+  @apply w-full px-2 lg:px-0 lg:max-w-[1240px] flex flex-col items-center justify-center;
 }
 
 .logo {
