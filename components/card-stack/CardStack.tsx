@@ -29,11 +29,11 @@ const CardStack = () => {
       />
       <ProjectCard
         projectCardVariants={secondCardVariants}
-        className="absolute top-0 left-2 bg-[#9FB1EF] z-40"
+        className="absolute top-0 left-0 bg-[#9FB1EF] z-40"
       />
       <ProjectCard
         projectCardVariants={thirdCardVariants}
-        className="absolute top-0 left-4 bg-[#8C6196] z-30"
+        className="absolute top-0 left-0 bg-[#8C6196] z-30"
       />
     </motion.div>
   );
