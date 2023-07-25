@@ -17,10 +17,13 @@ const RecentProjects = () => {
         </h1>
         <article className="mt-5 flex gap-5 w-full items-center justify-center">
           <section className="w-full flex items-center justify-center">
-            <CardStack />
+            <CardStack
+              firstCardChildren={<div>Airbnb Clone</div>}
+              secondCardChildren={<div>GitHub</div>}
+            />
           </section>
           <section className="w-full flex items-center justify-center">
-            <CardStack />
+            Airbnb Clone
           </section>
         </article>
       </div>
