@@ -15,7 +15,17 @@ const thirdCardVariants = {
   hover: { rotate: 20 },
 };
 
-const CardStack = () => {
+interface CardStackProps {
+  firstCardChildren?: React.ReactNode;
+  secondCardChildren?: React.ReactNode;
+  thirdCardChildren?: React.ReactNode;
+}
+
+const CardStack: React.FC<CardStackProps> = ({
+  firstCardChildren,
+  secondCardChildren,
+  thirdCardChildren,
+}) => {
   return (
     <motion.div
       initial="initial"
@@ -26,15 +36,21 @@ const CardStack = () => {
       <ProjectCard
         projectCardVariants={firstCardVariants}
         className="absolute top-0 left-0 bg-[#FCD968] z-50"
-      />
+      >
+        {firstCardChildren}
+      </ProjectCard>
       <ProjectCard
         projectCardVariants={secondCardVariants}
         className="absolute top-0 left-0 bg-[#9FB1EF] z-40"
-      />
+      >
+        {secondCardChildren}
+      </ProjectCard>
       <ProjectCard
         projectCardVariants={thirdCardVariants}
         className="absolute top-0 left-0 bg-[#8C6196] z-30"
-      />
+      >
+        {thirdCardChildren}
+      </ProjectCard>
     </motion.div>
   );
 };
