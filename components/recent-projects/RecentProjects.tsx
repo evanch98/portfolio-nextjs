@@ -2,6 +2,12 @@
 
 import { Element } from "react-scroll";
 import CardStack from "../card-stack/CardStack";
+import { motion } from "framer-motion";
+
+const mainVariants = {
+  initial: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 2 } },
+};
 
 const RecentProjects = () => {
   return (
@@ -11,7 +17,12 @@ const RecentProjects = () => {
       className="w-full h-screen flex flex-col justify-center items-center bg-white"
       aria-label="Recent Projects Section"
     >
-      <div className="outer-container">
+      <motion.div
+        className="outer-container"
+        variants={mainVariants}
+        initial="initial"
+        whileInView="visible"
+      >
         <h1 className="text-3xl lg:text-4xl text-[#8C6196] font-bold">
           Recent Projects
         </h1>
@@ -26,7 +37,7 @@ const RecentProjects = () => {
             Airbnb Clone
           </section>
         </article>
-      </div>
+      </motion.div>
     </Element>
   );
 };
