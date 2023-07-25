@@ -1,4 +1,4 @@
-const dayConverter = (day: number) => {
+export const dayConverter = (day: number) => {
   switch (day) {
     case 0:
       return "Sun";
@@ -19,7 +19,7 @@ const dayConverter = (day: number) => {
   }
 };
 
-const monthConverter = (month: number) => {
+export const monthConverter = (month: number) => {
   switch (month) {
     case 0:
       return "Jan";
