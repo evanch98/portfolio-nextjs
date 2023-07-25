@@ -25,10 +25,7 @@ const Main = () => {
       initial="hidden"
       animate="visible"
     >
-      <div
-        className="w-full px-2 lg:px-0 lg:max-w-[1240px] flex flex-col items-center justify-center gap-5"
-        aria-label="Main Section"
-      >
+      <div className="outer-container" aria-label="Main Section">
         <section className="w-full" aria-label="Introduction section">
           <h1
             className="text-2xl text-center lg:text-4xl font-bold lg:leading-[60px] uppercase cursor-default"
