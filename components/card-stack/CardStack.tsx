@@ -21,13 +21,11 @@ const thirdCardVariants = {
 interface CardStackProps {
   firstCardChildren?: React.ReactNode;
   secondCardChildren?: React.ReactNode;
-  thirdCardChildren?: React.ReactNode;
 }
 
 const CardStack: React.FC<CardStackProps> = ({
   firstCardChildren,
   secondCardChildren,
-  thirdCardChildren,
 }) => {
   return (
     <motion.div
@@ -51,9 +49,7 @@ const CardStack: React.FC<CardStackProps> = ({
       <ProjectCard
         projectCardVariants={thirdCardVariants}
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#8C6196] z-30"
-      >
-        {thirdCardChildren}
-      </ProjectCard>
+      />
     </motion.div>
   );
 };
