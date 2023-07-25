@@ -9,8 +9,9 @@ const RecentProjects = () => {
       name="recent-projects"
       id="recent-projects"
       className="w-full h-screen flex flex-col justify-center items-center bg-white"
+      aria-label="Recent Projects Section"
     >
-      <CardStack />
+      <div></div>
     </Element>
   );
 };
