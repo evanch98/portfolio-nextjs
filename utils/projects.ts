@@ -26,5 +26,32 @@ export const airbnbProject: projectType = {
   ],
   gitHubLink: "https://github.com/evanch98/airbnb_clone_react",
   demoLink: "https://rent-house-react-hopf81d0y-evanch98.vercel.app/",
-  pageUrl: "airbnb",
+  pageUrl: "/airbnb",
+};
+
+export const spotifyProject: projectType = {
+  title: "Spotify Clone",
+  description: [
+    "Developed a full-stack Spotify Clone website using Next.js, TypeScript, Zustand, Tailwind CSS, Supabase, and Stripe.",
+    "Hosted a project on Vercel for seamless deployment and accessibility of the live website.",
+    "Implemented the responsive user interfaces, mimicking the Spotify design and user experience, and utilized Tailwind CSS for styling.",
+    "Utilized Next.js framework for server-side rendering and optimized performance.",
+    "Managed application state using Zustand, providing efficient and scalable state management.",
+    "Integrated Supabase for database management, allowing seamless storage and retrieval of user and music data.",
+    "Implemented Stripe for secure payment processing, enabling premium subscription features.",
+  ],
+  imageSrc: airbnb,
+  imageAlt: "Spotify website image",
+  framework: "Next JS",
+  techStack: [
+    "Next JS",
+    "TypeScript",
+    "Zustand",
+    "Tailwind CSS",
+    "Supabase",
+    "Stripe",
+  ],
+  gitHubLink: "https://github.com/evanch98/spotify-clone-nextjs",
+  demoLink: "https://spotify-clone-nextjs-xi.vercel.app/",
+  pageUrl: "/spotify",
 };
