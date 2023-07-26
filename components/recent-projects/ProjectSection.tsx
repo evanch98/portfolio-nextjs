@@ -43,7 +43,13 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
               pageUrl={pageUrl}
             />
           }
-          secondCardChildren={<SecondCardTemplate />}
+          secondCardChildren={
+            <SecondCardTemplate
+              gitHubLink={gitHubLink}
+              demoLink={demoLink}
+              title={title}
+            />
+          }
         />
       </section>
       <section className="w-full flex flex-col items-center justify-center gap-2">
