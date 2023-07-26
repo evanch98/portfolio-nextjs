@@ -27,7 +27,12 @@ const RecentProjects = () => {
         <h1 className="text-3xl lg:text-4xl text-[#8C6196] font-bold">
           Recent Projects
         </h1>
-        <ProjectSection cardSide="left" />
+        <ProjectSection
+          cardSide="left"
+          title="Airbnb Clone"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui a incidunt repudiandae error iure, obcaecati minus ab iusto aliquam assumenda autem laudantium hic eius laborum! Voluptatibus hic distinctio fuga non."
+          framework="Next JS"
+        />
       </motion.div>
     </Element>
   );
