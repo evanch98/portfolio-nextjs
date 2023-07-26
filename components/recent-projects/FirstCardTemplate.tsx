@@ -1,6 +1,5 @@
 "use client";
 
-import airbnb from "@/public/assets/projects/airbnb.svg";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import Link from "next/link";
