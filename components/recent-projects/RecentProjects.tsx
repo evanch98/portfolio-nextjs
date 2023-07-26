@@ -37,6 +37,8 @@ const RecentProjects = () => {
             imageAlt={project.imageAlt}
             pageUrl={project.pageUrl}
             framework={project.framework}
+            gitHubLink={project.gitHubLink}
+            demoLink={project.demoLink}
           />
         ))}
       </motion.div>
