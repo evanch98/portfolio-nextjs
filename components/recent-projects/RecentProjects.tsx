@@ -27,7 +27,7 @@ const RecentProjects = () => {
         <h1 className="text-3xl lg:text-4xl text-[#8C6196] font-bold">
           Recent Projects
         </h1>
-        <ProjectSection />
+        <ProjectSection cardSide="left" />
       </motion.div>
     </Element>
   );
