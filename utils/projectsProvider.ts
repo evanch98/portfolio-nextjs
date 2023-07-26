@@ -1,7 +1,7 @@
 import { airbnbProject } from "./projects";
 
-const projects = {
+const projectsProvider = {
   airbnb: airbnbProject,
 };
 
-export default projects;
+export default projectsProvider;
