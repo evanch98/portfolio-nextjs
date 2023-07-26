@@ -1,6 +1,7 @@
 "use client";
 
 import CardStack from "../card-stack/CardStack";
+import FirstCardTemplate from "./FirstCardTemplate";
 
 interface ProjectSectionProps {
   cardSide: "left" | "right";
@@ -29,7 +30,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
     >
       <section className="w-full flex items-center justify-center">
         <CardStack
-          firstCardChildren={<div>Airbnb Clone</div>}
+          firstCardChildren={<FirstCardTemplate />}
           secondCardChildren={<div>GitHub</div>}
         />
       </section>
