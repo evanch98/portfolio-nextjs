@@ -30,7 +30,7 @@ const RecentProjects = () => {
         {projectsProvider.map((project, index) => (
           <ProjectSection
             key={index}
-            cardSide="left"
+            cardSide={index % 2 === 0 ? "left" : "right"}
             title={project.title}
             description={project.description[0]}
             imageSrc={project.imageSrc}
