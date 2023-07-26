@@ -1,9 +1,9 @@
 "use client";
 
-import airbnb from "@/public/assets/projects/airbnb.svg";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
 import ProjectSection from "./ProjectSection";
+import projectsProvider from "@/utils/projectsProvider";
 
 const mainVariants = {
   initial: { opacity: 0 },
@@ -27,15 +27,18 @@ const RecentProjects = () => {
         <h1 className="text-3xl lg:text-4xl text-[#8C6196] font-bold">
           Recent Projects
         </h1>
-        <ProjectSection
-          cardSide="left"
-          title="Airbnb Clone"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui a incidunt repudiandae error iure, obcaecati minus ab iusto aliquam assumenda autem laudantium hic eius laborum! Voluptatibus hic distinctio fuga non."
-          imageSrc={airbnb}
-          imageAlt="Airbnb Clone"
-          pageUrl="/airbnb"
-          framework="Next JS"
-        />
+        {projectsProvider.map((project, index) => (
+          <ProjectSection
+            key={index}
+            cardSide="left"
+            title={project.title}
+            description={project.description[0]}
+            imageSrc={project.imageSrc}
+            imageAlt={project.imageAlt}
+            pageUrl={project.pageUrl}
+            framework={project.framework}
+          />
+        ))}
       </motion.div>
     </Element>
   );
