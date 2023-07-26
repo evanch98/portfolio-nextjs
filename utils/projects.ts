@@ -1,4 +1,5 @@
 import airbnb from "@/public/assets/projects/airbnb.svg";
+import spotify from "@/public/assets/projects/spotify.svg";
 import { projectType } from "@/types/types";
 
 export const airbnbProject: projectType = {
@@ -40,7 +41,7 @@ export const spotifyProject: projectType = {
     "Integrated Supabase for database management, allowing seamless storage and retrieval of user and music data.",
     "Implemented Stripe for secure payment processing, enabling premium subscription features.",
   ],
-  imageSrc: airbnb,
+  imageSrc: spotify,
   imageAlt: "Spotify website image",
   framework: "Next JS",
   techStack: [
