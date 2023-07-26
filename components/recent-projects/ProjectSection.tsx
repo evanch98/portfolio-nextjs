@@ -3,6 +3,7 @@
 import CardStack from "../card-stack/CardStack";
 import FirstCardTemplate from "./FirstCardTemplate";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import SecondCardTemplate from "./SecondCardTemplate";
 
 interface ProjectSectionProps {
   cardSide: "left" | "right";
@@ -42,7 +43,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
               pageUrl={pageUrl}
             />
           }
-          secondCardChildren={<div>GitHub</div>}
+          secondCardChildren={<SecondCardTemplate />}
         />
       </section>
       <section className="w-full flex flex-col items-center justify-center gap-2">
