@@ -17,7 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <motion.div
       className={twMerge(
-        "w-[200px] h-[250px] bg-black rounded-2xl project-card-shadow flex flex-col items-center justify-center",
+        "w-[200px] h-[250px] bg-black rounded-2xl project-card-shadow",
         className
       )}
       variants={projectCardVariants}
