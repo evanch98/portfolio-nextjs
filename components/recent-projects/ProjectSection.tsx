@@ -1,23 +1,27 @@
 "use client";
 
-import airbnb from "@/public/assets/projects/airbnb.svg";
 import CardStack from "../card-stack/CardStack";
 import FirstCardTemplate from "./FirstCardTemplate";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface ProjectSectionProps {
   cardSide: "left" | "right";
   title: string;
   description: string;
+  imageSrc: StaticImport;
+  imageAlt: string;
   framework: string;
   gitHubLink?: string;
   demoLink?: string;
-  pageUrl?: string;
+  pageUrl: string;
 }
 
 const ProjectSection: React.FC<ProjectSectionProps> = ({
   cardSide,
   title,
   description,
+  imageSrc,
+  imageAlt,
   framework,
   gitHubLink,
   demoLink,
@@ -33,9 +37,9 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
         <CardStack
           firstCardChildren={
             <FirstCardTemplate
-              imageSrc={airbnb}
-              imageAlt="Airbnb Sample"
-              pageUrl="/airbnb"
+              imageSrc={imageSrc}
+              imageAlt={imageAlt}
+              pageUrl={pageUrl}
             />
           }
           secondCardChildren={<div>GitHub</div>}
