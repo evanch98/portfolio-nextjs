@@ -1,6 +1,6 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-interface projectType {
+export interface projectType {
   title: string;
   description: string;
   imageSrc: StaticImport;
