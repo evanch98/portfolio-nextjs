@@ -1,7 +1,7 @@
 "use client";
 
+import airbnb from "@/public/assets/projects/airbnb.svg";
 import { Element } from "react-scroll";
-import CardStack from "../card-stack/CardStack";
 import { motion } from "framer-motion";
 import ProjectSection from "./ProjectSection";
 
@@ -31,6 +31,9 @@ const RecentProjects = () => {
           cardSide="left"
           title="Airbnb Clone"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui a incidunt repudiandae error iure, obcaecati minus ab iusto aliquam assumenda autem laudantium hic eius laborum! Voluptatibus hic distinctio fuga non."
+          imageSrc={airbnb}
+          imageAlt="Airbnb Clone"
+          pageUrl="/airbnb"
           framework="Next JS"
         />
       </motion.div>
