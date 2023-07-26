@@ -1,6 +1,6 @@
 import { projectType } from "@/types/types";
-import { airbnbProject } from "./projects";
+import { airbnbProject, spotifyProject } from "./projects";
 
-const projectsProvider: projectType[] = [airbnbProject];
+const projectsProvider: projectType[] = [spotifyProject, airbnbProject];
 
 export default projectsProvider;
