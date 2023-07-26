@@ -5,8 +5,8 @@ import { FiGithub, FiGlobe } from "react-icons/fi";
 
 interface SecondCardTemplateProps {
   title: string;
-  gitHubLink?: string;
-  demoLink?: string;
+  gitHubLink: string;
+  demoLink: string;
 }
 
 const SecondCardTemplate: React.FC<SecondCardTemplateProps> = ({
@@ -20,7 +20,7 @@ const SecondCardTemplate: React.FC<SecondCardTemplateProps> = ({
       <section className="flex items-center justify-center w-full gap-2">
         <FiGithub className="w-6 h-6" />
         <Link
-          href={gitHubLink ?? "/404"}
+          href={gitHubLink}
           target="_blank"
           className="hover:underline transition"
         >
@@ -30,7 +30,7 @@ const SecondCardTemplate: React.FC<SecondCardTemplateProps> = ({
       <section className="flex items-center justify-center w-full gap-2">
         <FiGlobe className="w-6 h-6" />
         <Link
-          href={demoLink ?? "/404"}
+          href={demoLink}
           target="_blank"
           className="hover:underline transition"
         >

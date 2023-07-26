@@ -12,8 +12,8 @@ interface ProjectSectionProps {
   imageSrc: StaticImport;
   imageAlt: string;
   framework: string;
-  gitHubLink?: string;
-  demoLink?: string;
+  gitHubLink: string;
+  demoLink: string;
   pageUrl: string;
 }
 
