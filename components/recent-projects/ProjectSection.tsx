@@ -22,26 +22,22 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
   pageUrl,
 }) => {
   return (
-    <div className="mt-5 flex gap-5 w-full items-center justify-center">
-      {cardSide === "left" && (
-        <section className="w-full flex items-center justify-center">
-          <CardStack
-            firstCardChildren={<div>Airbnb Clone</div>}
-            secondCardChildren={<div>GitHub</div>}
-          />
-        </section>
-      )}
-      <section className="w-full flex flex-col items-center justify-center">
-        <h2 className="font-bold text-2xl">{title}</h2>
+    <div
+      className={`${
+        cardSide === "left" ? "flex-row" : "flex-row-reverse"
+      } mt-5 flex gap-5 w-full items-center justify-center`}
+    >
+      <section className="w-full flex items-center justify-center">
+        <CardStack
+          firstCardChildren={<div>Airbnb Clone</div>}
+          secondCardChildren={<div>GitHub</div>}
+        />
       </section>
-      {cardSide === "right" && (
-        <section className="w-full flex items-center justify-center">
-          <CardStack
-            firstCardChildren={<div>Airbnb Clone</div>}
-            secondCardChildren={<div>GitHub</div>}
-          />
-        </section>
-      )}
+      <section className="w-full flex flex-col items-center justify-center gap-2">
+        <h2 className="font-bold text-2xl">{title}</h2>
+        <p>{framework}</p>
+        <p>{description}</p>
+      </section>
     </div>
   );
 };
