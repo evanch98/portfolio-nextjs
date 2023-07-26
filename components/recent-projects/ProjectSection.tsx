@@ -1,5 +1,6 @@
 "use client";
 
+import airbnb from "@/public/assets/projects/airbnb.svg";
 import CardStack from "../card-stack/CardStack";
 import FirstCardTemplate from "./FirstCardTemplate";
 
@@ -30,7 +31,13 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
     >
       <section className="w-full flex items-center justify-center">
         <CardStack
-          firstCardChildren={<FirstCardTemplate />}
+          firstCardChildren={
+            <FirstCardTemplate
+              imageSrc={airbnb}
+              imageAlt="Airbnb Sample"
+              pageUrl="/airbnb"
+            />
+          }
           secondCardChildren={<div>GitHub</div>}
         />
       </section>
