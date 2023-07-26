@@ -3,6 +3,7 @@
 import { Element } from "react-scroll";
 import CardStack from "../card-stack/CardStack";
 import { motion } from "framer-motion";
+import ProjectSection from "./ProjectSection";
 
 const mainVariants = {
   initial: { opacity: 0 },
@@ -26,17 +27,7 @@ const RecentProjects = () => {
         <h1 className="text-3xl lg:text-4xl text-[#8C6196] font-bold">
           Recent Projects
         </h1>
-        <article className="mt-5 flex gap-5 w-full items-center justify-center">
-          <section className="w-full flex items-center justify-center">
-            <CardStack
-              firstCardChildren={<div>Airbnb Clone</div>}
-              secondCardChildren={<div>GitHub</div>}
-            />
-          </section>
-          <section className="w-full flex items-center justify-center">
-            Airbnb Clone
-          </section>
-        </article>
+        <ProjectSection />
       </motion.div>
     </Element>
   );
