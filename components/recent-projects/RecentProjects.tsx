@@ -7,7 +7,7 @@ import projectsProvider from "@/utils/projectsProvider";
 
 const mainVariants = {
   initial: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 2 } },
+  visible: { opacity: 1, transition: { duration: 1.5 } },
 };
 
 const RecentProjects = () => {
@@ -15,7 +15,7 @@ const RecentProjects = () => {
     <Element
       name="recent-projects"
       id="recent-projects"
-      className="w-full h-screen flex flex-col justify-center items-center bg-white"
+      className="w-full h-full flex flex-col justify-center items-center bg-white pt-[100px]"
       aria-label="Recent Projects Section"
     >
       <motion.div
