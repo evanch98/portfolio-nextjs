@@ -7,7 +7,7 @@ export interface projectType {
   imageAlt: string;
   framework: string;
   techStack: string[];
-  gitHubLink?: string;
-  demoLink?: string;
+  gitHubLink: string;
+  demoLink: string;
   pageUrl: string;
 }
