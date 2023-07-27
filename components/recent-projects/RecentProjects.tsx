@@ -27,7 +27,7 @@ const RecentProjects = () => {
         <h1 className="text-3xl lg:text-4xl text-[#8C6196] font-bold">
           Recent Projects
         </h1>
-        <div className="flex flex-col w-full gap-5">
+        <div className="flex flex-col w-full h-full gap-5">
           {projectsProvider.map((project, index) => (
             <ProjectSection
               key={index}
