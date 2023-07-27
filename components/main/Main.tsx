@@ -28,7 +28,7 @@ const Main = () => {
       <div className="outer-container" aria-label="Main Section">
         <section className="w-full" aria-label="Introduction section">
           <h1
-            className="text-2xl text-center lg:text-4xl font-bold lg:leading-[60px] uppercase cursor-default"
+            className="text-2xl text-center lg:text-4xl font-bold uppercase cursor-default"
             aria-label="Introduction Title"
           >
             {text.split("+").map((text, index) => (
@@ -56,8 +56,8 @@ const Main = () => {
             Science in Computer Science at the University of the People.
           </p>
         </section>
-        <section className="w-full h-full flex flex-col items-center justify-center">
-          <p className="text-lg text-center lg:text-xl tracking-widest mt-5">
+        <section className="w-full h-full flex flex-col items-center justify-center mt-5">
+          <p className="text-lg text-center lg:text-xl tracking-widest">
             Let's Build Something Legendary Together
           </p>
           <div className="flex w-2/3 lg:w-1/3 items-center justify-between mt-5">
