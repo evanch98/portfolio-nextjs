@@ -13,7 +13,7 @@ const Nav = () => {
   const sidebar = useSidebar();
   return (
     <>
-      <nav className="w-full bg-[#fcd968] px-5 lg:px-10 py-2 shadow-xl flex justify-between items-center fixed top-0 left-0 z-50">
+      <nav className="w-full bg-[#fcd968] px-5 lg:px-10 py-2 shadow-xl flex justify-between items-center fixed top-0 left-0 z-20">
         <Logo />
         <ul className="hidden lg:flex justify-between items-end space-x-10">
           <li>
