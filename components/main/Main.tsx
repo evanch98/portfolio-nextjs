@@ -51,9 +51,10 @@ const Main = () => {
             aria-label="Introduction Paragraph"
           >
             I'm an aspiring front-end web developer with a willingness to
-            explore and learn. Currently, I'm focused on building responsive
-            front-end web applications. I am currently pursuing a Bachelor of
-            Science in Computer Science at the University of the People.
+            explore and learn. I'm focusing on building responsive front-end web
+            applications using Next JS, Tailwind CSS, and TypeScript. I am
+            currently pursuing a Bachelor of Science in Computer Science at the
+            University of the People.
           </p>
         </section>
         <section className="w-full h-full flex flex-col items-center justify-center mt-5">
