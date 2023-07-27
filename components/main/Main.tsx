@@ -19,7 +19,7 @@ const mainVariants = {
 const Main = () => {
   return (
     <motion.div
-      className="relative w-full h-screen flex flex-col items-center justify-center pt-20"
+      className="relative w-full h-screen flex flex-col items-center justify-center lg:pt-20"
       aria-label="Home Screen"
       variants={mainVariants}
       initial="hidden"
