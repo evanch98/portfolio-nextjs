@@ -1,3 +1,9 @@
+import HomeClient from "./home-client";
+
 export default function HomePage() {
-  return <main>Main</main>;
+  return (
+    <main>
+      <HomeClient />
+    </main>
+  );
 }
