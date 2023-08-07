@@ -4,50 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply text-[#3F3A27] bg-[#fcd968];
-}
-
-.outer-container {
-  @apply w-full px-2 lg:px-0 lg:max-w-[1240px] flex flex-col items-center justify-center;
-}
-
-.logo {
-  @apply w-16 h-auto;
-}
-
-.logo-svg {
-  @apply w-16 h-16;
-}
-
-.btn {
-  @apply px-3 py-2 rounded-full hover:opacity-70 transition;
-}
-
-.btn-primary {
-  @apply bg-[#8C6196] text-white;
-}
-
-.btn-secondary {
-  @apply bg-[#9FB1EF];
-}
-
-.terminal {
-  font-family: "Fira Code", monospace;
-}
-
-.terminal-shadow {
-  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
-}
-
-.floating-button-shadow {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.project-card-shadow {
-  box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.25);
-}
-
 ::-webkit-scrollbar {
   width: 4px;
 }

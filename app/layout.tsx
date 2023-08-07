@@ -1,9 +1,6 @@
-import Nav from "@/components/nav/Nav";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import TerminalProvider from "@/components/providers/TerminalProvider";
-import FloatingButton from "@/components/floating-button/FloatingButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +17,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <Nav />
-        <TerminalProvider />
-        <FloatingButton />
         {children}
       </body>
     </html>
