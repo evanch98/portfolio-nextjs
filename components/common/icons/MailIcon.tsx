@@ -30,7 +30,7 @@ const MailIcon: React.FC<MailIconProps> = ({ className }) => {
   return (
     <a
       href="mailto:evanch98@gmail.com"
-      className={twMerge("w-14 h-auto", className)}
+      className={twMerge("w-10 h-auto", className)}
     >
       <motion.svg
         width="100%"

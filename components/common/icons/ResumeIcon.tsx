@@ -32,7 +32,7 @@ const ResumeIcon: React.FC<ResumeIconProps> = ({ className }) => {
       href="https://drive.google.com/file/d/10mhxA0iDtQLDJPP7a3Ndiyl9RjExcT9o/view?usp=drive_link"
       target="_blank"
       rel="noreferrer"
-      className={twMerge("w-14 h-auto", className)}
+      className={twMerge("w-10 h-auto", className)}
     >
       <motion.svg
         width="100%"
