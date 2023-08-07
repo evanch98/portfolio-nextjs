@@ -36,7 +36,7 @@ export function MainNav({
   ];
 
   return (
-    <nav className="fixed top-0 left-1/2 -translate-x-1/2 p-5 flex items-center space-x-4 lg:space-x-6 bg-[#282B30] rounded-b-lg">
+    <nav className="fixed top-0 left-1/2 -translate-x-1/2 px-5 py-2 flex items-center space-x-4 lg:space-x-6 bg-[#282B30] rounded-b-lg">
       {routes.map((route) => (
         <Link
           key={route.href}
