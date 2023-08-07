@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiExternalLink, FiHome, FiList, FiUser } from "react-icons/fi";
 import { twMerge } from "tailwind-merge";
+import NavLink from "./nav-link";
 
 export function MainNav({
   className,
@@ -14,28 +15,28 @@ export function MainNav({
   const routes = [
     {
       href: "/",
-      icon: <FiHome className="h-6 w-6" />,
+      icon: <NavLink label="Home" icon={FiHome} />,
       active: pathname === "/",
     },
     {
       href: "/about",
-      icon: <FiUser className="h-6 w-6" />,
+      icon: <NavLink label="About" icon={FiUser} />,
       active: pathname === "/about",
     },
     {
       href: "/resume",
-      icon: <FiList className="h-6 w-6" />,
+      icon: <NavLink label="Resume" icon={FiList} />,
       active: pathname === "/resume",
     },
     {
       href: "/links",
-      icon: <FiExternalLink className="h-6 w-6" />,
+      icon: <NavLink label="Links" icon={FiExternalLink} />,
       active: pathname === "/links",
     },
   ];
 
   return (
-    <nav className="fixed top-0 left-1/2 -translate-x-1/2 p-5 h-8 flex items-center space-x-4 lg:space-x-6 bg-[#282B30] rounded-b-lg">
+    <nav className="fixed top-0 left-1/2 -translate-x-1/2 p-5 flex items-center space-x-4 lg:space-x-6 bg-[#282B30] rounded-b-lg">
       {routes.map((route) => (
         <Link
           key={route.href}
