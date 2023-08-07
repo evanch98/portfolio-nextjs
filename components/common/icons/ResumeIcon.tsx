@@ -32,7 +32,7 @@ const ResumeIcon: React.FC<ResumeIconProps> = ({ className }) => {
       href="https://drive.google.com/file/d/10mhxA0iDtQLDJPP7a3Ndiyl9RjExcT9o/view?usp=drive_link"
       target="_blank"
       rel="noreferrer"
-      className={twMerge("w-10 h-auto", className)}
+      className={twMerge("w-7 h-7", className)}
     >
       <motion.svg
         width="100%"
@@ -46,7 +46,7 @@ const ResumeIcon: React.FC<ResumeIconProps> = ({ className }) => {
         variants={svgVariants}
         initial="hidden"
         animate="visible"
-        viewBox="0 0 32 32"
+        viewBox="0 0 24 24"
       >
         <g>
           <title>Layer 1</title>

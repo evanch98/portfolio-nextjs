@@ -32,7 +32,7 @@ const LinkedinIcon: React.FC<LinkedinIconProps> = ({ className }) => {
       href="https://www.linkedin.com/in/kyaw-thu-0b3956212/"
       target="_blank"
       rel="noreferrer"
-      className={twMerge("w-10 h-auto", className)}
+      className={twMerge("w-7 h-7", className)}
     >
       <motion.svg
         width="100%"
@@ -46,7 +46,7 @@ const LinkedinIcon: React.FC<LinkedinIconProps> = ({ className }) => {
         variants={svgVariants}
         initial="hidden"
         animate="visible"
-        viewBox="0 0 32 32"
+        viewBox="0 0 24 24"
       >
         <g>
           <title>Layer 1</title>
