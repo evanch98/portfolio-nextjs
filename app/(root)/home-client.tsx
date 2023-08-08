@@ -1,6 +1,6 @@
 "use client";
 
-import Banner from "./components/banner";
+import Banner from "../../components/common/banner";
 
 const HomeClient = () => {
   return (
