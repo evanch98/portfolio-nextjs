@@ -22,8 +22,8 @@ const ResumeClient = () => {
           <Subheading title="Experience" />
           <Alert>
             <p className="font-semibold">
-              Although I do not have any professional experience as of now, I
-              have built real-world web applications.
+              Although I do not have any professional experience for now, I
+              have experiences in building real-world web applications.
             </p>
           </Alert>
           <ExpSection />
