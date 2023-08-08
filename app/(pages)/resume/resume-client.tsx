@@ -2,6 +2,7 @@
 
 import Banner from "@/components/common/banner";
 import Subheading from "@/components/common/subheading";
+import EduSection from "./components/edu-section";
 
 const ResumeClient = () => {
   return (
@@ -13,6 +14,7 @@ const ResumeClient = () => {
         />
         <section className="w-full flex flex-col gap-5">
           <Subheading title="Education" />
+          <EduSection />
         </section>
         <section className="w-full flex flex-col gap-5">
           <Subheading title="Contact Me" />
