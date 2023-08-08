@@ -17,6 +17,9 @@ const AboutClient = () => {
           <Subheading title="Introduction" />
           <IntroSection />
         </section>
+        <section className="w-full flex flex-col gap-5">
+          <Subheading title="Contact Me" />
+        </section>
       </div>
     </div>
   );
