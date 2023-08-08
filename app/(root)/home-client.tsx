@@ -2,6 +2,7 @@
 
 import Subheading from "@/components/common/subheading";
 import Banner from "@/components/common/banner";
+import ProjectsSection from "./components/projects-section";
 
 const HomeClient = () => {
   return (
@@ -12,8 +13,9 @@ const HomeClient = () => {
           description="An aspiring front-end developer"
           home={true}
         />
-        <section className="w-full">
+        <section className="w-full flex flex-col gap-5">
           <Subheading title="Projects" moreHref="/projects" />
+          <ProjectsSection />
         </section>
       </div>
     </div>
