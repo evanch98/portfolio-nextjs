@@ -13,6 +13,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
+import axios from "axios";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
@@ -29,6 +31,8 @@ const formSchema = z.object({
 type formValues = z.infer<typeof formSchema>;
 
 const ContactSection = () => {
+  const [loading, setLoading] = useState(false);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -39,15 +43,24 @@ const ContactSection = () => {
   });
 
   const onSubmit = async (data: formValues) => {
-    
-  }
+    try {
+      setLoading(true);
+      await axios.post(
+        "https://getform.io/f/7d7e9421-700a-4548-8a97-e472b180613d",
+        data
+      );
+    } catch (e) {
+      console.log(e);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="w-full p-5 rounded-2xl bg-[#282B30] shadow-lg">
       <Form {...form}>
         <form
-          action="https://getform.io/f/7d7e9421-700a-4548-8a97-e472b180613d"
-          method="POST"
+          onSubmit={form.handleSubmit(onSubmit)}
           className="flex flex-col gap-y-5"
         >
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -60,6 +73,7 @@ const ContactSection = () => {
                   <FormControl>
                     <Input
                       className="bg-transparent"
+                      disabled={loading}
                       placeholder="Kyaw Thu"
                       {...field}
                     />
@@ -77,6 +91,7 @@ const ContactSection = () => {
                   <FormControl>
                     <Input
                       className="bg-transparent"
+                      disabled={loading}
                       placeholder="evanch98@gmail.com"
                       {...field}
                     />
@@ -96,6 +111,7 @@ const ContactSection = () => {
                   <Textarea
                     rows={5}
                     className="bg-transparent"
+                    disabled={loading}
                     placeholder="Type your message here."
                     {...field}
                   />
@@ -104,7 +120,7 @@ const ContactSection = () => {
               </FormItem>
             )}
           />
-          <Button className="bg-[#1E2124]" type="submit">
+          <Button className="bg-[#1E2124]" type="submit" disabled={loading}>
             Let's Talk
           </Button>
         </form>
