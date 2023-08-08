@@ -23,17 +23,29 @@ const Card: React.FC<CardProps> = ({
       <p className="opacity-70 text-sm md:text-base">{description}</p>
       <div className="flex gap-x-4 w-full items-center justify-center mt-auto">
         {code && (
-          <Link href={code} className="hover:opacity-70 transition-opacity">
+          <Link
+            href={code}
+            className="hover:opacity-70 transition-opacity"
+            target="_blank"
+          >
             <NavLink label="Code" icon={FiGithub} />
           </Link>
         )}
         {live && (
-          <Link href={live} className="hover:opacity-70 transition-opacity">
+          <Link
+            href={live}
+            className="hover:opacity-70 transition-opacity"
+            target="_blank"
+          >
             <NavLink label="Live" icon={FiGlobe} />
           </Link>
         )}
         {info && (
-          <Link href={info} className="hover:opacity-70 transition-opacity">
+          <Link
+            href={info}
+            className="hover:opacity-70 transition-opacity"
+            target="_blank"
+          >
             <NavLink label="Info" icon={FiInfo} />
           </Link>
         )}
