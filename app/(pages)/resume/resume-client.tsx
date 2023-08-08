@@ -33,6 +33,9 @@ const ResumeClient = () => {
           <Subheading title="Projects" moreHref="/" />
           <ProjectsSection />
         </section>
+        <section className="w-full flex flex-col gap-5">
+          <Subheading title="Tech Stack" />
+        </section>
       </div>
     </div>
   );
