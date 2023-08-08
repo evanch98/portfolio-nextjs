@@ -1,3 +1,9 @@
+import AboutClient from "./about-client";
+
 export default function AboutPage() {
-  return <div>AboutPage</div>;
+  return (
+    <main>
+      <AboutClient />
+    </main>
+  );
 }
