@@ -5,7 +5,7 @@ const ContactSection = () => {
       action="https://getform.io/f/7d7e9421-700a-4548-8a97-e472b180613d"
       method="POST"
     >
-      <div className="flex items-center justify-between w-full gap-5">
+      <div className="flex flex-col md:flex-row items-center justify-between w-full gap-5">
         <div className="w-full flex flex-col gap-2">
           <label htmlFor="name">Name</label>
           <input
