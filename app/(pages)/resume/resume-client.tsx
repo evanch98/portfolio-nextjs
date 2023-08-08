@@ -17,7 +17,7 @@ const ResumeClient = () => {
           <EduSection />
         </section>
         <section className="w-full flex flex-col gap-5">
-          <Subheading title="Contact Me" />
+          <Subheading title="Experience" />
         </section>
       </div>
     </div>
