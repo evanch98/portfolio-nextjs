@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -10,6 +11,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
@@ -24,6 +26,8 @@ const formSchema = z.object({
   }),
 });
 
+type formValues = z.infer<typeof formSchema>;
+
 const ContactSection = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -34,11 +38,16 @@ const ContactSection = () => {
     },
   });
 
+  const onSubmit = async (data: formValues) => {
+    
+  }
+
   return (
     <div className="w-full p-5 rounded-2xl bg-[#282B30] shadow-lg">
       <Form {...form}>
         <form
           action="https://getform.io/f/7d7e9421-700a-4548-8a97-e472b180613d"
+          method="POST"
           className="flex flex-col gap-y-5"
         >
           <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -68,7 +77,7 @@ const ContactSection = () => {
                   <FormControl>
                     <Input
                       className="bg-transparent"
-                      placeholder="Kyaw Thu"
+                      placeholder="evanch98@gmail.com"
                       {...field}
                     />
                   </FormControl>
@@ -77,6 +86,27 @@ const ContactSection = () => {
               )}
             />
           </div>
+          <FormField
+            control={form.control}
+            name="message"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="md:text-lg">Message</FormLabel>
+                <FormControl>
+                  <Textarea
+                    rows={5}
+                    className="bg-transparent"
+                    placeholder="Type your message here."
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <Button className="bg-[#1E2124]" type="submit">
+            Let's Talk
+          </Button>
         </form>
       </Form>
     </div>
