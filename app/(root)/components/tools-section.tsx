@@ -10,7 +10,7 @@ const ToolsSection = () => {
     },
     {
       title: "React",
-      description: "I use React library for building website user interface.",
+      description: "I use React library for building UI for website.",
       info: "https://react.dev/",
     },
     {
