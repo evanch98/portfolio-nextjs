@@ -32,8 +32,8 @@ const ExpSection = () => {
           </p>
           <ul className="list-inside list-disc">
             {experience.summary.map((point) => (
-              <li key={point}>
-                <p className="opacity-70 text-sm md:text-base">{point}</p>
+              <li key={point} className="opacity-70 text-sm md:text-base">
+                {point}
               </li>
             ))}
           </ul>
