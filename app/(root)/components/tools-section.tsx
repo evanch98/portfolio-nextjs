@@ -19,6 +19,12 @@ const ToolsSection = () => {
         "I style almost all of my React components using Tailwind CSS.",
       info: "https://tailwindcss.com/",
     },
+    {
+      title: "Zustand",
+      description:
+        "I use Zustand as my primary state management library due to its simplicity.",
+      info: "https://docs.pmnd.rs/zustand/getting-started/introduction",
+    },
   ];
 
   return (
