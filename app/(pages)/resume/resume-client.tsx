@@ -5,6 +5,7 @@ import Subheading from "@/components/common/subheading";
 import EduSection from "./components/edu-section";
 import Alert from "@/components/common/alert";
 import ExpSection from "./components/exp-section";
+import ProjectsSection from "@/app/(root)/components/projects-section";
 
 const ResumeClient = () => {
   return (
@@ -27,6 +28,10 @@ const ResumeClient = () => {
             </p>
           </Alert>
           <ExpSection />
+        </section>
+        <section className="w-full flex flex-col gap-5">
+          <Subheading title="Projects" moreHref="/" />
+          <ProjectsSection />
         </section>
       </div>
     </div>
