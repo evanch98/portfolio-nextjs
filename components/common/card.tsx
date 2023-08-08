@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({
   info,
 }) => {
   return (
-    <div className="w-full bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2">
+    <div className="w-full bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg">
       <h3 className="md:text-lg lg:text-xl font-bold">{title}</h3>
       <p className="opacity-70 text-sm md:text-base">{description}</p>
       <div className="flex gap-x-4 w-full items-center justify-center mt-auto">
