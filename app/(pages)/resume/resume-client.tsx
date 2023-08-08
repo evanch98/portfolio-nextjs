@@ -3,6 +3,7 @@
 import Banner from "@/components/common/banner";
 import Subheading from "@/components/common/subheading";
 import EduSection from "./components/edu-section";
+import Alert from "@/components/common/alert";
 
 const ResumeClient = () => {
   return (
@@ -18,6 +19,7 @@ const ResumeClient = () => {
         </section>
         <section className="w-full flex flex-col gap-5">
           <Subheading title="Experience" />
+          <Alert />
         </section>
       </div>
     </div>
