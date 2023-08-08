@@ -1,5 +1,11 @@
+import Card from "@/components/common/card";
+
 const ProjectsSection = () => {
-  return <div>Projects</div>;
+  return (
+    <div>
+      <Card />
+    </div>
+  );
 };
 
 export default ProjectsSection;
