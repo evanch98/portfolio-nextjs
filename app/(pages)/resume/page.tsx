@@ -1,5 +1,3 @@
-const ResumePage = () => {
-  return <div>Projects</div>;
-};
-
-export default ResumePage;
+export default function ResumePage() {
+  return <main></main>;
+}
