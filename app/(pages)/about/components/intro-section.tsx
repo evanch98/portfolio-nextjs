@@ -1,6 +1,6 @@
 const IntroSection = () => {
   return (
-    <div className="w-full p-5 rounded-2xl bg-[#282B30] flex flex-col gap-y-2">
+    <div className="w-full p-5 rounded-2xl bg-[#282B30] flex flex-col gap-y-2 shadow-lg">
       <p>
         My name is Kyaw Thu, and a lot of people know me as Evan. I have born
         and raised in Burma (Myanmar), and I am currently living in Taiwan. I am
