@@ -38,7 +38,7 @@ const ContactSection = () => {
         type="submit"
         className="p-2 border border-white rounded-xl hover:opacity-70 transition-opacity"
       >
-        Send
+        Let's Talk
       </button>
     </form>
   );
