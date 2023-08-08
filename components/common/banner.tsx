@@ -12,7 +12,7 @@ interface BannerProps {
 const Banner: React.FC<BannerProps> = ({
   heading,
   description,
-  home = false,
+  home = true,
 }) => {
   return (
     <div className="w-full py-5 flex flex-col items-center justify-center bg-[#282B30] rounded-2xl gap-y-2 shadow-lg">
