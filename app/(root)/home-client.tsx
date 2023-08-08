@@ -11,7 +11,7 @@ const HomeClient = () => {
       <div className="h-full w-full max-w-[1024px] flex flex-col items-center justify-center px-2 lg:px-0 gap-5">
         <Banner
           heading="Kyaw Thu"
-          description="An aspiring front-end developer"
+          description="Let's Build Something Legendary Together"
           home={true}
         />
         <section className="w-full flex flex-col gap-5">
