@@ -13,7 +13,7 @@ const HomeClient = () => {
           home={true}
         />
         <section className="w-full">
-          <Subheading />
+          <Subheading title="Projects" moreHref="/projects" />
         </section>
       </div>
     </div>
