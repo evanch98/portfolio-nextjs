@@ -20,10 +20,10 @@ const Banner: React.FC<BannerProps> = ({
       <p className="opacity-70 md:text-lg lg:text-xl">{description}</p>
       {home && (
         <div className="flex items-center justify-center gap-x-4">
-          <GitHubIcon />
-          <LinkedinIcon />
-          <MailIcon />
-          <ResumeIcon />
+          <GitHubIcon className="hover:opacity-70 transition-opacity" />
+          <LinkedinIcon className="hover:opacity-70 transition-opacity" />
+          <MailIcon className="hover:opacity-70 transition-opacity" />
+          <ResumeIcon className="hover:opacity-70 transition-opacity" />
         </div>
       )}
     </div>
