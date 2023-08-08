@@ -17,6 +17,9 @@ const HomeClient = () => {
           <Subheading title="Projects" moreHref="/projects" />
           <ProjectsSection />
         </section>
+        <section className="w-full flex flex-col gap-5">
+          <Subheading title="Most Used Frameworks" />
+        </section>
       </div>
     </div>
   );
