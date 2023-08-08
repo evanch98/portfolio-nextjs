@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiExternalLink, FiHome, FiList, FiUser } from "react-icons/fi";
 import { twMerge } from "tailwind-merge";
-import NavLink from "./nav-link";
+import NavLink from "./common/nav-link";
 
 export function MainNav({
   className,
