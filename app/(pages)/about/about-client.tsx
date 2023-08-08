@@ -3,6 +3,7 @@
 import Banner from "@/components/common/banner";
 import Subheading from "@/components/common/subheading";
 import IntroSection from "./components/intro-section";
+import ContactSection from "./components/contact-section";
 
 const AboutClient = () => {
   return (
@@ -19,6 +20,7 @@ const AboutClient = () => {
         </section>
         <section className="w-full flex flex-col gap-5">
           <Subheading title="Contact Me" />
+          <ContactSection />
         </section>
       </div>
     </div>
