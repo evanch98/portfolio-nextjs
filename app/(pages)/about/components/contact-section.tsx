@@ -1,4 +1,29 @@
+"use client";
+
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
+
+const formSchema = z.object({
+  name: z.string().min(2, {
+    message: "Name must be at least 2 characters",
+  }),
+  email: z.string().email(),
+  message: z.string().min(10, {
+    message: "Message must be at least 10 characters",
+  }),
+});
+
 const ContactSection = () => {
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  });
+
   return (
     <form
       className="w-full p-5 rounded-2xl bg-[#282B30] flex flex-col gap-y-5 shadow-lg"
