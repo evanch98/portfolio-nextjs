@@ -9,10 +9,10 @@ const ResumeClient = () => {
       <div className="h-full w-full max-w-[1024px] flex flex-col items-center justify-center px-2 lg:px-0 gap-5">
         <Banner
           heading="Resume"
-          description="Highly motivated and detail-oriented computer science student with a strong passion for front-end development."
+          description="Studying Computer Science at the University of the People"
         />
         <section className="w-full flex flex-col gap-5">
-          <Subheading title="Introduction" />
+          <Subheading title="Education" />
         </section>
         <section className="w-full flex flex-col gap-5">
           <Subheading title="Contact Me" />
