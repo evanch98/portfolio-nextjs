@@ -6,6 +6,7 @@ import EduSection from "./components/edu-section";
 import Alert from "@/components/common/alert";
 import ExpSection from "./components/exp-section";
 import ProjectsSection from "@/app/(root)/components/projects-section";
+import TechStackSection from "./components/tech-stack-section";
 
 const ResumeClient = () => {
   return (
@@ -35,6 +36,7 @@ const ResumeClient = () => {
         </section>
         <section className="w-full flex flex-col gap-5">
           <Subheading title="Tech Stack" />
+          <TechStackSection />
         </section>
       </div>
     </div>
