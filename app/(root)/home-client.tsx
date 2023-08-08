@@ -18,7 +18,7 @@ const HomeClient = () => {
           <ProjectsSection />
         </section>
         <section className="w-full flex flex-col gap-5">
-          <Subheading title="Most Used Frameworks" />
+          <Subheading title="Most Used Tools and Frameworks" />
         </section>
       </div>
     </div>
