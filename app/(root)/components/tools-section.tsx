@@ -25,6 +25,12 @@ const ToolsSection = () => {
         "I use Zustand as my primary state management library due to its simplicity.",
       info: "https://docs.pmnd.rs/zustand/getting-started/introduction",
     },
+    {
+      title: "Prisma",
+      description:
+        "I use Prisma ORM due to its intuitive data model and type safety.",
+      info: "https://www.prisma.io/",
+    },
   ];
 
   return (
