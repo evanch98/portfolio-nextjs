@@ -4,6 +4,7 @@ import Banner from "@/components/common/banner";
 import Subheading from "@/components/common/subheading";
 import EduSection from "./components/edu-section";
 import Alert from "@/components/common/alert";
+import ExpSection from "./components/exp-section";
 
 const ResumeClient = () => {
   return (
@@ -25,6 +26,7 @@ const ResumeClient = () => {
               have built real-world web applications.
             </p>
           </Alert>
+          <ExpSection />
         </section>
       </div>
     </div>
