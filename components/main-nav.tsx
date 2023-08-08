@@ -43,7 +43,7 @@ export function MainNav({
           href={route.href}
           className={twMerge(
             "transition-colors hover:opacity-100",
-            route.active ? "opacity-100" : "opacity-70"
+            route.active ? "opacity-100" : "opacity-50"
           )}
         >
           {route.icon}
