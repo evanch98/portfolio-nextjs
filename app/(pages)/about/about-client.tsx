@@ -12,7 +12,6 @@ const AboutClient = () => {
         <Banner
           heading="About Me"
           description="An aspiring front-end developer"
-          home={true}
         />
         <section className="w-full flex flex-col gap-5">
           <Subheading title="Introduction" />

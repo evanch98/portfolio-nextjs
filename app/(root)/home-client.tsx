@@ -12,7 +12,6 @@ const HomeClient = () => {
         <Banner
           heading="Kyaw Thu"
           description="Let's Build Something Legendary Together"
-          home={true}
         />
         <section className="w-full flex flex-col gap-5">
           <Subheading title="Projects" moreHref="/projects" />
