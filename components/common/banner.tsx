@@ -15,7 +15,7 @@ const Banner: React.FC<BannerProps> = ({
   home = false,
 }) => {
   return (
-    <div className="w-full py-5 flex flex-col items-center justify-center bg-[#282B30] rounded-2xl gap-y-2">
+    <div className="w-full py-5 flex flex-col items-center justify-center bg-[#282B30] rounded-2xl gap-y-2 shadow-lg">
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">{heading}</h1>
       <p className="opacity-70 md:text-lg lg:text-xl">{description}</p>
       {home && (
