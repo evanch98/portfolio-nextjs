@@ -28,7 +28,7 @@ const ToolsSection = () => {
     {
       title: "Prisma",
       description:
-        "I use Prisma ORM due to its intuitive data model and type safety.",
+        "I use Prisma ORM in most of my projects due to its intuitive data model and type safety.",
       info: "https://www.prisma.io/",
     },
   ];
