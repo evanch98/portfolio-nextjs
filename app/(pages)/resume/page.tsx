@@ -1,3 +1,9 @@
+import ResumeClient from "./resume-client";
+
 export default function ResumePage() {
-  return <main></main>;
+  return (
+    <main>
+      <ResumeClient />
+    </main>
+  );
 }
