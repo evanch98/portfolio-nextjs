@@ -5,7 +5,7 @@ const ToolsSection = () => {
     {
       title: "Next JS",
       description:
-        "I have built several web applications, including Airbnb Clone, Spotify Clone, and Admin Dashboard, using Next JS framework.",
+        "I have built several web applications, such as Airbnb Clone, using Next JS framework.",
       info: "https://nextjs.org/",
     },
     {
@@ -15,8 +15,9 @@ const ToolsSection = () => {
     },
     {
       title: "Tailwind CSS",
-      description: "",
-      info: "",
+      description:
+        "I style almost all of my React components using Tailwind CSS.",
+      info: "https://tailwindcss.com/",
     },
   ];
 
