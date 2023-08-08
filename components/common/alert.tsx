@@ -3,7 +3,7 @@ interface AlertProps {
 }
 
 const Alert: React.FC<AlertProps> = ({ children }) => {
-  return <div className="w-full bg-[#FCA5A5] rounded-2xl p-5">{children}</div>;
+  return <div className="w-full bg-[#FCA5A5] rounded-2xl p-5 shadow-lg">{children}</div>;
 };
 
 export default Alert;
