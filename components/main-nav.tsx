@@ -5,6 +5,12 @@ import { usePathname } from "next/navigation";
 import { FiExternalLink, FiHome, FiList, FiUser } from "react-icons/fi";
 import { twMerge } from "tailwind-merge";
 import NavLink from "@/components/common/nav-link";
+import { motion } from "framer-motion";
+
+const mainVariants = {
+  hidden: { y: "-100vh", x: "-50%" },
+  visible: { y: 0, x: "-50%", transition: { duration: 1, type: "spring" } },
+};
 
 export function MainNav({
   className,
@@ -36,7 +42,12 @@ export function MainNav({
   ];
 
   return (
-    <nav className="fixed top-0 left-1/2 -translate-x-1/2 px-5 py-2 flex items-center space-x-4 lg:space-x-6 bg-[#282B30] rounded-b-2xl shadow-lg">
+    <motion.nav
+      className="fixed top-0 left-1/2 -translate-x-1/2 px-5 py-2 flex items-center space-x-4 lg:space-x-6 bg-[#282B30] rounded-b-2xl shadow-lg"
+      variants={mainVariants}
+      initial="hidden"
+      animate="visible"
+    >
       {routes.map((route) => (
         <Link
           key={route.href}
@@ -49,6 +60,6 @@ export function MainNav({
           {route.icon}
         </Link>
       ))}
-    </nav>
+    </motion.nav>
   );
 }
