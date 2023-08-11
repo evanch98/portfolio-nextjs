@@ -4,6 +4,7 @@ import Banner from "@/components/common/banner";
 import Subheading from "@/components/common/subheading";
 import { projectType } from "@/types/types";
 import OverviewSection from "./components/overview-section";
+import DescSection from "./components/desc-section";
 
 interface ProjectClientProps {
   data: projectType;
@@ -28,6 +29,10 @@ const ProjectClient: React.FC<ProjectClientProps> = ({ data }) => {
             gitHub={data.gitHubLink}
             live={data.demoLink}
           />
+        </section>
+        <section className="w-full flex flex-col gap-5">
+          <Subheading title="Descriptions" />
+          <DescSection descriptions={data.description} />
         </section>
       </div>
     </div>
