@@ -32,10 +32,18 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({
       <div className="w-full bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg">
         <h2 className="md:text-lg lg:text-xl font-bold">Links</h2>
         <div className="w-full flex gap-x-4">
-          <Link href={gitHub} target="_blank">
+          <Link
+            href={gitHub}
+            target="_blank"
+            className="hover:opacity-70 transition-opacity"
+          >
             <NavLink label="Code" icon={FiGithub} />
           </Link>
-          <Link href={live} target="_blank">
+          <Link
+            href={live}
+            target="_blank"
+            className="hover:opacity-70 transition-opacity"
+          >
             <NavLink label="Live" icon={FiGlobe} />
           </Link>
         </div>
