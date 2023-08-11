@@ -1,5 +1,11 @@
+import ProjectsClient from "./projects-client";
+
 const ProjectsPage = () => {
-  return <div>Projects</div>;
+  return (
+    <div>
+      <ProjectsClient />
+    </div>
+  );
 };
 
 export default ProjectsPage;
