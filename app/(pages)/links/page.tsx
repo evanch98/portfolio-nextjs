@@ -1,5 +1,11 @@
+import LinksClient from "./links-client";
+
 const LinksPage = () => {
-  return <div>Links Page</div>;
+  return (
+    <div>
+      <LinksClient />
+    </div>
+  );
 };
 
 export default LinksPage;
