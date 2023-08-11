@@ -19,6 +19,15 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import * as z from "zod";
+import { motion } from "framer-motion";
+
+const mainVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 1 },
+  },
+};
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -62,7 +71,12 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="w-full p-5 rounded-2xl bg-[#282B30] shadow-lg">
+    <motion.div
+      className="w-full p-5 rounded-2xl bg-[#282B30] shadow-lg"
+      variants={mainVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
@@ -130,7 +144,7 @@ const ContactSection = () => {
           </Button>
         </form>
       </Form>
-    </div>
+    </motion.div>
   );
 };
 
