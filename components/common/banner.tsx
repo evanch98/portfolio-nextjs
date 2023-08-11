@@ -17,7 +17,9 @@ const Banner: React.FC<BannerProps> = ({
   return (
     <div className="w-full p-5 flex flex-col items-center justify-center bg-[#282B30] rounded-2xl gap-y-2 shadow-lg">
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">{heading}</h1>
-      <p className="opacity-70 md:text-lg lg:text-xl text-center">{description}</p>
+      <p className="opacity-70 md:text-lg lg:text-xl text-center">
+        {description}
+      </p>
       {home && (
         <div className="flex items-center justify-center gap-x-4">
           <GitHubIcon className="hover:opacity-70 transition-opacity" />
