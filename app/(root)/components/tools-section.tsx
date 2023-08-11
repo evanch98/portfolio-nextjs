@@ -1,4 +1,13 @@
 import Card from "@/components/common/card";
+import { motion } from "framer-motion";
+
+const mainVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 1, staggerChildren: 0.1, delayChildren: 0.3 },
+  },
+};
 
 const ToolsSection = () => {
   const tools = [
@@ -39,7 +48,12 @@ const ToolsSection = () => {
   ];
 
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    <motion.div
+      className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+      variants={mainVariants}
+      initial="hidden"
+      animate="visible"
+    >
       {tools.map((tool) => (
         <Card
           key={tool.title}
@@ -48,7 +62,7 @@ const ToolsSection = () => {
           info={tool.info}
         />
       ))}
-    </div>
+    </motion.div>
   );
 };
 
