@@ -1,7 +1,7 @@
 import { projectType } from "@/types/types";
 
 export const airbnbProject: projectType = {
-  id: "1",
+  id: "airbnb_clone",
   title: "Airbnb Clone",
   description: [
     "Developed a full-stack Airbnb Clone website using Next.js, TypeScript, Zustand, Tailwind CSS, MongoDB, Prisma, and NextAuth.",
@@ -27,7 +27,7 @@ export const airbnbProject: projectType = {
 };
 
 export const spotifyProject: projectType = {
-  id: "2",
+  id: "spotify_clone",
   title: "Spotify Clone",
   description: [
     "Developed a full-stack Spotify Clone website using Next.js, TypeScript, Zustand, Tailwind CSS, Supabase, and Stripe.",
