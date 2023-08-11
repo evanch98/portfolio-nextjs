@@ -1,3 +1,7 @@
+"use client";
+
+import {motion} from "framer-motion";
+
 const ExpSection = () => {
   const experiences = [
     {
@@ -15,7 +19,11 @@ const ExpSection = () => {
   ];
 
   return (
-    <div className="w-full grid grid-cols-1 gap-5">
+    <motion.div
+      className="w-full grid grid-cols-1 gap-5"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1.5 } }}
+    >
       {experiences.map((experience) => (
         <div
           key={experience.profession}
@@ -39,7 +47,7 @@ const ExpSection = () => {
           </ul>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
