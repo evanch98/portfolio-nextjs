@@ -1,4 +1,5 @@
 export interface projectType {
+  id: string;
   title: string;
   description: string[];
   framework: string;
