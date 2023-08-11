@@ -51,3 +51,7 @@ export const spotifyProject: projectType = {
   gitHubLink: "https://github.com/evanch98/spotify-clone-nextjs",
   demoLink: "https://spotify-clone-nextjs-xi.vercel.app/",
 };
+
+const projects: projectType[] = [spotifyProject, airbnbProject];
+
+export default projects;
