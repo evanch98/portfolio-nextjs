@@ -1,3 +1,7 @@
+"use client";
+
+import {motion} from "framer-motion";
+
 const EduSection = () => {
   const educations = [
     {
@@ -9,7 +13,11 @@ const EduSection = () => {
   ];
 
   return (
-    <div className="w-full grid grid-cols-1 gap-5">
+    <motion.div
+      className="w-full grid grid-cols-1 gap-5"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1 } }}
+    >
       {educations.map((education) => (
         <div
           key={education.degree}
@@ -27,7 +35,7 @@ const EduSection = () => {
           </p>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
