@@ -33,7 +33,7 @@ const ToolsSection = () => {
     },
     {
       title: "Framer Motion",
-      description: "I use Framer Motion to animate my most of my components.",
+      description: "I use Framer Motion to animate most of my components.",
       info: "https://www.framer.com/motion/",
     },
   ];
