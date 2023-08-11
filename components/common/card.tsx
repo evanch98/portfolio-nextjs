@@ -44,7 +44,7 @@ const Card: React.FC<CardProps> = ({
           <Link
             href={info}
             className="hover:opacity-70 transition-opacity"
-            target="_blank"
+            target={info.startsWith("/") ? "_self" : "_blank"}
           >
             <NavLink label="Info" icon={FiInfo} />
           </Link>
