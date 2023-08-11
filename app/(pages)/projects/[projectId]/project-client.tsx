@@ -3,6 +3,7 @@
 import Banner from "@/components/common/banner";
 import Subheading from "@/components/common/subheading";
 import { projectType } from "@/types/types";
+import OverviewSection from "./components/overview-section";
 
 interface ProjectClientProps {
   data: projectType;
@@ -19,6 +20,7 @@ const ProjectClient: React.FC<ProjectClientProps> = ({ data }) => {
         />
         <section className="w-full flex flex-col gap-5">
           <Subheading title="Overview" />
+          <OverviewSection />
         </section>
       </div>
     </div>
