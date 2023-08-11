@@ -4,6 +4,8 @@ export interface projectType {
   description: string[];
   framework: string;
   techStack: string[];
+  date: string;
+  category: string;
   gitHubLink: string;
   demoLink: string;
 }
