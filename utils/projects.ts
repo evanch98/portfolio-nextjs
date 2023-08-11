@@ -13,8 +13,6 @@ export const airbnbProject: projectType = {
     "Integrated MongoDB for data storage and Prisma as the ORM for seamless database management.",
     "Implemented authentication and authorization functionalities using NextAuth to enable secure user registration, login, and protected routes.",
   ],
-  imageSrc: airbnb,
-  imageAlt: "Airbnb website Image",
   framework: "Next JS",
   techStack: [
     "Next JS",
@@ -27,7 +25,6 @@ export const airbnbProject: projectType = {
   ],
   gitHubLink: "https://github.com/evanch98/airbnb_clone_react",
   demoLink: "https://rent-house-react-hopf81d0y-evanch98.vercel.app/",
-  pageUrl: "/airbnb",
 };
 
 export const spotifyProject: projectType = {
@@ -41,8 +38,6 @@ export const spotifyProject: projectType = {
     "Integrated Supabase for database management, allowing seamless storage and retrieval of user and music data.",
     "Implemented Stripe for secure payment processing, enabling premium subscription features.",
   ],
-  imageSrc: spotify,
-  imageAlt: "Spotify website image",
   framework: "Next JS",
   techStack: [
     "Next JS",
@@ -54,5 +49,4 @@ export const spotifyProject: projectType = {
   ],
   gitHubLink: "https://github.com/evanch98/spotify-clone-nextjs",
   demoLink: "https://spotify-clone-nextjs-xi.vercel.app/",
-  pageUrl: "/spotify",
 };
