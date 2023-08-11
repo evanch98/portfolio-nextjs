@@ -5,5 +5,6 @@ export const getProject = (id: string) => {
   const project = projects.filter((project) => {
     return project.id === id;
   });
+
   return project;
 };
