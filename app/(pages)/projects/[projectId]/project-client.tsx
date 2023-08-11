@@ -24,6 +24,7 @@ const ProjectClient: React.FC<ProjectClientProps> = ({ data }) => {
             title={data.title}
             category={data.category}
             date={data.date}
+            framework={data.framework}
             gitHub={data.gitHubLink}
             live={data.demoLink}
           />
