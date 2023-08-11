@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const TechStackSection = () => {
   const techs = [
     {
@@ -23,7 +27,11 @@ const TechStackSection = () => {
   ];
 
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    <motion.div
+      className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1.5 } }}
+    >
       {techs.map((tech) => (
         <div
           key={tech.title}
@@ -37,7 +45,7 @@ const TechStackSection = () => {
           </ul>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
