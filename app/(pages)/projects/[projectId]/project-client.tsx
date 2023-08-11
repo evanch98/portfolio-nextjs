@@ -1,6 +1,7 @@
 "use client";
 
 import Banner from "@/components/common/banner";
+import Subheading from "@/components/common/subheading";
 import { projectType } from "@/types/types";
 
 interface ProjectClientProps {
@@ -16,7 +17,9 @@ const ProjectClient: React.FC<ProjectClientProps> = ({ data }) => {
           description={data.description[0]}
           home={false}
         />
-        
+        <section className="w-full flex flex-col gap-5">
+          <Subheading title="Overview" />
+        </section>
       </div>
     </div>
   );
