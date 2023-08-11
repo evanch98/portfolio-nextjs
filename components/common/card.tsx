@@ -1,6 +1,7 @@
 import { FiGithub, FiGlobe, FiInfo } from "react-icons/fi";
 import NavLink from "./nav-link";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface CardProps {
   title: string;
@@ -10,6 +11,27 @@ interface CardProps {
   info?: string;
 }
 
+const mainVariants = {
+  hidden: { x: "-100vw" },
+  visible: {
+    x: 0,
+    transition: {
+      duration: 1,
+      delayChildren: 0.3,
+      staggerChildren: 0.1,
+      type: "spring",
+    },
+  },
+};
+
+const childVariants = {
+  hidden: { x: "-100vw" },
+  visible: {
+    x: 0,
+    transition: { duration: 1, type: "spring" },
+  },
+};
+
 const Card: React.FC<CardProps> = ({
   title,
   description,
@@ -18,10 +40,26 @@ const Card: React.FC<CardProps> = ({
   info,
 }) => {
   return (
-    <div className="w-full bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg">
-      <h3 className="md:text-lg lg:text-xl font-bold">{title}</h3>
-      <p className="opacity-70 text-sm md:text-base">{description}</p>
-      <div className="flex gap-x-4 w-full items-center justify-center mt-auto">
+    <motion.div
+      className="w-full bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
+      variants={mainVariants}
+    >
+      <motion.h3
+        className="md:text-lg lg:text-xl font-bold"
+        variants={childVariants}
+      >
+        {title}
+      </motion.h3>
+      <motion.p
+        className="opacity-70 text-sm md:text-base"
+        variants={childVariants}
+      >
+        {description}
+      </motion.p>
+      <motion.div
+        className="flex gap-x-4 w-full items-center justify-center mt-auto"
+        variants={childVariants}
+      >
         {code && (
           <Link
             href={code}
@@ -49,8 +87,8 @@ const Card: React.FC<CardProps> = ({
             <NavLink label="Info" icon={FiInfo} />
           </Link>
         )}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
