@@ -1,5 +1,3 @@
-import airbnb from "@/public/assets/projects/airbnb.svg";
-import spotify from "@/public/assets/projects/spotify.svg";
 import { projectType } from "@/types/types";
 
 export const airbnbProject: projectType = {
