@@ -1,6 +1,6 @@
 import ProjectClient from "./project-client";
 
-const ProjectPage = () => {
+const ProjectPage = ({ params }: { params: { projectId: string } }) => {
   return (
     <div>
       <ProjectClient />
