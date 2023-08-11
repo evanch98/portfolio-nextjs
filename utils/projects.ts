@@ -22,6 +22,8 @@ export const airbnbProject: projectType = {
     "Prisma",
     "NextAuth",
   ],
+  date: "8 May 2023",
+  category: "Hobby Project",
   gitHubLink: "https://github.com/evanch98/airbnb_clone_react",
   demoLink: "https://rent-house-react-hopf81d0y-evanch98.vercel.app/",
 };
@@ -47,6 +49,8 @@ export const spotifyProject: projectType = {
     "Supabase",
     "Stripe",
   ],
+  date: "31 May 2023",
+  category: "Hobby Project",
   gitHubLink: "https://github.com/evanch98/spotify-clone-nextjs",
   demoLink: "https://spotify-clone-nextjs-xi.vercel.app/",
 };
