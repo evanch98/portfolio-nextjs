@@ -43,7 +43,7 @@ export function MainNav({
 
   return (
     <motion.nav
-      className="fixed top-0 left-1/2 -translate-x-1/2 px-5 py-2 flex items-center space-x-4 lg:space-x-6 bg-[#282B30] rounded-b-2xl shadow-lg"
+      className="fixed top-0 left-1/2 -translate-x-1/2 px-5 py-2 flex items-center space-x-4 lg:space-x-6 bg-[#282B30] rounded-b-2xl shadow-lg z-50"
       variants={mainVariants}
       initial="hidden"
       animate="visible"
