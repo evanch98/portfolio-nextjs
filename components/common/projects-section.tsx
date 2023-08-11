@@ -8,7 +8,7 @@ const ProjectsSection = () => {
     <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       {projects.slice(0, 3).map((project) => (
         <Card
-          key={project.title}
+          key={project.id}
           title={project.title}
           description={project.description[0]}
           code={project.gitHubLink}
