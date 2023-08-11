@@ -31,6 +31,11 @@ const ToolsSection = () => {
         "I use Prisma ORM in most of my projects due to its intuitive data model and type safety.",
       info: "https://www.prisma.io/",
     },
+    {
+      title: "Framer Motion",
+      description: "I use Framer Motion to animate my most of my components.",
+      info: "https://www.framer.com/motion/",
+    },
   ];
 
   return (
