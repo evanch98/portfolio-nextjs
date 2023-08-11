@@ -4,6 +4,7 @@ import Subheading from "@/components/common/subheading";
 import Banner from "@/components/common/banner";
 import ProjectsSection from "@/components/common/projects-section";
 import ToolsSection from "./components/tools-section";
+import ContactSection from "@/components/common/contact-section";
 
 const HomeClient = () => {
   return (
@@ -20,6 +21,10 @@ const HomeClient = () => {
         <section className="w-full flex flex-col gap-5">
           <Subheading title="Most Used Tools and Frameworks" />
           <ToolsSection />
+        </section>
+        <section className="w-full flex flex-col gap-5">
+          <Subheading title="Contact Me" />
+          <ContactSection />
         </section>
       </div>
     </div>
