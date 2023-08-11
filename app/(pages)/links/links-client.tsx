@@ -2,6 +2,7 @@
 
 import Banner from "@/components/common/banner";
 import Subheading from "@/components/common/subheading";
+import LinksSection from "./components/links-section";
 
 const LinksClient = () => {
   return (
@@ -14,6 +15,7 @@ const LinksClient = () => {
         />
         <section className="w-full flex flex-col gap-5">
           <Subheading title="Links" />
+          <LinksSection />
         </section>
       </div>
     </div>
