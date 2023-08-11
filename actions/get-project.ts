@@ -6,5 +6,5 @@ export const getProject = (id: string) => {
     return project.id === id;
   });
 
-  return project;
+  return project[0];
 };
