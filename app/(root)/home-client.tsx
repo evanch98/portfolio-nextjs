@@ -2,7 +2,7 @@
 
 import Subheading from "@/components/common/subheading";
 import Banner from "@/components/common/banner";
-import ProjectsSection from "./components/projects-section";
+import ProjectsSection from "../../components/common/projects-section";
 import ToolsSection from "./components/tools-section";
 
 const HomeClient = () => {

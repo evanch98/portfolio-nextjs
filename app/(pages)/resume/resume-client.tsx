@@ -5,7 +5,7 @@ import Subheading from "@/components/common/subheading";
 import EduSection from "./components/edu-section";
 import Alert from "@/components/common/alert";
 import ExpSection from "./components/exp-section";
-import ProjectsSection from "@/app/(root)/components/projects-section";
+import ProjectsSection from "@/components/common/projects-section";
 import TechStackSection from "./components/tech-stack-section";
 
 const ResumeClient = () => {
@@ -24,8 +24,8 @@ const ResumeClient = () => {
           <Subheading title="Experience" />
           <Alert>
             <p className="font-semibold">
-              Although I do not have any professional experience for now, I
-              have experiences in building real-world web applications.
+              Although I do not have any professional experience for now, I have
+              experiences in building real-world web applications.
             </p>
           </Alert>
           <ExpSection />
