@@ -20,7 +20,13 @@ const ProjectClient: React.FC<ProjectClientProps> = ({ data }) => {
         />
         <section className="w-full flex flex-col gap-5">
           <Subheading title="Overview" />
-          <OverviewSection />
+          <OverviewSection
+            title={data.title}
+            category={data.category}
+            date={data.date}
+            gitHub={data.gitHubLink}
+            live={data.demoLink}
+          />
         </section>
       </div>
     </div>
