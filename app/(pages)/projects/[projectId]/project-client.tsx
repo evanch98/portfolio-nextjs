@@ -16,6 +16,7 @@ const ProjectClient: React.FC<ProjectClientProps> = ({ data }) => {
           description={data.description[0]}
           home={false}
         />
+        
       </div>
     </div>
   );
