@@ -1,8 +1,7 @@
 import { projectType } from "@/types/types";
-import { v4 as uuidv4 } from "uuid";
 
 export const airbnbProject: projectType = {
-  id: uuidv4(),
+  id: "1",
   title: "Airbnb Clone",
   description: [
     "Developed a full-stack Airbnb Clone website using Next.js, TypeScript, Zustand, Tailwind CSS, MongoDB, Prisma, and NextAuth.",
@@ -28,7 +27,7 @@ export const airbnbProject: projectType = {
 };
 
 export const spotifyProject: projectType = {
-  id: uuidv4(),
+  id: "2",
   title: "Spotify Clone",
   description: [
     "Developed a full-stack Spotify Clone website using Next.js, TypeScript, Zustand, Tailwind CSS, Supabase, and Stripe.",
