@@ -10,7 +10,7 @@ const TechStackSection = () => {
     },
     {
       title: "Libraries & Frameworks",
-      tech: ["React", "Next JS", "Tailwind CSS", "Zustand"],
+      tech: ["React", "Next JS", "Three JS", "Tailwind CSS", "Zustand"],
     },
     {
       title: "ORM & Databases",
