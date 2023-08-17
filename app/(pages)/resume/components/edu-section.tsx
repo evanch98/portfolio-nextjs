@@ -6,7 +6,7 @@ const EduSection = () => {
   const educations = [
     {
       degree: "Bachelor of Science in Computer Science",
-      date: "Sep, 2021-Mar, 2025 (Expected)",
+      date: "Sep, 2021 - Mar, 2025 (Expected)",
       university: "University of the People, Pasadena, CA",
       gpa: "3.97",
     },
