@@ -38,7 +38,7 @@ const TechStackSection = () => {
           className="w-full bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
         >
           <h1 className="md:text-lg lg:text-xl font-bold">{tech.title}</h1>
-          <ul className="list-inside list-disc">
+          <ul className="list-inside list-disc opacity-70">
             {tech.tech.map((list) => (
               <li key={list}>{list}</li>
             ))}
