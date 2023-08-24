@@ -1,4 +1,5 @@
 import { projectType } from "@/types/types";
+import Link from "next/link";
 
 export const airbnbProject: projectType = {
   id: "airbnb_clone",
@@ -115,6 +116,15 @@ export const eCommerceStore: projectType = {
   category: "Hobby Project",
   gitHubLink: "https://github.com/evanch98/ecommerce-store-nextjs",
   demoLink: "https://ecommerce-store-nextjs-tau.vercel.app/",
+  alert: (
+    <p>
+      The contents of this E-commerce Store are managed through the{" "}
+      <Link className="font-bold" href={`/projects/${eCommerceAdmin.id}`}>
+        E-Commerce Admin Dashboard
+      </Link>
+      .
+    </p>
+  ),
 };
 
 const projects: projectType[] = [
