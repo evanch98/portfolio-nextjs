@@ -6,6 +6,7 @@ import { projectType } from "@/types/types";
 import OverviewSection from "./components/overview-section";
 import DescSection from "./components/desc-section";
 import TechSection from "./components/tech-section";
+import Alert from "@/components/common/alert";
 
 interface ProjectClientProps {
   data: projectType;
@@ -20,6 +21,7 @@ const ProjectClient: React.FC<ProjectClientProps> = ({ data }) => {
           description={data.description[0]}
           home={false}
         />
+        {data.alert && <Alert>{data.alert}</Alert>}
         <section className="w-full flex flex-col gap-5">
           <Subheading title="Overview" />
           <OverviewSection
