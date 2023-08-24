@@ -8,5 +8,5 @@ export interface projectType {
   category: string;
   gitHubLink: string;
   demoLink: string;
-  alert?: string;
+  alert?: React.ReactNode;
 }
