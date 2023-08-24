@@ -23,7 +23,7 @@ export const airbnbProject: projectType = {
     "NextAuth",
     "Cloudinary",
   ],
-  date: "May 8 2023",
+  date: "May 8, 2023",
   category: "Hobby Project",
   gitHubLink: "https://github.com/evanch98/airbnb_clone_react",
   demoLink: "https://rent-house-react-hopf81d0y-evanch98.vercel.app/",
@@ -50,14 +50,14 @@ export const spotifyProject: projectType = {
     "Supabase",
     "Stripe",
   ],
-  date: "May 31 2023",
+  date: "May 31, 2023",
   category: "Hobby Project",
   gitHubLink: "https://github.com/evanch98/spotify-clone-nextjs",
   demoLink: "https://spotify-clone-nextjs-xi.vercel.app/",
 };
 
 export const eCommerceAdmin: projectType = {
-  id: "eCommerceAdmin",
+  id: "e_commerce_admin",
   title: "E-Commerce Admin Dashboard",
   description: [
     "Built using cutting-edge technologies like Next JS, TypeScript, Tailwind CSS, Shadcn UI, Planet Scale, Prisma, Zustand, Clerk Auth, and Cloudinary",
@@ -81,13 +81,47 @@ export const eCommerceAdmin: projectType = {
     "Zustand",
     "Clerk Auth",
     "Cloudinary",
+    "Stripe",
   ],
-  date: "July 26 2023",
+  date: "July 26, 2023",
   category: "Hobby Project",
   gitHubLink: "https://github.com/evanch98/ecommerce-admin-nextjs",
-  demoLink: "",
+  demoLink: "https://ecommerce-admin-nextjs-mu.vercel.app/",
 };
 
-const projects: projectType[] = [eCommerceAdmin, spotifyProject, airbnbProject];
+export const eCommerceStore: projectType = {
+  id: "e_commerce_store",
+  title: "E-Commerce Store",
+  description: [
+    "Developed using state-of-the-art technologies including Next JS, TypeScript, Tailwind CSS, Zustand, and Headless UI.",
+    "This E-Commerce Store is designed with responsiveness in mind, ensuring a flawless shopping experience across various devices and screen sizes. Whether on a desktop, tablet, or smartphone, customers can effortlessly browse and purchase products.",
+    "Navigating through the extensive collection of products is a breeze. The interface boasts an intuitive design, enabling shoppers to seamlessly explore different categories and access product details with ease.",
+    "The use of Tailwind CSS and Headless UI creates a visually stunning environment that highlights your products in the best light. High-quality images, carefully chosen typography, and clean layouts contribute to an immersive shopping journey.",
+    "Customers can access comprehensive information about each product, including detailed multiple images, sizes, and colors.",
+    "Zustand powers a smooth and interactive shopping cart experience. Adding and removing items and proceeding to checkout are seamless processes, enhancing the convenience of completing purchases.",
+    "Experience secure and hassle-free transactions through the power of Stripe integration. Leveraging an API endpoint of the admin dashboard, our E-Commerce Store seamlessly processes payments, ensuring the confidentiality of personal and payment information.",
+    "With Next JS at the core, the store employs dynamic loading techniques that optimize page loading speeds. This means customers can swiftly browse through product categories without enduring lengthy load times.",
+  ],
+  framework: "Next JS",
+  techStack: [
+    "Next JS",
+    "TypeScript",
+    "Tailwind CSS",
+    "Zustand",
+    "Headless UI",
+    "Stripe",
+  ],
+  date: "August 9, 2023",
+  category: "Hobby Project",
+  gitHubLink: "https://github.com/evanch98/ecommerce-store-nextjs",
+  demoLink: "https://ecommerce-store-nextjs-tau.vercel.app/",
+};
+
+const projects: projectType[] = [
+  eCommerceStore,
+  eCommerceAdmin,
+  spotifyProject,
+  airbnbProject,
+];
 
 export default projects;
