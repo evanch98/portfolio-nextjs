@@ -1,3 +1,4 @@
+/* Every project should include the following properties */
 export interface projectType {
   id: string;
   title: string;
