@@ -24,7 +24,7 @@ const TechSection: React.FC<TechSectionProps> = ({ techs }) => {
   return (
     <div className="w-full grid grid-cols-1 gap-5">
       <motion.div
-        className="w-full bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
+        className="w-full bg-[#EEEFF1] dark:bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
         variants={mainVariants}
         initial="hidden"
         animate="visible"
