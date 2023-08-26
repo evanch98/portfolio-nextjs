@@ -32,7 +32,7 @@ export default function RootLayout({
           enableSystem={false}
           storageKey="portfolio"
         >
-          <div className="fixed top-5 left-5">
+          <div className="fixed top-1 md:top-5 left-5 z-50">
             <ModeToggle />
           </div>
           {children}
