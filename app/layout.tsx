@@ -25,16 +25,16 @@ export default function RootLayout({
         )}
       >
         <ToastProvider />
-        <div className="absolute top-0 right-5">
-          <ModeToggle />
-        </div>
         <MainNav />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
+          enableSystem={false}
           storageKey="portfolio"
         >
+          <div className="absolute top-0 left-5">
+            <ModeToggle />
+          </div>
           {children}
         </ThemeProvider>
       </body>
