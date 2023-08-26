@@ -48,7 +48,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({
       animate="visible"
     >
       <motion.div
-        className="w-full bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
+        className="w-full bg-[#EEEFF1] dark:bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
         variants={mainVariants}
       >
         <motion.h2
@@ -72,7 +72,7 @@ const OverviewSection: React.FC<OverviewSectionProps> = ({
         </motion.p>
       </motion.div>
       <motion.div
-        className="w-full bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
+        className="w-full bg-[#EEEFF1] dark:bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
         variants={mainVariants}
       >
         <motion.h2
