@@ -1,6 +1,6 @@
 "use client";
 
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const ExpSection = () => {
   const experiences = [
@@ -27,7 +27,7 @@ const ExpSection = () => {
       {experiences.map((experience) => (
         <div
           key={experience.profession}
-          className="w-full bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
+          className="w-full bg-[#EEEFF1] dark:bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
         >
           <div className="flex flex-col gap-y-2 md:flex-row md:justify-between">
             <h1 className="font-bold text-sm md:text-lg">
