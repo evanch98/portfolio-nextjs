@@ -21,7 +21,7 @@ const childVariants = {
 const IntroSection = () => {
   return (
     <motion.div
-      className="w-full p-5 rounded-2xl bg-[#282B30] flex flex-col gap-y-2 shadow-lg"
+      className="w-full p-5 rounded-2xl bg-[#EEEFF1] dark:bg-[#282B30] flex flex-col gap-y-2 shadow-lg"
       variants={mainVariants}
       initial="hidden"
       animate="visible"
