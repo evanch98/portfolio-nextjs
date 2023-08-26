@@ -5,7 +5,6 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#1E2124] text-white;
   font-family: "Montserrat", sans-serif;
 }
 
