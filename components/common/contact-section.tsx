@@ -72,7 +72,7 @@ const ContactSection = () => {
 
   return (
     <motion.div
-      className="w-full p-5 rounded-2xl bg-[#282B30] shadow-lg"
+      className="w-full p-5 rounded-2xl bg-[#EEEFF1] dark:bg-[#282B30] shadow-lg"
       variants={mainVariants}
       initial="hidden"
       animate="visible"
