@@ -41,7 +41,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <motion.div
-      className="w-full bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
+      className="w-full bg-[#EEEFF1] dark:bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
       variants={mainVariants}
     >
       <motion.h3
