@@ -139,7 +139,11 @@ const ContactSection = () => {
               </FormItem>
             )}
           />
-          <Button className="bg-[#1E2124]" type="submit" disabled={loading}>
+          <Button
+            className="bg-white text-[#1E2124] dark:bg-[#1E2124] dark:text-white"
+            type="submit"
+            disabled={loading}
+          >
             Let's Talk
           </Button>
         </form>
