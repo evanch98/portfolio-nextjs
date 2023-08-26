@@ -30,7 +30,7 @@ const Banner: React.FC<BannerProps> = ({
 }) => {
   return (
     <motion.div
-      className="w-full p-5 flex flex-col items-center justify-center bg-[#282B30] rounded-2xl gap-y-2 shadow-lg"
+      className="w-full p-5 flex flex-col items-center justify-center bg-[#EEEFF1] dark:bg-[#282B30] rounded-2xl gap-y-2 shadow-lg"
       variants={mainVariants}
       initial="hidden"
       animate="visible"
