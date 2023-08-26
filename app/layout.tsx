@@ -2,6 +2,7 @@ import { MainNav } from "@/components/main-nav";
 import "./globals.css";
 import type { Metadata } from "next";
 import { ToastProvider } from "@/providers/toast-provider";
+import { ThemeProvider } from "@/providers/theme-provider";
 
 export const metadata: Metadata = {
   title: "Kyaw | Front-end developer",
@@ -18,7 +19,9 @@ export default function RootLayout({
       <body className="relative">
         <ToastProvider />
         <MainNav />
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
