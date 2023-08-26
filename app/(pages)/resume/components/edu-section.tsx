@@ -8,7 +8,7 @@ const EduSection = () => {
       degree: "Bachelor of Science in Computer Science",
       date: "Sep, 2021 - Mar, 2025 (Expected)",
       university: "University of the People, Pasadena, CA",
-      gpa: "3.97",
+      gpa: "3.96",
     },
   ];
 
@@ -21,7 +21,7 @@ const EduSection = () => {
       {educations.map((education) => (
         <div
           key={education.degree}
-          className="w-full bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
+          className="w-full bg-[#EEEFF1] dark:bg-[#282B30] p-5 rounded-2xl flex flex-col gap-y-2 shadow-lg"
         >
           <div className="flex flex-col gap-y-2 md:flex-row md:justify-between">
             <h1 className="font-bold text-sm md:text-lg">{education.degree}</h1>
