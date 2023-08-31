@@ -1,14 +1,20 @@
 "use client";
 
-import {motion} from "framer-motion";
+import { useUoPeopleModal } from "@/hooks/use-uopeople-modal";
+import { motion } from "framer-motion";
 
 const EduSection = () => {
+  const uoPeopleModal = useUoPeopleModal();
+
   const educations = [
     {
       degree: "Bachelor of Science in Computer Science",
       date: "Sep, 2021 - Mar, 2025 (Expected)",
       university: "University of the People, Pasadena, CA",
       gpa: "3.96",
+      onclick: () => {
+        uoPeopleModal.onOpen();
+      },
     },
   ];
 
@@ -32,6 +38,12 @@ const EduSection = () => {
           </p>
           <p className="opacity-70 text-sm md:text-base">
             CGPA: {education.gpa}
+          </p>
+          <p
+            onClick={education.onclick}
+            className="italic text-sm underline opacity-70 hover:cursor-pointer hover:opacity-50 transition"
+          >
+            Learn More
           </p>
         </div>
       ))}
