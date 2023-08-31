@@ -1,7 +1,7 @@
 "use client";
 
-const EduModal = () => {
+const UoPeopleModal = () => {
   return <div>Edu Modal</div>;
 };
 
-export default EduModal;
+export default UoPeopleModal;
