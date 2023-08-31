@@ -1,12 +1,12 @@
 import { create } from "zustand";
 
-interface useEduModalStore {
+interface useUoPeopleModalStore {
   isOpen: boolean;
   onOpen: () => void;
   onClose: () => void;
 }
 
-export const useEduModal = create<useEduModalStore>((set) => ({
+export const useUoPeopleModal = create<useUoPeopleModalStore>((set) => ({
   isOpen: false,
   onOpen: () => set({ isOpen: true }),
   onClose: () => set({ isOpen: false }),
