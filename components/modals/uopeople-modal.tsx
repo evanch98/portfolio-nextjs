@@ -93,10 +93,20 @@ const transferredCourses = [
   "Introduction to Web Development",
 ];
 
+const descriptions = [
+  "Web Development: Comprehensive study of front-end and back-end web technologies, including HTML, CSS, JavaScript, and frameworks such as React.js and Vue.js. Developed skills in creating responsive and interactive web interfaces.",
+  "Mobile Application Development: Focused on native mobile app development for iOS and Android platforms using programming languages such as Swift and Java. Explored platform-specific frameworks and tools, such as Xcode and Android Studio, to create engaging and user-friendly mobile applications.",
+  "Data Structures and Algorithms: Gained a solid understanding of fundamental data structures (arrays, linked lists, trees, graphs) and algorithms, including sorting, searching, and optimization techniques",
+  "Software Engineering: Learned software development methodologies and best practices, including requirements analysis, system design, testing, and project management. Developed skills in collaborative development using version control systems like Git.",
+  "Database Management: Studied relational database management systems (MySQL) and learned concepts such as data modeling, querying, and normalization.",
+  "Programming Languages: Explored various programming languages such as Python, Java, and their application in solving real-world problems. Gained proficiency in writing clean and efficient code.",
+];
+
 const UoPeopleModal = () => {
   const uoPeopleModal = useUoPeopleModal();
   const [isOpen, setIsOpen] = useState(false); // for the courses
   const [isOpenT, setIsOpenT] = useState(false); // for the transferred courses
+  const [isOpenD, setIsOpenD] = useState(false); // for the descriptions
   return (
     <Modal
       title="University of the People"
@@ -150,6 +160,33 @@ const UoPeopleModal = () => {
               {transferredCourses.map((course) => (
                 <p className="mt-2 text-sm opacity-70">{course}</p>
               ))}
+            </CollapsibleContent>
+          </Collapsible>
+        </div>
+        <Separator className="bg-neutral-400/70 my-2" />
+        <div className="w-full">
+          <Collapsible open={isOpenD} onOpenChange={setIsOpenD}>
+            <div className="flex items-center justify-between w-full">
+              <h2 className="font-bold">Descriptions</h2>
+              <CollapsibleTrigger asChild>
+                <Button variant="ghost" size="sm" className="w-9 p-0">
+                  <ChevronsUpDown className="h-4 w-4" />
+                  <span className="sr-only">Toggle</span>
+                </Button>
+              </CollapsibleTrigger>
+            </div>
+            <CollapsibleContent>
+              {descriptions.map((description) => {
+                const desc = description.split(":");
+                return (
+                  <p className="mt-2 text-sm opacity-70">
+                    <span className="font-semibold">
+                      {desc[0]}:
+                    </span>{" "}
+                    {desc[1]}
+                  </p>
+                );
+              })}
             </CollapsibleContent>
           </Collapsible>
         </div>
