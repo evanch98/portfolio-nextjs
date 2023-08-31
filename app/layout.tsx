@@ -5,6 +5,7 @@ import { ToastProvider } from "@/providers/toast-provider";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
 import { cn } from "@/lib/utils";
+import { ModalProvider } from "@/providers/modal-provider";
 
 export const metadata: Metadata = {
   title: "Kyaw | Front-end developer",
@@ -25,6 +26,7 @@ export default function RootLayout({
         )}
       >
         <ToastProvider />
+        <ModalProvider />
         <MainNav />
         <ThemeProvider
           attribute="class"
