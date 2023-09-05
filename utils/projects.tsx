@@ -61,7 +61,7 @@ export const eCommerceAdmin: projectType = {
   id: "e_commerce_admin",
   title: "E-Commerce Admin Dashboard",
   description: [
-    "Built using cutting-edge technologies like Next JS, TypeScript, Tailwind CSS, Shadcn UI, Planet Scale, Prisma, Zustand, Clerk Auth, and Cloudinary",
+    "Built using cutting-edge technologies like Next JS, TypeScript, Tailwind CSS, Shadcn UI, Planet Scale, Prisma, Zustand, Clerk Auth, and Cloudinary.",
     "The admin dashboard allows the website's administrators to create, update, and delete store information.",
     "Admins can efficiently manage the billboards or banners that appear on the website's homepage. They can upload, update, and remove promotional banners to attract customers and highlight ongoing offers or sales.",
     "With the admin dashboard, managing product categories, sizes, and colors becomes a breeze. Administrators can add, edit, or delete categories, sizes, and colors, enabling the website to efficiently organize and display products.",
