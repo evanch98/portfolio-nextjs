@@ -17,6 +17,11 @@ const links = [
     description: "Let's chat on Discord",
     info: "https://www.discordapp.com/users/442602474067722241",
   },
+  {
+    title: "My Game Website",
+    description: "Checkout my game website to see the game screenshots",
+    info: "https://game-web-nextjs.vercel.app/",
+  },
 ];
 
 const mainVariants = {
