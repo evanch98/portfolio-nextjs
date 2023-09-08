@@ -1,7 +1,11 @@
 import Card from "@/components/common/card";
 import { motion } from "framer-motion";
 
-const links = [
+const links: {
+  title: string;
+  description: string;
+  info: string;
+}[] = [
   {
     title: "GitHub",
     description: "Checkout and star my projects",
@@ -16,6 +20,11 @@ const links = [
     title: "Discord",
     description: "Let's chat on Discord",
     info: "https://www.discordapp.com/users/442602474067722241",
+  },
+  {
+    title: "Medium",
+    description: "Read my blogs on Medium",
+    info: "https://medium.com/@evanch98",
   },
   {
     title: "My Game Website",
