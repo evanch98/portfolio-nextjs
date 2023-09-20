@@ -6,8 +6,7 @@ import { cn } from "@/lib/utils";
 import { Container } from "@/components/common/container";
 import Logo from "@/public/logo.svg";
 import Image from "next/image";
-import { Dribbble, Instagram, Twitter } from "lucide-react";
-import { FaDribbble, FaInstagram, FaTwitter } from "react-icons/fa6";
+import { FaDribbble, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 export function MainNav({
   className,
@@ -51,10 +50,10 @@ export function MainNav({
             <FaDribbble className="w-[32px] h-[32px]" />
           </Link>
           <Link href="">
-            <FaInstagram className="w-[32px] h-[32px]" />
+            <FaInstagram className="w-[34px] h-[34px]" />
           </Link>
           <Link href="">
-            <FaTwitter className="w-[32px] h-[32px]" />
+            <FaXTwitter className="w-[32px] h-[32px]" />
           </Link>
         </div>
       </nav>
