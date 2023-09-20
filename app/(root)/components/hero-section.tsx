@@ -1,4 +1,6 @@
+import Button from "@/components/common/button";
 import { Container } from "@/components/common/container";
+import { FaChevronRight, FaArrowRight } from "react-icons/fa6";
 
 export const HeroSection = () => {
   return (
@@ -14,9 +16,10 @@ export const HeroSection = () => {
               A designer/front-end developer with a passion for helping startups
               through unique and user-centered design.
             </p>
-            <button className="px-[32px] py-[16px] flex items-center justify-center border border-[--primary-200] uppercase rounded-full">
-              View my work
-            </button>
+            <Button variant="hero" className="group">
+              View my work{" "}
+              <FaArrowRight className="w-6 h-6 group-hover:rotate-90 ease-in duration-300" />
+            </Button>
           </div>
         </div>
       </Container>
