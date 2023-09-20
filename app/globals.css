@@ -30,10 +30,13 @@ body {
   --secondary-700: #038496;
   --secondary-800: #015a66;
   --secondary-900: #002d33;
-  --brand-gradient: linear-gradient(90deg, #0051ed 0%, #0098da 100%);
   --black: #212429;
   --error: #ed3718;
   --success: #aced18;
+}
+
+.hero-background {
+  background: linear-gradient(90deg, #0051ed 0%, #0098da 100%);
 }
 
 .heading-1 {
