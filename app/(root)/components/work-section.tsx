@@ -1,10 +1,17 @@
 import { Container } from "@/components/common/container";
+import { Header } from "@/components/common/header";
 
 export const WorkSection = () => {
   return (
     <Container className="pt-[256px] pb-[128px]">
-      <div className="flex flex-col items-center justify-center w-full gap-y-[128px]">
-        <h1 className="heading-1 uppercase text-[--black]">My work</h1>
+      <div
+        id="my-work"
+        className="flex flex-col items-center justify-center w-full gap-y-[128px]"
+      >
+        <Header
+          title="My work"
+          description="I specialize in designing and building modern-looking and user-centered websites."
+        />
       </div>
     </Container>
   );
