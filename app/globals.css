@@ -59,6 +59,58 @@ body {
   font-weight: 300;
 }
 
+.heading-3 {
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 64px;
+}
+
+.heading-4 {
+  font-weight: bold;
+  font-size: 37px;
+  line-height: 48px;
+}
+
+.heading-5 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.heading-6,
+.heading-6-regular {
+  font-size: 21px;
+  line-height: 32px;
+}
+
+.heading-6 {
+  font-weight: bold;
+}
+
+.heading-6-regular {
+  font-weight: 400;
+}
+
+.paragraph,
+.paragraph-bold {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--black);
+  opacity: 0.75;
+}
+
+.paragraph-bold {
+  font-weight: bold;
+}
+
+.button-text {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
 }
