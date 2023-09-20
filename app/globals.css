@@ -1,11 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --primary-color: #0051ed;
+  --primary-100: #e5eeff;
+  --primary-200: #a9c5fc;
+  --primary-300: #6f9ef7;
+  --primary-400: #3576f2;
+  --primary-500: #0051ed;
+  --primary-600: #0041bf;
+  --primary-700: #003191;
+  --primary-800: #002a7a;
+  --primary-900: #001133;
+  --secondary-color: #0cdaf7;
+  --secondary-100: #e6fcff;
+  --secondary-200: #adf5ff;
+  --secondary-300: #77ecfc;
+  --secondary-400: #41e3fa;
+  --secondary-500: #0cdaf7;
+  --secondary-600: #06afc7;
+  --secondary-700: #038496;
+  --secondary-800: #015a66;
+  --secondary-900: #002d33;
+  --brand-gradient: linear-gradient(90deg, #0051ed 0%, #0098da 100%);
+  --black: #212429;
+  --error: #ed3718;
+  --success: #aced18;
+}
+
+.heading-1 {
+  font-weight: bold;
+  font-size: 88px;
+  line-height: 112px;
+}
+
+.heading-2,
+.heading-2-light {
+  font-size: 66px;
+  line-height: 80px;
+}
+
+.heading-2 {
+  font-weight: bold;
+}
+
+.heading-2-light {
+  font-weight: 300;
 }
 
 ::-webkit-scrollbar {
