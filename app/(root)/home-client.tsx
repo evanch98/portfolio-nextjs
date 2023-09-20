@@ -5,30 +5,10 @@ import Banner from "@/components/common/banner";
 import ProjectsSection from "@/components/common/projects-section";
 import ToolsSection from "./components/tools-section";
 import ContactSection from "@/components/common/contact-section";
+import { MainNav } from "@/components/main-nav";
 
 const HomeClient = () => {
-  return (
-    <div className="w-full h-full mt-[70px] mb-5 flex items-center justify-center">
-      <div className="h-full w-full max-w-[1024px] flex flex-col items-center justify-center px-2 lg:px-0 gap-5">
-        <Banner
-          heading="Kyaw Thu"
-          description="Let's Build Something Legendary Together"
-        />
-        <section className="w-full flex flex-col gap-5">
-          <Subheading title="Projects" moreHref="/projects" />
-          <ProjectsSection />
-        </section>
-        <section className="w-full flex flex-col gap-5">
-          <Subheading title="Most Used Tools and Frameworks" />
-          <ToolsSection />
-        </section>
-        <section className="w-full flex flex-col gap-5">
-          <Subheading title="Contact Me" />
-          <ContactSection />
-        </section>
-      </div>
-    </div>
-  );
+  return <MainNav />;
 };
 
 export default HomeClient;
