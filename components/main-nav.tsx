@@ -31,37 +31,41 @@ export function MainNav({
   ];
 
   return (
-    <Container className="py-[40px]">
-      <nav
-        className={cn(
-          "hidden md:flex items-center justify-between",
-          pathname === "/" ? "text-[--primary-100]" : "text-[--black]"
-        )}
-      >
-        <div className="flex items-center justify-center gap-x-[64px]">
-          <Link href="/">
-            <Image src={Logo} width={54} height={41} alt="Logo" />
-          </Link>
-          <div className="flex items-center justify-center gap-x-[48px]">
-            {routes.map((route) => (
-              <Link key={route.href} href={route.href} className="heading-6">
-                {route.name}
-              </Link>
-            ))}
+    <div
+      className={cn(
+        "w-full",
+        pathname === "/"
+          ? "hero-background text-[--primary-100]"
+          : "text - [--black]"
+      )}
+    >
+      <Container className="py-[40px]">
+        <nav className="hidden md:flex items-center justify-between">
+          <div className="flex items-center justify-center gap-x-[64px]">
+            <Link href="/">
+              <Image src={Logo} width={54} height={41} alt="Logo" />
+            </Link>
+            <div className="flex items-center justify-center gap-x-[48px]">
+              {routes.map((route) => (
+                <Link key={route.href} href={route.href} className="heading-6">
+                  {route.name}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="flex items-center justify-center gap-x-[24px]">
-          <Link href="">
-            <FaDribbble className="w-[32px] h-[32px]" />
-          </Link>
-          <Link href="">
-            <FaInstagram className="w-[34px] h-[34px]" />
-          </Link>
-          <Link href="">
-            <FaXTwitter className="w-[32px] h-[32px]" />
-          </Link>
-        </div>
-      </nav>
-    </Container>
+          <div className="flex items-center justify-center gap-x-[24px]">
+            <Link href="">
+              <FaDribbble className="w-[32px] h-[32px]" />
+            </Link>
+            <Link href="">
+              <FaInstagram className="w-[34px] h-[34px]" />
+            </Link>
+            <Link href="">
+              <FaXTwitter className="w-[32px] h-[32px]" />
+            </Link>
+          </div>
+        </nav>
+      </Container>
+    </div>
   );
 }

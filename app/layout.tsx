@@ -25,6 +25,7 @@ export default function RootLayout({
           "bg-white text-[#1E2124] dark:bg-[#1E2124] dark:text-white"
         )}
       >
+        <MainNav />
         <ToastProvider />
         <ModalProvider />
         {children}
