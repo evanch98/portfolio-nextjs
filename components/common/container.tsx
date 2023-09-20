@@ -10,7 +10,7 @@ export const Container = ({ className, children }: ContainerProps) => {
     <div className="w-full flex flex-col items-center justify-center">
       <div
         className={cn(
-          "w-full max-w-[1440px] flex flex-col py-[256px] px-[120px]",
+          "w-full max-w-[1440px] flex flex-col px-[120px]",
           className
         )}
       >
