@@ -32,14 +32,19 @@ export function MainNav({
 
   return (
     <Container className="py-[40px]">
-      <nav className="hidden md:flex items-center justify-between">
+      <nav
+        className={cn(
+          "hidden md:flex items-center justify-between",
+          pathname === "/" ? "text-[--primary-100]" : "text-[--black]"
+        )}
+      >
         <div className="flex items-center justify-center gap-x-[64px]">
           <Link href="/">
             <Image src={Logo} width={54} height={41} alt="Logo" />
           </Link>
           <div className="flex items-center justify-center gap-x-[48px]">
             {routes.map((route) => (
-              <Link key={route.href} href={route.href}>
+              <Link key={route.href} href={route.href} className="heading-6">
                 {route.name}
               </Link>
             ))}
