@@ -28,17 +28,7 @@ export default function RootLayout({
         <ToastProvider />
         <ModalProvider />
         <MainNav />
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem={false}
-          storageKey="portfolio"
-        >
-          <div className="fixed top-1 md:top-5 left-5 z-50">
-            <ModeToggle />
-          </div>
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );
