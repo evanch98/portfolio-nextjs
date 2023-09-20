@@ -18,7 +18,7 @@ export const HeroSection = () => {
             </p>
             <Button variant="hero" className="group">
               View my work{" "}
-              <FaArrowRight className="w-6 h-6 group-hover:rotate-90 ease-in duration-300" />
+              <FaArrowRight className="w-[20px] h-[20px] group-hover:rotate-90 ease-in duration-300" />
             </Button>
           </div>
         </div>
