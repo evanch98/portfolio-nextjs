@@ -5,8 +5,9 @@ import Image from "next/image";
 export const ProjectCard = () => {
   return (
     <Container>
-      <div className="flex items-center justify-between"></div>
-      <Image src={Placeholder} width={690} height={500} alt="Image" />
+      <div className="flex items-center justify-between">
+        <div className="w-[690px] h-[500px]"></div>
+      </div>
     </Container>
   );
 };

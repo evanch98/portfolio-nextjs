@@ -13,7 +13,7 @@ export const WorkSection = () => {
           title="My work"
           description="I specialize in designing and building modern-looking and user-centered websites."
         />
-        <div className="w-full mt-[128px] flex flex-col items-center justify-center space-y-[96px]">
+        <div className="w-full flex flex-col items-center justify-center space-y-[96px]">
           <ProjectCard />
         </div>
       </div>
