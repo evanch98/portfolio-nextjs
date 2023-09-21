@@ -1,10 +1,15 @@
 import Button from "@/components/common/button";
+import { cn } from "@/lib/utils";
 import Placeholder from "@/public/assets/placeholder.jpg";
 import Image from "next/image";
 
-export const ProjectCard = () => {
+interface ProjectCardProps {
+  imageSide?: "left" | "right";
+}
+
+export const ProjectCard = ({ imageSide = "left" }: ProjectCardProps) => {
   return (
-    <div className="flex items-center justify-between w-full">
+    <div className={cn("flex items-center justify-between w-full", imageSide === "right" ? "flex-row-reverse" : "")}>
       <div className="w-[690px] h-[500px] relative">
         <Image src={Placeholder} layout="fill" objectFit="cover" alt="Image" />
       </div>
