@@ -4,7 +4,7 @@ import { ProjectCard } from "./project-card";
 
 export const WorkSection = () => {
   return (
-    <Container className="pt-[256px] pb-[128px]">
+    <Container className="pt-[256px] pb-[128px] text-[--black]">
       <div
         id="my-work"
         className="flex flex-col items-center justify-center w-full gap-y-[128px]"
