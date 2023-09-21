@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const CallToAction = () => {
   return (
-    <Container className="py-[128px]">
+    <Container className="py-[128px] text-[--black]">
       <div className="w-full px-[104px]">
         <div className="flex flex-col gap-y-[24px] w-[690px]">
           <h1 className="heading-2">Got a project in mind?</h1>
