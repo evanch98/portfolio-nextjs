@@ -15,7 +15,7 @@ export const ProjectCard = ({ imageSide = "left" }: ProjectCardProps) => {
       </div>
       <div className="flex flex-col items-center justify-center gap-y-[24px] w-[380px]">
         <h1 className="heading-3">Little Lemon Restaurant</h1>
-        <div className="w-full flex flex-col items-center justify-center gap-y-[32px]">
+        <div className="w-full flex flex-col items-center justify-center gap-y-[48px]">
           <p className="paragraph opacity-75">
             Designing a streamlined restaurant website that helps customers
             explore menu, order online, and reserve a table with ease.
