@@ -7,7 +7,7 @@
 
 body {
   font-family: "Lato", sans-serif;
-  color: var(--black);
+  @apply text-[--black];
 }
 
 :root {
