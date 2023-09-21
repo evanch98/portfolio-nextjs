@@ -1,6 +1,7 @@
 import Button from "@/components/common/button";
 import { Container } from "@/components/common/container";
 import { FaChevronRight, FaArrowRight } from "react-icons/fa6";
+import { Link } from "react-scroll";
 
 export const HeroSection = () => {
   return (
@@ -16,10 +17,12 @@ export const HeroSection = () => {
               A designer/front-end developer with a passion for helping startups
               through unique and user-centered design.
             </p>
-            <Button variant="hero" className="group">
-              View my work{" "}
-              <FaArrowRight className="w-[20px] h-[20px] group-hover:rotate-90 ease-in duration-300" />
-            </Button>
+            <Link to="my-work" smooth={true} duration={300}>
+              <Button variant="hero" className="group">
+                View my work{" "}
+                <FaArrowRight className="w-[20px] h-[20px] group-hover:rotate-90 ease-in duration-300" />
+              </Button>
+            </Link>
           </div>
         </div>
       </Container>
