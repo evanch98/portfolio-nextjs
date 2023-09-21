@@ -16,9 +16,9 @@ export const WorkSection = () => {
         {/* TODO: Update the ProjectCard and projects */}
         <div className="w-full flex flex-col items-center justify-center space-y-[96px]">
           <ProjectCard />
+          <ProjectCard imageSide="right" />
           <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          <ProjectCard imageSide="right" />
         </div>
       </div>
     </Container>
