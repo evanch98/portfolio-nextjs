@@ -1,5 +1,6 @@
 import { Container } from "@/components/common/container";
 import { Header } from "@/components/common/header";
+import { ProjectCard } from "./project-card";
 
 export const WorkSection = () => {
   return (
@@ -12,6 +13,9 @@ export const WorkSection = () => {
           title="My work"
           description="I specialize in designing and building modern-looking and user-centered websites."
         />
+        <div className="w-full mt-[128px] flex flex-col items-center justify-center space-y-[96px]">
+          <ProjectCard />
+        </div>
       </div>
     </Container>
   );
