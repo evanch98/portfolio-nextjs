@@ -39,7 +39,9 @@ export const Footer = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-[128px] gap-y-[32px] heading-6-regular">
-            <Link href="">Work</Link>
+            <Link href="/#my-work">
+              Work
+            </Link>
             <Link href="/about">About</Link>
             <Link href="">Resume</Link>
             <Link href="/contact">Contact</Link>
