@@ -1,6 +1,7 @@
 import { FaArrowRight } from "react-icons/fa6";
 import Button from "./button";
 import { Container } from "./container";
+import Link from "next/link";
 
 export const CallToAction = () => {
   return (
@@ -13,11 +14,11 @@ export const CallToAction = () => {
               If you're looking for a designer and developer who is passionate
               about helping you business grow, let's talk.
             </p>
-            <div>
+            <Link href="/contact">
               <Button variant="normalWithIcon">
                 Let's Talk <FaArrowRight className="w-[20px] h-[20px]" />
               </Button>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
