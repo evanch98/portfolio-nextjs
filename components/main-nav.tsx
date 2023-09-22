@@ -56,7 +56,7 @@ export function MainNav({
                 <Link
                   key={route.href}
                   href={route.href}
-                  className={cn("heading-6", route.active ? "" : "")}
+                  className={cn("heading-6", route.active ? "active-page" : "")}
                 >
                   {route.name}
                 </Link>
