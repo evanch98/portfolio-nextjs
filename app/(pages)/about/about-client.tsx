@@ -8,8 +8,8 @@ const AboutClient = () => {
   return (
     <>
       <IntroSection />
-      <CallToAction />
       <MyValues />
+      <CallToAction />
     </>
   );
 };
