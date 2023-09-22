@@ -29,6 +29,11 @@ export function MainNav({
       href: "/contact",
       active: pathname === "/contact",
     },
+    {
+      name: "Resume",
+      href: "/",
+      active: false,
+    },
   ];
 
   return (
