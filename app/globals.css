@@ -43,6 +43,10 @@ body {
   background: linear-gradient(90deg, #0051ed 0%, #0098da 100%);
 }
 
+.active-page {
+  color: linear-gradient(90deg, #0051ed 0%, #0098da 100%);
+}
+
 .heading-1 {
   font-weight: bold;
   font-size: 88px;
