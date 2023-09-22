@@ -24,7 +24,7 @@ const tools = [
 
 export const Capabilities = () => {
   return (
-    <Container className="py-[128px]">
+    <Container className="py-[128px] text-[--black]">
       <div className="flex flex-col gap-y-[128px] items-center justify-center">
         <Header
           title="Capabilities"
