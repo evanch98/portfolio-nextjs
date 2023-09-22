@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/common/container";
 import Logo from "@/public/logo.svg";
+import LogoBlack from "@/public/logo-black.svg";
 import Image from "next/image";
 import { FaDribbble, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
@@ -43,11 +44,20 @@ export function MainNav({
         <nav className="hidden md:flex items-center justify-between">
           <div className="flex items-center justify-center gap-x-[64px]">
             <Link href="/">
-              <Image src={Logo} width={54} height={41} alt="Logo" />
+              <Image
+                src={pathname === "/" ? Logo : LogoBlack}
+                width={54}
+                height={41}
+                alt="Logo"
+              />
             </Link>
             <div className="flex items-center justify-center gap-x-[48px]">
               {routes.map((route) => (
-                <Link key={route.href} href={route.href} className="heading-6">
+                <Link
+                  key={route.href}
+                  href={route.href}
+                  className={cn("heading-6", route.active ? "" : "")}
+                >
                   {route.name}
                 </Link>
               ))}
