@@ -28,28 +28,32 @@ export const Capabilities = () => {
       <div className="flex flex-col gap-y-[128px] items-center justify-center">
         <Header
           title="Capabilities"
-          description="Transforming complex ideas into intuitive and human-centered experiences"
+          description="Transforming complex ideas into intuitive and human-centered experiences."
         />
         <div className="flex items-center justify-center gap-x-[24px] w-[590px]">
           <section className="flex flex-col items-center justify-center gap-y-[24px] w-full">
             <h2 className="heading-3">Skills</h2>
-            {skills.map((skill, index) => (
-              <SkillBox
-                key={skill}
-                name={skill}
-                border={index === skills.length - 1 ? "topAndBottom" : "top"}
-              />
-            ))}
+            <div className="w-full">
+              {skills.map((skill, index) => (
+                <SkillBox
+                  key={skill}
+                  name={skill}
+                  border={index === skills.length - 1 ? "topAndBottom" : "top"}
+                />
+              ))}
+            </div>
           </section>
           <section className="flex flex-col items-center justify-center gap-y-[24px] w-full">
             <h2 className="heading-3">Tools</h2>
-            {tools.map((tool, index) => (
-              <SkillBox
-                key={tool}
-                name={tool}
-                border={index === tools.length - 1 ? "topAndBottom" : "top"}
-              />
-            ))}
+            <div className="w-full">
+              {tools.map((tool, index) => (
+                <SkillBox
+                  key={tool}
+                  name={tool}
+                  border={index === tools.length - 1 ? "topAndBottom" : "top"}
+                />
+              ))}
+            </div>
           </section>
         </div>
       </div>
