@@ -42,7 +42,7 @@ export function MainNav({
         "w-full",
         pathname === "/"
           ? "hero-background text-[--primary-100]"
-          : "text - [--black]"
+          : "text-[--black]"
       )}
     >
       <Container className="py-[40px]">
