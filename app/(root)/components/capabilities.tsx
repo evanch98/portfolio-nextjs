@@ -10,14 +10,14 @@ export const Capabilities = () => {
           title="Capabilities"
           description="Transforming complex ideas into intuitive and human-centered experiences"
         />
-        <div className="flex items-center justify-center gap-x-[24px]">
-          <section className="flex flex-col items-center justify-center gap-y-[24px]">
+        <div className="flex items-center justify-center gap-x-[24px] w-[590px]">
+          <section className="flex flex-col items-center justify-center gap-y-[24px] w-full">
             <h2 className="heading-3">Skills</h2>
-            <SkillBox />
+            <SkillBox name="Design" />
           </section>
-          <section className="flex flex-col items-center justify-center gap-y-[24px]">
+          <section className="flex flex-col items-center justify-center gap-y-[24px] w-full">
             <h2 className="heading-3">Tools</h2>
-            <SkillBox />
+            <SkillBox name="Figma" />
           </section>
         </div>
       </div>
