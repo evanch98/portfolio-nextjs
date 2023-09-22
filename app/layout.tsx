@@ -2,10 +2,7 @@ import { MainNav } from "@/components/main-nav";
 import "./globals.css";
 import type { Metadata } from "next";
 import { ToastProvider } from "@/providers/toast-provider";
-import { ThemeProvider } from "@/providers/theme-provider";
-import { ModeToggle } from "@/components/mode-toggle";
 import { cn } from "@/lib/utils";
-import { ModalProvider } from "@/providers/modal-provider";
 import { Footer } from "@/components/common/footer";
 
 export const metadata: Metadata = {
@@ -28,7 +25,6 @@ export default function RootLayout({
       >
         <MainNav />
         <ToastProvider />
-        <ModalProvider />
         {children}
         <Footer />
       </body>
