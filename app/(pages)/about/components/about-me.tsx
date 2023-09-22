@@ -1,5 +1,7 @@
 import { Container } from "@/components/common/container";
 import { Header } from "@/components/common/header";
+import AboutImage from "@/public/assets/about.png";
+import Image from "next/image";
 
 export const AboutMe = () => {
   return (
@@ -9,7 +11,7 @@ export const AboutMe = () => {
           title="Who I Am"
           description="I am pursuing a Bachelor of Science in Computer Science at the University of the People."
         />
-        <div className="w-full items-center justify-between">
+        <div className="w-full flex items-center justify-between">
           <div className="flex flex-col w-[490px] gap-y-[24px] opacity-75 paragraph">
             <p>
               My name is Kyaw Thu, and a lot of people know me as Evan. I was
@@ -33,6 +35,14 @@ export const AboutMe = () => {
               front-end development. I am passionate about helping business grow
               through beautiful, modern-looking, and user-centered websites.
             </p>
+          </div>
+          <div className="w-[380px] h-[520px] relative">
+            <Image
+              src={AboutImage}
+              layout="fill"
+              objectFit="cover"
+              alt="Image"
+            />
           </div>
         </div>
       </div>
