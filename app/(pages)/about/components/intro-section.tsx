@@ -1,15 +1,35 @@
 "use client";
 
 import { Container } from "@/components/common/container";
+import { motion } from "framer-motion";
 import Link from "next/link";
+
+const titleVariant = {
+  hidden: { y: -50 },
+  visible: { y: 0, transition: { duration: 0.3, type: "ease-in" } },
+};
+
+const descriptionVariant = {
+  hidden: { y: 50 },
+  visible: { y: 0, transition: { duration: 0.3, type: "ease-in" } },
+};
 
 const IntroSection = () => {
   return (
     <Container className="pt-[216px] pb-[128px] text-[--black]">
       <div className="px-[104px] w-full">
-        <div className="flex flex-col gap-y-[24px] w-[590px]">
-          <h1 className="heading-3">Hey, nice to meet you!</h1>
-          <p className="paragraph opacity-75">
+        <motion.div
+          className="flex flex-col gap-y-[24px] w-[590px]"
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.h1 variants={titleVariant} className="heading-3">
+            Hey, nice to meet you!
+          </motion.h1>
+          <motion.p
+            variants={descriptionVariant}
+            className="paragraph opacity-75"
+          >
             I'm Kyaw Thu. I'm a UI/UX designer and front-end developer who likes
             to build beautiful and modern-looking websites using the latest
             technologies. Scroll down to learn about me,{" "}
@@ -21,8 +41,8 @@ const IntroSection = () => {
               <Link href="/contact">drop me a line</Link>
             </span>
             .
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
       </div>
     </Container>
   );
