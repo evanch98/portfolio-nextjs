@@ -31,7 +31,7 @@ export function MainNav({
     },
     {
       name: "Resume",
-      href: "/",
+      href: "https://drive.google.com/file/d/10mhxA0iDtQLDJPP7a3Ndiyl9RjExcT9o/view?usp=drive_link",
       active: false,
     },
   ];
