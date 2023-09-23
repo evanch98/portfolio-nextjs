@@ -2,8 +2,12 @@ import Image from "next/image";
 import { Container } from "./container";
 import Logo from "@/public/logo-black.svg";
 import Link from "next/link";
-import { FaDribbble, FaInstagram, FaXTwitter } from "react-icons/fa6";
-import { SlSocialYoutube } from "react-icons/sl";
+import {
+  FaDribbble,
+  FaInstagram,
+  FaRegEnvelope,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 export const Footer = () => {
   return (
@@ -33,15 +37,13 @@ export const Footer = () => {
               <Link href="">
                 <FaXTwitter className="w-[32px] h-[32px]" />
               </Link>
-              <Link href="">
-                <SlSocialYoutube className="w-[32px] h-[32px]" />
+              <Link href="mailto:evanch98@gmail.com">
+                <FaRegEnvelope className="w-[32px] h-[32px]" />
               </Link>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-[128px] gap-y-[32px] heading-6-regular">
-            <Link href="/#my-work">
-              Work
-            </Link>
+            <Link href="/#my-work">Work</Link>
             <Link href="/about">About</Link>
             <Link href="">Resume</Link>
             <Link href="/contact">Contact</Link>
