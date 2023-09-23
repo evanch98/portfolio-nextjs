@@ -65,6 +65,7 @@ export const ContactForm = () => {
       toast.success(
         "Thank you for contacting me. I will get back to you as soon as I can."
       );
+      form.reset();
     } catch (error) {
       toast.error("Something went wrong. Please try again later");
     } finally {
