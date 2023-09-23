@@ -6,12 +6,12 @@ import Link from "next/link";
 
 const titleVariant = {
   hidden: { y: -50 },
-  visible: { y: 0, transition: { duration: 0.3, type: "ease-in" } },
+  visible: { y: 0, transition: { duration: 0.5, type: "ease-in" } },
 };
 
 const descriptionVariant = {
   hidden: { y: 50 },
-  visible: { y: 0, transition: { duration: 0.3, type: "ease-in" } },
+  visible: { y: 0, transition: { duration: 0.5, type: "ease-in" } },
 };
 
 const IntroSection = () => {
