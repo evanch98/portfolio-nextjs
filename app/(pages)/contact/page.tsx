@@ -1,3 +1,9 @@
+import { ContactClient } from "./contact-client";
+
 export default function ContactPage() {
-  return <main></main>;
+  return (
+    <main>
+      <ContactClient />
+    </main>
+  );
 }
