@@ -79,85 +79,89 @@ export const ContactForm = () => {
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className="w-full flex flex-col gap-y-[96px] items-center justify-center"
+              className="w-full flex flex-col gap-y-[96px] items-start justify-center"
             >
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem className="space-y-[24px] w-full">
-                    <FormLabel className="heading-6-regular">
-                      What is your name?
-                    </FormLabel>
-                    <FormControl>
-                      <Input
-                        disabled={loading}
-                        {...field}
-                        className="border-t-0 border-l-0 border-r-0 border-b border-b-[--black] focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-t-0 focus:border-l-0 focus:border-r-0 rounded-none"
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem className="space-y-[24px] w-full">
-                    <FormLabel className="heading-6-regular">
-                      What is you email address?
-                    </FormLabel>
-                    <FormControl>
-                      <Input
-                        disabled={loading}
-                        {...field}
-                        className="border-t-0 border-l-0 border-r-0 border-b border-b-[--black] focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-t-0 focus:border-l-0 focus:border-r-0 rounded-none"
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem className="space-y-[24px] w-full">
-                    <FormLabel className="heading-6-regular">
-                      Tell me some details.
-                    </FormLabel>
-                    <FormControl>
-                      <Textarea
-                        disabled={loading}
-                        {...field}
-                        rows={5}
-                        className="border-t-0 border-l-0 border-r-0 border-b border-b-[--black] focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-t-0 focus:border-l-0 focus:border-r-0 rounded-none"
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+              <div className="flex gap-x-[128px] w-full">
+                <div className="flex flex-col gap-y-[96px] w-full">
+                  <FormField
+                    control={form.control}
+                    name="name"
+                    render={({ field }) => (
+                      <FormItem className="space-y-[24px] w-full">
+                        <FormLabel className="heading-6-regular">
+                          What is your name?
+                        </FormLabel>
+                        <FormControl>
+                          <Input
+                            disabled={loading}
+                            {...field}
+                            className="border-t-0 border-l-0 border-r-0 border-b border-b-[--black] focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-t-0 focus:border-l-0 focus:border-r-0 rounded-none"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem className="space-y-[24px] w-full">
+                        <FormLabel className="heading-6-regular">
+                          What is you email address?
+                        </FormLabel>
+                        <FormControl>
+                          <Input
+                            disabled={loading}
+                            {...field}
+                            className="border-t-0 border-l-0 border-r-0 border-b border-b-[--black] focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-t-0 focus:border-l-0 focus:border-r-0 rounded-none"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="message"
+                    render={({ field }) => (
+                      <FormItem className="space-y-[24px] w-full">
+                        <FormLabel className="heading-6-regular">
+                          Tell me some details.
+                        </FormLabel>
+                        <FormControl>
+                          <Textarea
+                            disabled={loading}
+                            {...field}
+                            rows={5}
+                            className="border-t-0 border-l-0 border-r-0 border-b border-b-[--black] focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-t-0 focus:border-l-0 focus:border-r-0 rounded-none"
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+                <div className="flex flex-col items-center justify-center gap-y-[24px]">
+                  <Link href="">
+                    <FaDribbble className="w-[32px] h-[32px]" />
+                  </Link>
+                  <Link href="">
+                    <FaInstagram className="w-[34px] h-[34px]" />
+                  </Link>
+                  <Link href="">
+                    <FaXTwitter className="w-[32px] h-[32px]" />
+                  </Link>
+                  <Link href="mailto:evanch98@gmail.com">
+                    <FaRegEnvelope className="w-[32px] h-[32px]" />
+                  </Link>
+                </div>
+              </div>
               <Button disabled={loading} variant="normal" type="submit">
                 Let's do it
               </Button>
             </form>
           </Form>
-        </div>
-        <div className="flex flex-col items-center justify-center gap-y-[24px]">
-          <Link href="">
-            <FaDribbble className="w-[32px] h-[32px]" />
-          </Link>
-          <Link href="">
-            <FaInstagram className="w-[34px] h-[34px]" />
-          </Link>
-          <Link href="">
-            <FaXTwitter className="w-[32px] h-[32px]" />
-          </Link>
-          <Link href="mailto:evanch98@gmail.com">
-            <FaRegEnvelope className="w-[32px] h-[32px]" />
-          </Link>
         </div>
       </div>
     </Container>
