@@ -74,7 +74,7 @@ export const ContactForm = () => {
 
   return (
     <Container className="py-[128px]">
-      <div className="w-full px-[104px] text-[--black] flex items-center justify-center gap-x-[128px]">
+      <div className="w-full px-[104px] text-[--black] flex gap-x-[128px]">
         <div className="w-[590px]">
           <Form {...form}>
             <form
