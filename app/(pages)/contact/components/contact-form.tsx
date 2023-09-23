@@ -91,6 +91,7 @@ export const ContactForm = () => {
                     </FormLabel>
                     <FormControl>
                       <Input
+                        disabled={loading}
                         {...field}
                         className="border-t-0 border-l-0 border-r-0 border-b border-b-[--black] focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-t-0 focus:border-l-0 focus:border-r-0 rounded-none"
                       />
@@ -109,6 +110,7 @@ export const ContactForm = () => {
                     </FormLabel>
                     <FormControl>
                       <Input
+                        disabled={loading}
                         {...field}
                         className="border-t-0 border-l-0 border-r-0 border-b border-b-[--black] focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-t-0 focus:border-l-0 focus:border-r-0 rounded-none"
                       />
@@ -127,6 +129,7 @@ export const ContactForm = () => {
                     </FormLabel>
                     <FormControl>
                       <Textarea
+                        disabled={loading}
                         {...field}
                         rows={5}
                         className="border-t-0 border-l-0 border-r-0 border-b border-b-[--black] focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-t-0 focus:border-l-0 focus:border-r-0 rounded-none"
@@ -136,7 +139,7 @@ export const ContactForm = () => {
                   </FormItem>
                 )}
               />
-              <Button variant="normal" type="submit">
+              <Button disabled={loading} variant="normal" type="submit">
                 Let's do it
               </Button>
             </form>
