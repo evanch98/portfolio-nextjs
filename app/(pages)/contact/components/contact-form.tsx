@@ -5,7 +5,6 @@ import { Container } from "@/components/common/container";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -15,10 +14,18 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
+import {
+  FaDribbble,
+  FaInstagram,
+  FaRegEnvelope,
+  FaXTwitter,
+} from "react-icons/fa6";
+import { SlSocialYoutube } from "react-icons/sl";
 import * as z from "zod";
 
 const formSchema = z.object({
@@ -134,6 +141,23 @@ export const ContactForm = () => {
               </Button>
             </form>
           </Form>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-y-[24px]">
+          <Link href="">
+            <FaDribbble className="w-[32px] h-[32px]" />
+          </Link>
+          <Link href="">
+            <FaInstagram className="w-[34px] h-[34px]" />
+          </Link>
+          <Link href="">
+            <FaXTwitter className="w-[32px] h-[32px]" />
+          </Link>
+          <Link href="">
+            <SlSocialYoutube className="w-[32px] h-[32px]" />
+          </Link>
+          <Link href="mailto:evanch98@gmail.com">
+            <FaRegEnvelope className="w-[32px] h-[32px]" />
+          </Link>
         </div>
       </div>
     </Container>
