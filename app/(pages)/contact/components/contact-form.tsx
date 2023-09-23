@@ -25,7 +25,6 @@ import {
   FaRegEnvelope,
   FaXTwitter,
 } from "react-icons/fa6";
-import { SlSocialYoutube } from "react-icons/sl";
 import * as z from "zod";
 
 const formSchema = z.object({
@@ -155,9 +154,6 @@ export const ContactForm = () => {
           </Link>
           <Link href="">
             <FaXTwitter className="w-[32px] h-[32px]" />
-          </Link>
-          <Link href="">
-            <SlSocialYoutube className="w-[32px] h-[32px]" />
           </Link>
           <Link href="mailto:evanch98@gmail.com">
             <FaRegEnvelope className="w-[32px] h-[32px]" />
