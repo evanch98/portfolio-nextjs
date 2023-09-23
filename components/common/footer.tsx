@@ -28,30 +28,50 @@ export const Footer = () => {
               digital experiences.
             </p>
             <div className="flex items-center gap-x-[24px]">
-              <Link href="">
+              <Link href="" className="hover:animate-bounce">
                 <FaDribbble className="w-[32px] h-[32px]" />
               </Link>
-              <Link href="">
+              <Link href="" className="hover:animate-bounce">
                 <FaInstagram className="w-[34px] h-[34px]" />
               </Link>
-              <Link href="">
+              <Link href="" className="hover:animate-bounce">
                 <FaXTwitter className="w-[32px] h-[32px]" />
               </Link>
-              <Link href="mailto:evanch98@gmail.com">
+              <Link
+                href="mailto:evanch98@gmail.com"
+                className="hover:animate-bounce"
+              >
                 <FaRegEnvelope className="w-[32px] h-[32px]" />
               </Link>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-x-[128px] gap-y-[32px] heading-6-regular">
-            <Link href="/#my-work">Work</Link>
-            <Link href="/about">About</Link>
-            <Link href="">Resume</Link>
-            <Link href="/contact">Contact</Link>
+            <Link
+              href="/#my-work"
+              className="hover:opacity-75 ease-in duration-300"
+            >
+              Work
+            </Link>
+            <Link
+              href="/about"
+              className="hover:opacity-75 ease-in duration-300"
+            >
+              About
+            </Link>
+            <Link href="" className="hover:opacity-75 ease-in duration-300">
+              Resume
+            </Link>
+            <Link
+              href="/contact"
+              className="hover:opacity-75 ease-in duration-300"
+            >
+              Contact
+            </Link>
           </div>
         </div>
         <p className="paragraph opacity-75">
           Proudly built by using{" "}
-          <span className="paragraph-bold opacity-100">React</span>.
+          <span className="paragraph-bold opacity-100">Next.js</span>.
         </p>
       </Container>
     </footer>
