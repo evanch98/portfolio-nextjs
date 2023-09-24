@@ -4,8 +4,13 @@ import { Container } from "@/components/common/container";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const variant = {
+const titleVariant = {
   hidden: { y: -50, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.8, type: "ease-in" } },
+};
+
+const descriptionVariant = {
+  hidden: { y: 50, opacity: 0 },
   visible: { y: 0, opacity: 1, transition: { duration: 0.8, type: "ease-in" } },
 };
 
@@ -18,10 +23,13 @@ const IntroSection = () => {
           initial="hidden"
           animate="visible"
         >
-          <motion.h1 variants={variant} className="heading-3">
+          <motion.h1 variants={titleVariant} className="heading-3">
             Hey, nice to meet you!
           </motion.h1>
-          <motion.p variants={variant} className="paragraph opacity-75">
+          <motion.p
+            variants={descriptionVariant}
+            className="paragraph opacity-75"
+          >
             I'm Kyaw Thu. I'm a UI/UX designer and front-end developer who likes
             to build beautiful and modern-looking websites using the latest
             technologies. Scroll down to learn about me,{" "}

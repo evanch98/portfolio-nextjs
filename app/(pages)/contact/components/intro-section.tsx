@@ -4,13 +4,13 @@ import { Container } from "@/components/common/container";
 import { motion } from "framer-motion";
 
 const titleVariant = {
-  hidden: { y: -50 },
-  visible: { y: 0, transition: { duration: 0.5, type: "ease-in" } },
+  hidden: { y: -50, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.8, type: "ease-in" } },
 };
 
 const descriptionVariant = {
-  hidden: { y: 50 },
-  visible: { y: 0, transition: { duration: 0.5, type: "ease-in" } },
+  hidden: { y: 50, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.8, type: "ease-in" } },
 };
 
 const IntroSection = () => {
