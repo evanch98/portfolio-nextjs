@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { Footer } from "@/components/common/footer";
 
 export const metadata: Metadata = {
-  title: "Kyaw | Front-end developer",
+  title: "Kyaw | Designer & Web Developer",
   description: "Kyaw Thu's portfolio website",
 };
 
