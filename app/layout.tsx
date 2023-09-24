@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { ToastProvider } from "@/providers/toast-provider";
 import { cn } from "@/lib/utils";
 import { Footer } from "@/components/common/footer";
+import { AnimatePresenceProvider } from "@/providers/animate-presence-provider";
 
 export const metadata: Metadata = {
   title: "Kyaw | Designer & Web Developer",
@@ -25,7 +26,7 @@ export default function RootLayout({
       >
         <MainNav />
         <ToastProvider />
-        {children}
+        <AnimatePresenceProvider>{children}</AnimatePresenceProvider>
         <Footer />
       </body>
     </html>
