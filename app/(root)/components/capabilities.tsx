@@ -40,7 +40,8 @@ export const Capabilities = () => {
         >
           <motion.section
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: true }}
             transition={{
               duration: 0.7,
               staggerChildren: 0.7,
@@ -62,7 +63,8 @@ export const Capabilities = () => {
           </motion.section>
           <motion.section
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: true }}
             transition={{
               duration: 0.7,
               staggerChildren: 0.7,
