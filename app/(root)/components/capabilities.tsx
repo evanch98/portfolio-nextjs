@@ -1,6 +1,8 @@
 import { Container } from "@/components/common/container";
 import { Header } from "@/components/common/header";
 import { SkillBox } from "@/components/skill-box";
+import { hVariant } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 const skills = [
   "Journey Maps",
@@ -30,21 +32,46 @@ export const Capabilities = () => {
           title="Capabilities"
           description="Transforming complex ideas into intuitive and human-centered experiences."
         />
-        <div className="flex items-center justify-center gap-x-[24px] w-[590px]">
-          <section className="flex flex-col items-center justify-center gap-y-[24px] w-full">
-            <h2 className="heading-3">Skills</h2>
-            <div className="w-full">
+        <motion.div
+          className="flex items-center justify-center gap-x-[24px] w-[590px]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <motion.section
+            initial="hidden"
+            animate="visible"
+            transition={{
+              duration: 0.7,
+              staggerChildren: 0.7,
+            }}
+            className="flex flex-col items-center justify-center gap-y-[24px] w-full"
+          >
+            <motion.h2 variants={hVariant} className="heading-3">
+              Skills
+            </motion.h2>
+            <motion.div className="w-full">
               {skills.map((skill, index) => (
                 <SkillBox
-                  key={skill}
+                  key={index}
                   name={skill}
                   border={index === skills.length - 1 ? "topAndBottom" : "top"}
                 />
               ))}
-            </div>
-          </section>
-          <section className="flex flex-col items-center justify-center gap-y-[24px] w-full">
-            <h2 className="heading-3">Tools</h2>
+            </motion.div>
+          </motion.section>
+          <motion.section
+            initial="hidden"
+            animate="visible"
+            transition={{
+              duration: 0.7,
+              staggerChildren: 0.7,
+            }}
+            className="flex flex-col items-center justify-center gap-y-[24px] w-full"
+          >
+            <motion.h2 variants={hVariant} className="heading-3">
+              Tools
+            </motion.h2>
             <div className="w-full">
               {tools.map((tool, index) => (
                 <SkillBox
@@ -54,8 +81,8 @@ export const Capabilities = () => {
                 />
               ))}
             </div>
-          </section>
-        </div>
+          </motion.section>
+        </motion.div>
       </div>
     </Container>
   );

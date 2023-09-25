@@ -1,4 +1,5 @@
-import { cn } from "@/lib/utils";
+import { cn, hVariant } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 interface SkillBoxProps {
   border?: "top" | "bottom" | "topAndBottom";
@@ -18,8 +19,11 @@ export const SkillBox = ({ border = "top", name }: SkillBoxProps) => {
         "flex flex-col py-[8px] px-[16px] w-full items-center justify-center",
         borderMap[border]
       )}
+      key={name}
     >
-      <p className="heading-6">{name}</p>
+      <motion.p variants={hVariant} className="heading-6">
+        {name}
+      </motion.p>
     </div>
   );
 };
