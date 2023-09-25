@@ -3,16 +3,7 @@ import { Container } from "@/components/common/container";
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa6";
 import Link from "next/link";
-
-const hVariant = {
-  hidden: { opacity: 0, y: -50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeIn" } },
-};
-
-const pVariant = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeIn" } },
-};
+import { hVariant, pVariant } from "@/lib/utils";
 
 export const HeroSection = () => {
   return (
