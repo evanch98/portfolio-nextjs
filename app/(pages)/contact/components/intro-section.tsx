@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 const titleVariant = {
   hidden: { y: -50, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { duration: 0.8, type: "ease-in" } },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.7, ease: "easeIn" } },
 };
 
 const descriptionVariant = {
   hidden: { y: 50, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { duration: 0.8, type: "ease-in" } },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.7, ease: "easeIn" } },
 };
 
 const IntroSection = () => {
