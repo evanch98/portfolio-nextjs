@@ -9,6 +9,7 @@ import LogoBlack from "@/public/logo-black.svg";
 import Image from "next/image";
 import { FaDribbble, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./ui/sheet";
 
 export function MainNav({
   className,
@@ -82,7 +83,39 @@ export function MainNav({
           </div>
         </nav>
         <nav className="md:hidden">
-          <Menu className="w-[24px] h-[24px]" />
+          <Sheet>
+            <SheetTrigger>
+              <Menu className="h-[32px] w-[32px]" />
+            </SheetTrigger>
+            <SheetContent>
+              <SheetHeader>
+                <Image src={LogoBlack} width={54} height={41} alt="Logo" />
+              </SheetHeader>
+              <div className="flex flex-col items-center justify-center gap-y-[48px] pt-[64px]">
+                <Link
+                  href="/"
+                  className={cn(
+                    "heading-6",
+                    pathname === "/" ? "active-page" : ""
+                  )}
+                >
+                  Home
+                </Link>
+                {routes.map((route) => (
+                  <Link
+                    key={route.href}
+                    href={route.href}
+                    className={cn(
+                      "heading-6",
+                      route.active ? "active-page" : ""
+                    )}
+                  >
+                    {route.name}
+                  </Link>
+                ))}
+              </div>
+            </SheetContent>
+          </Sheet>
         </nav>
       </Container>
     </div>
