@@ -8,6 +8,7 @@ import Logo from "@/public/logo.svg";
 import LogoBlack from "@/public/logo-black.svg";
 import Image from "next/image";
 import { FaDribbble, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { Menu } from "lucide-react";
 
 export function MainNav({
   className,
@@ -79,6 +80,9 @@ export function MainNav({
               <FaXTwitter className="w-[32px] h-[32px]" />
             </Link>
           </div>
+        </nav>
+        <nav className="md:hidden">
+          <Menu className="w-[24px] h-[24px]" />
         </nav>
       </Container>
     </div>
