@@ -45,7 +45,7 @@ export function MainNav({
           : "text-[--black]"
       )}
     >
-      <Container className="py-[40px]">
+      <Container className="md:py-[40px] py-[24px]">
         <nav className="hidden md:flex items-center justify-between">
           <div className="flex items-center justify-center gap-x-[64px]">
             <Link href="/">
