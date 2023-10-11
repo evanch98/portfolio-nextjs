@@ -7,9 +7,15 @@ import { Container } from "@/components/common/container";
 import Logo from "@/public/logo.svg";
 import LogoBlack from "@/public/logo-black.svg";
 import Image from "next/image";
-import { FaDribbble, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import {
+  FaDribbble,
+  FaInstagram,
+  FaRegEnvelope,
+  FaXTwitter,
+} from "react-icons/fa6";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./ui/sheet";
+import { Separator } from "./ui/separator";
 
 export function MainNav({
   className,
@@ -91,7 +97,8 @@ export function MainNav({
               <SheetHeader>
                 <Image src={LogoBlack} width={54} height={41} alt="Logo" />
               </SheetHeader>
-              <div className="flex flex-col items-center justify-center gap-y-[48px] pt-[64px]">
+              <Separator className="my-[24px]" />
+              <div className="flex flex-col items-center justify-center gap-y-[48px]">
                 <Link
                   href="/"
                   className={cn(
@@ -113,6 +120,24 @@ export function MainNav({
                     {route.name}
                   </Link>
                 ))}
+              </div>
+              <Separator className="my-[24px]" />
+              <div className="flex items-center justify-center gap-x-[24px]">
+                <Link href="" className="hover:animate-bounce">
+                  <FaDribbble className="w-[32px] h-[32px]" />
+                </Link>
+                <Link href="" className="hover:animate-bounce">
+                  <FaInstagram className="w-[34px] h-[34px]" />
+                </Link>
+                <Link href="" className="hover:animate-bounce">
+                  <FaXTwitter className="w-[32px] h-[32px]" />
+                </Link>
+                <Link
+                  href="mailto:evanch98@gmail.com"
+                  className="hover:animate-bounce"
+                >
+                  <FaRegEnvelope className="w-[32px] h-[32px]" />
+                </Link>
               </div>
             </SheetContent>
           </Sheet>
