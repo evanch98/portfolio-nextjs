@@ -8,13 +8,13 @@ import { hVariant, pVariant } from "@/lib/utils";
 export const HeroSection = () => {
   return (
     <div className="hero-background w-full h-full">
-      <Container className="py-[128px]">
+      <Container className="py-[64px] md:py-[128px]">
         <motion.div
           className="flex flex-col items-center justify-center gap-y-[32px] text-[--primary-100]"
           initial="hidden"
           animate="visible"
         >
-          <motion.h2 variants={hVariant} className="heading-3">
+          <motion.h2 variants={hVariant} className="heading-3 text-center">
             Hey there, I'm Kyaw Thu
           </motion.h2>
           <motion.h1 variants={hVariant} className="heading-2 text-center">
