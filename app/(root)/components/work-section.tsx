@@ -106,7 +106,7 @@ export const WorkSection = () => {
               </>
             )}
             {value === "ui/ux" && (
-              <div className="text-[--black] text-lg opacity-75">
+              <div className="text-[--black] text-lg opacity-75 flex flex-col items-center justify-center">
                 No project found.
               </div>
             )}
