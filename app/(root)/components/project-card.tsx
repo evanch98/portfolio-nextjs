@@ -50,7 +50,7 @@ export const ProjectCard = ({
           className="w-full flex flex-col items-center justify-center gap-y-[32px] md:gap-y-[48px]"
         >
           <p className="paragraph opacity-75">{description}</p>
-          <a href={href} rel="noreferrer noopener" target="_blank">
+          <a href={href}>
             <Button variant="normal">{buttonText}</Button>
           </a>
         </motion.div>
