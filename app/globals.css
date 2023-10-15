@@ -49,15 +49,12 @@ body {
 }
 
 .heading-1 {
-  font-weight: bold;
-  font-size: 88px;
-  line-height: 112px;
+  @apply md:text-[5.5rem] text-[4.125rem] md:leading-[7rem] leading-[5rem] font-bold;
 }
 
 .heading-2,
 .heading-2-light {
-  font-size: 66px;
-  line-height: 80px;
+  @apply md:text-[5.5rem] text-[3.125rem] md:leading-[5rem] leading-[4rem];
 }
 
 .heading-2 {
@@ -69,27 +66,21 @@ body {
 }
 
 .heading-3 {
+  @apply md:text-[3.125rem] text-[2.3125rem] md:leading-[4rem] leading-[3rem];
   font-weight: 300;
-  font-size: 50px;
-  line-height: 64px;
 }
 
 .heading-4 {
-  font-weight: bold;
-  font-size: 37px;
-  line-height: 48px;
+  @apply md:text-[2.3125rem] text-[1.75rem] md:leading-[3rem] leading-[2.5rem] font-bold;
 }
 
 .heading-5 {
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 40px;
+  @apply md:text-[1.75rem] text-[1.3125rem] md:leading-[2.5rem] leading-[2rem] font-bold;
 }
 
 .heading-6,
 .heading-6-regular {
-  font-size: 21px;
-  line-height: 32px;
+  @apply md:text-[1rem] text-[0.75rem] md:leading-[2rem] leading-[1.875rem];
 }
 
 .heading-6 {
@@ -103,8 +94,7 @@ body {
 .paragraph,
 .paragraph-bold {
   font-family: "Karla", sans-serif;
-  font-size: 16px;
-  line-height: 30px;
+  @apply text-[1rem] leading-[1.875rem];
 }
 
 .paragraph-bold {
@@ -112,10 +102,8 @@ body {
 }
 
 .button-text {
+  @apply text-[1rem] leading-[1.875rem] font-bold;
   font-family: "Karla", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
 }
 
 .slide-out {
