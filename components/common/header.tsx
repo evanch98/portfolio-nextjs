@@ -11,7 +11,7 @@ interface HeaderProps {
 export const Header = ({ title, description }: HeaderProps) => {
   return (
     <motion.div
-      className="max-w-[790px] w-full flex flex-col items-center justify-center text-center md:gap-y-[24px] gap-y-[16px]"
+      className="md:w-[790px] w-full flex flex-col items-center justify-center text-center md:gap-y-[24px] gap-y-[8px]"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}

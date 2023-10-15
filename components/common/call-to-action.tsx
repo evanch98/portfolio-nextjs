@@ -14,7 +14,7 @@ export const CallToAction = () => {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <div className="flex flex-col gap-y-[24px] max-w-[690px] w-full">
+        <div className="flex flex-col gap-y-[24px] md:w-[690px] w-full">
           <motion.h1 variants={hVariant} className="heading-2">
             Got a project in mind?
           </motion.h1>

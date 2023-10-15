@@ -14,7 +14,7 @@ export const WorkSection = () => {
           description="I specialize in designing and building modern-looking and user-centered websites."
         />
         {/* TODO: Update the ProjectCard and projects */}
-        <div className="w-full flex flex-col items-center justify-center space-y-[24px]">
+        <div className="w-full flex flex-col items-center justify-center md:space-y-[96px] space-y-[56px]">
           <ProjectCard />
           <ProjectCard imageSide="right" />
           <ProjectCard />

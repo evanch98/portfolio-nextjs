@@ -49,12 +49,12 @@ body {
 }
 
 .heading-1 {
-  @apply md:text-[5.5rem] text-[4.125rem] md:leading-[7rem] leading-[5rem] font-bold;
+  @apply md:text-[5.5rem] text-[3rem] md:leading-[7rem] leading-[5rem] font-bold;
 }
 
 .heading-2,
 .heading-2-light {
-  @apply md:text-[5.5rem] text-[3.125rem] md:leading-[5rem] leading-[4rem];
+  @apply md:text-[4.125rem] text-[2.5rem] md:leading-[5rem] leading-[3rem];
 }
 
 .heading-2 {
@@ -66,7 +66,7 @@ body {
 }
 
 .heading-3 {
-  @apply md:text-[3.125rem] text-[2.3125rem] md:leading-[4rem] leading-[3rem];
+  @apply md:text-[3.125rem] text-[2rem] md:leading-[4rem] leading-[3rem];
   font-weight: 300;
 }
 
@@ -80,7 +80,7 @@ body {
 
 .heading-6,
 .heading-6-regular {
-  @apply md:text-[1rem] md:leading-[2rem];
+  @apply md:text-[1.3125rem] md:leading-[2rem] text-[1rem];
 }
 
 .heading-6 {

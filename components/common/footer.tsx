@@ -11,8 +11,8 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className="mt-[128px] w-full border-t border-t-[#c7c8c9]">
-      <Container className="py-[40px] flex flex-col gap-y-[48px]">
+    <footer className="md:mt-[128px] mt-[32px] w-full border-t border-t-[#c7c8c9]">
+      <Container className="py-[40px] flex flex-col md:gap-y-[48px] gap-y-[24px]">
         <div className="flex items-center justify-between w-full">
           <div className="flex flex-col gap-y-[24px] w-full md:w-[490px]">
             <Image
