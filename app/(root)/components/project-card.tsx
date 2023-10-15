@@ -1,6 +1,6 @@
 import Button from "@/components/common/button";
 import { cn, hVariant, pVariant } from "@/lib/utils";
-import Placeholder from "@/public/assets/placeholder.jpg";
+import Placeholder from "@/public/assets/Spotify.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
