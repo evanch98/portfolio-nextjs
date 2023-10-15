@@ -24,7 +24,7 @@ const categories = [
 
 export const WorkSection = () => {
   const [open, setOpen] = useState(false);
-  const [value, setValue] = useState("webApp");
+  const [value, setValue] = useState("web applications");
 
   return (
     <Container className="md:pt-[256px] pt-[64px] md:pb-[128px] pb-[32px] text-[--black]">
