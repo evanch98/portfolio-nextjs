@@ -76,10 +76,23 @@ export const WorkSection = () => {
           </Popover>
           {/* TODO: Update the ProjectCard and projects */}
           <div className="w-full flex flex-col items-center justify-center md:space-y-[96px] space-y-[56px]">
-            <ProjectCard />
-            <ProjectCard imageSide="right" />
-            <ProjectCard />
-            <ProjectCard imageSide="right" />
+            {value === "web applications" && (
+              <>
+                <ProjectCard
+                  title="Discord Clone"
+                  description="Developed a full-stack Spotify Clone website using Next.js, TypeScript, Zustand, Tailwind CSS, Supabase, and Stripe."
+                  buttonText="Learn More"
+                  href=""
+                />
+                <ProjectCard
+                  title="Discord Clone"
+                  description="Developed a full-stack Spotify Clone website using Next.js, TypeScript, Zustand, Tailwind CSS, Supabase, and Stripe."
+                  buttonText="Learn More"
+                  href=""
+                  imageSide="right"
+                />
+              </>
+            )}
           </div>
         </div>
       </div>
