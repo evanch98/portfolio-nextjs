@@ -80,7 +80,7 @@ body {
 
 .heading-6,
 .heading-6-regular {
-  @apply md:text-[1rem] text-[0.75rem] md:leading-[2rem] leading-[1.875rem];
+  @apply md:text-[1rem] md:leading-[2rem];
 }
 
 .heading-6 {
@@ -107,11 +107,7 @@ body {
 }
 
 .slide-out {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  @apply fixed top-0 left-0 w-full h-full max-w-[1440px];
   transform-origin: top;
 }
 

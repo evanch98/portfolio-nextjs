@@ -8,7 +8,7 @@ import { hVariant, pVariant } from "@/lib/utils";
 export const HeroSection = () => {
   return (
     <div className="hero-background w-full h-full">
-      <Container className="py-[64px] md:py-[128px]">
+      <Container className="py-[24px] md:py-[128px]">
         <motion.div
           className="flex flex-col items-center justify-center gap-y-[32px] text-[--primary-100]"
           initial="hidden"

@@ -17,8 +17,8 @@ export const ProjectCard = ({ imageSide = "left" }: ProjectCardProps) => {
   return (
     <motion.div
       className={cn(
-        "flex items-center justify-between w-full",
-        imageSide === "right" ? "flex-row-reverse" : ""
+        "flex flex-col md:flex-row items-center gap-y-[16px] md:justify-between w-full",
+        imageSide === "right" ? "md:flex-row-reverse" : ""
       )}
       initial="hidden"
       whileInView="visible"
@@ -26,17 +26,17 @@ export const ProjectCard = ({ imageSide = "left" }: ProjectCardProps) => {
     >
       <motion.div
         variants={imgVariant}
-        className="w-[690px] h-[500px] relative"
+        className="md:w-[690px] w-full h-[300px] md:h-[500px] relative"
       >
         <Image src={Placeholder} layout="fill" objectFit="cover" alt="Image" />
       </motion.div>
-      <div className="flex flex-col items-center justify-center gap-y-[24px] w-[380px]">
+      <div className="flex flex-col items-center justify-center gap-y-[16px] md:gap-y-[24px] w-[380px]">
         <motion.h1 variants={hVariant} className="heading-3">
           Little Lemon Restaurant
         </motion.h1>
         <motion.div
           variants={pVariant}
-          className="w-full flex flex-col items-center justify-center gap-y-[48px]"
+          className="w-full flex flex-col items-center justify-center gap-y-[32px] md:gap-y-[48px]"
         >
           <p className="paragraph opacity-75">
             Designing a streamlined restaurant website that helps customers

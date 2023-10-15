@@ -14,7 +14,7 @@ export const Footer = () => {
     <footer className="mt-[128px] w-full border-t border-t-[#c7c8c9]">
       <Container className="py-[40px] flex flex-col gap-y-[48px]">
         <div className="flex items-center justify-between w-full">
-          <div className="flex flex-col gap-y-[24px] w-[490px]">
+          <div className="flex flex-col gap-y-[24px] w-full md:w-[490px]">
             <Image
               src={Logo}
               width={54}
@@ -45,7 +45,7 @@ export const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-x-[128px] gap-y-[32px] heading-6-regular">
+          <div className="hidden md:grid grid-cols-2 gap-x-[128px] gap-y-[32px] heading-6-regular">
             <Link
               href="/#my-work"
               className="hover:opacity-75 ease-in duration-300"

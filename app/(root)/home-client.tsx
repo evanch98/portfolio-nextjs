@@ -8,7 +8,7 @@ import { TransitionWrapper } from "@/components/common/transition-wrapper";
 
 const HomeClient = () => {
   return (
-    <TransitionWrapper className="bg-[--primary-100]">
+    <TransitionWrapper className="bg-[--primary-100] w-full">
       <HeroSection />
       <WorkSection />
       <CallToAction />

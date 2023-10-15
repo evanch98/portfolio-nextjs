@@ -7,14 +7,14 @@ import { hVariant, pVariant } from "@/lib/utils";
 
 export const CallToAction = () => {
   return (
-    <Container className="py-[128px] text-[--black]">
+    <Container className="md:py-[128px] py-[32px] text-[--black]">
       <motion.div
-        className="w-full px-[104px]"
+        className="w-full md:px-[104px]"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <div className="flex flex-col gap-y-[24px] w-[690px]">
+        <div className="flex flex-col gap-y-[24px] max-w-[690px] w-full">
           <motion.h1 variants={hVariant} className="heading-2">
             Got a project in mind?
           </motion.h1>

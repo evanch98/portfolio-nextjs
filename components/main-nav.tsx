@@ -88,7 +88,7 @@ export function MainNav({
             </Link>
           </div>
         </nav>
-        <nav className="md:hidden">
+        <nav className="md:hidden relative">
           <Sheet>
             <SheetTrigger>
               <Menu className="h-[32px] w-[32px]" />

@@ -26,14 +26,14 @@ const tools = [
 
 export const Capabilities = () => {
   return (
-    <Container className="py-[128px] text-[--black]">
+    <Container className="md:py-[128px] py-[32px] text-[--black]">
       <div className="flex flex-col gap-y-[128px] items-center justify-center">
         <Header
           title="Capabilities"
           description="Transforming complex ideas into intuitive and human-centered experiences."
         />
         <motion.div
-          className="flex items-center justify-center gap-x-[24px] w-[590px]"
+          className="flex items-center justify-center gap-x-[24px] w-full max:w-[590px]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
