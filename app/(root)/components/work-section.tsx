@@ -11,6 +11,7 @@ import { Check, ChevronsUpDown } from "lucide-react";
 import { Command, CommandGroup, CommandItem } from "@/components/ui/command";
 import { cn } from "@/lib/utils";
 import Spotify from "@/public/assets/Spotify.svg";
+import Admin from "@/public/assets/Admin.svg";
 
 const categories = [
   {
@@ -87,12 +88,12 @@ export const WorkSection = () => {
                   image={Spotify}
                 />
                 <ProjectCard
-                  title="Discord Clone"
-                  description="Developed a full-stack Spotify Clone website using Next.js, TypeScript, Zustand, Tailwind CSS, Supabase, and Stripe."
+                  title="E-Commerce Admin Dashboard"
+                  description="Built using cutting-edge technologies like Next JS, TypeScript, Tailwind CSS, Shadcn UI, Planet Scale, Prisma, Zustand, Clerk Auth, and Cloudinary."
                   buttonText="Learn More"
                   href=""
                   imageSide="right"
-                  image={Spotify}
+                  image={Admin}
                 />
               </>
             )}
