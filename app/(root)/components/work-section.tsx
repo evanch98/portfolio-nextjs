@@ -10,6 +10,7 @@ import {
 import { Check, ChevronsUpDown } from "lucide-react";
 import { Command, CommandGroup, CommandItem } from "@/components/ui/command";
 import { cn } from "@/lib/utils";
+import Spotify from "@/public/assets/Spotify.svg";
 
 const categories = [
   {
@@ -83,6 +84,7 @@ export const WorkSection = () => {
                   description="Developed a full-stack Spotify Clone website using Next.js, TypeScript, Zustand, Tailwind CSS, Supabase, and Stripe."
                   buttonText="Learn More"
                   href=""
+                  image={Spotify}
                 />
                 <ProjectCard
                   title="Discord Clone"
@@ -90,6 +92,7 @@ export const WorkSection = () => {
                   buttonText="Learn More"
                   href=""
                   imageSide="right"
+                  image={Spotify}
                 />
               </>
             )}

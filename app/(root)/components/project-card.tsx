@@ -1,6 +1,5 @@
 import Button from "@/components/common/button";
 import { cn, hVariant, pVariant } from "@/lib/utils";
-import Placeholder from "@/public/assets/Spotify.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -24,6 +23,7 @@ export const ProjectCard = ({
   description,
   buttonText,
   href,
+  image,
 }: ProjectCardProps) => {
   return (
     <motion.div
@@ -39,7 +39,7 @@ export const ProjectCard = ({
         variants={imgVariant}
         className="md:w-[690px] w-full h-[300px] md:h-[500px] relative border border-[--black] rounded-2xl overflow-hidden"
       >
-        <Image src={Placeholder} layout="fill" objectFit="cover" alt="Image" />
+        <Image src={image} layout="fill" objectFit="cover" alt="Image" />
       </motion.div>
       <div className="flex flex-col items-center justify-center gap-y-[16px] md:gap-y-[24px] w-[380px]">
         <motion.h1 variants={hVariant} className="heading-3">
