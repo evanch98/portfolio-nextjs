@@ -11,9 +11,19 @@ const imgVariant = {
 
 interface ProjectCardProps {
   imageSide?: "left" | "right";
+  title: string;
+  description: string;
+  buttonText: string;
+  href: string;
 }
 
-export const ProjectCard = ({ imageSide = "left" }: ProjectCardProps) => {
+export const ProjectCard = ({
+  imageSide = "left",
+  title,
+  description,
+  buttonText,
+  href,
+}: ProjectCardProps) => {
   return (
     <motion.div
       className={cn(
@@ -32,17 +42,16 @@ export const ProjectCard = ({ imageSide = "left" }: ProjectCardProps) => {
       </motion.div>
       <div className="flex flex-col items-center justify-center gap-y-[16px] md:gap-y-[24px] w-[380px]">
         <motion.h1 variants={hVariant} className="heading-3">
-          Little Lemon Restaurant
+          {title}
         </motion.h1>
         <motion.div
           variants={pVariant}
           className="w-full flex flex-col items-center justify-center gap-y-[32px] md:gap-y-[48px]"
         >
-          <p className="paragraph opacity-75">
-            Designing a streamlined restaurant website that helps customers
-            explore menu, order online, and reserve a table with ease.
-          </p>
-          <Button variant="normal">Read Case Study</Button>
+          <p className="paragraph opacity-75">{description}</p>
+          <a href={href} rel="noreferrer noopener" target="_blank">
+            <Button variant="normal">{buttonText}</Button>
+          </a>
         </motion.div>
       </div>
     </motion.div>
