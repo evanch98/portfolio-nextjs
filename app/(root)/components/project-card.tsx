@@ -15,6 +15,7 @@ interface ProjectCardProps {
   description: string;
   buttonText: string;
   href: string;
+  image: any;
 }
 
 export const ProjectCard = ({
@@ -36,7 +37,7 @@ export const ProjectCard = ({
     >
       <motion.div
         variants={imgVariant}
-        className="md:w-[690px] w-full h-[300px] md:h-[500px] relative"
+        className="md:w-[690px] w-full h-[300px] md:h-[500px] relative border border-[--black] rounded-2xl overflow-hidden"
       >
         <Image src={Placeholder} layout="fill" objectFit="cover" alt="Image" />
       </motion.div>
