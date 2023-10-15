@@ -12,6 +12,7 @@ import { Command, CommandGroup, CommandItem } from "@/components/ui/command";
 import { cn } from "@/lib/utils";
 import Spotify from "@/public/assets/Spotify.svg";
 import Admin from "@/public/assets/Admin.svg";
+import Discord from "@/public/assets/Discord.svg";
 
 const categories = [
   {
@@ -81,7 +82,7 @@ export const WorkSection = () => {
             {value === "web applications" && (
               <>
                 <ProjectCard
-                  title="Discord Clone"
+                  title="Spotify Clone"
                   description="Developed a full-stack Spotify Clone website using Next.js, TypeScript, Zustand, Tailwind CSS, Supabase, and Stripe."
                   buttonText="Learn More"
                   href=""
@@ -94,6 +95,13 @@ export const WorkSection = () => {
                   href=""
                   imageSide="right"
                   image={Admin}
+                />
+                <ProjectCard
+                  title="Discord Clone"
+                  description="Built using cutting-edge technologies like Next JS, TypeScript, Tailwind CSS, Shadcn UI, Planet Scale, Prisma, Zustand, Clerk Auth, Socket.io and UploadThing."
+                  buttonText="Learn More"
+                  href=""
+                  image={Discord}
                 />
               </>
             )}
