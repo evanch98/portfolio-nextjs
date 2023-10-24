@@ -9,7 +9,10 @@ import LogoBlack from "@/public/logo-black.svg";
 import Image from "next/image";
 import {
   FaDribbble,
+  FaEnvelope,
+  FaGithub,
   FaInstagram,
+  FaLinkedin,
   FaRegEnvelope,
   FaXTwitter,
 } from "react-icons/fa6";
@@ -77,14 +80,23 @@ export function MainNav({
             </div>
           </div>
           <div className="flex items-center justify-center gap-x-[24px]">
-            <Link href="">
-              <FaDribbble className="w-[32px] h-[32px]" />
+            <Link
+              href="https://www.linkedin.com/in/kyaw-thu-0b3956212/"
+              className="hover:animate-bounce"
+            >
+              <FaLinkedin className="w-[32px] h-[32px]" />
             </Link>
-            <Link href="">
-              <FaInstagram className="w-[34px] h-[34px]" />
+            <Link
+              href="https://github.com/evanch98"
+              className="hover:animate-bounce"
+            >
+              <FaGithub className="w-[34px] h-[34px]" />
             </Link>
-            <Link href="">
-              <FaXTwitter className="w-[32px] h-[32px]" />
+            <Link
+              href="mailto:evanch98@gmail.com"
+              className="hover:animate-bounce"
+            >
+              <FaEnvelope className="w-[32px] h-[32px]" />
             </Link>
           </div>
         </nav>
@@ -93,7 +105,7 @@ export function MainNav({
             <SheetTrigger>
               <Menu className="h-[32px] w-[32px]" />
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent side="left">
               <SheetHeader>
                 <Image src={LogoBlack} width={54} height={41} alt="Logo" />
               </SheetHeader>
@@ -123,20 +135,23 @@ export function MainNav({
               </div>
               <Separator className="my-[24px]" />
               <div className="flex items-center justify-center gap-x-[24px]">
-                <Link href="" className="hover:animate-bounce">
-                  <FaDribbble className="w-[32px] h-[32px]" />
+                <Link
+                  href="https://www.linkedin.com/in/kyaw-thu-0b3956212/"
+                  className="hover:animate-bounce"
+                >
+                  <FaLinkedin className="w-[32px] h-[32px]" />
                 </Link>
-                <Link href="" className="hover:animate-bounce">
-                  <FaInstagram className="w-[34px] h-[34px]" />
-                </Link>
-                <Link href="" className="hover:animate-bounce">
-                  <FaXTwitter className="w-[32px] h-[32px]" />
+                <Link
+                  href="https://github.com/evanch98"
+                  className="hover:animate-bounce"
+                >
+                  <FaGithub className="w-[34px] h-[34px]" />
                 </Link>
                 <Link
                   href="mailto:evanch98@gmail.com"
                   className="hover:animate-bounce"
                 >
-                  <FaRegEnvelope className="w-[32px] h-[32px]" />
+                  <FaEnvelope className="w-[32px] h-[32px]" />
                 </Link>
               </div>
             </SheetContent>
