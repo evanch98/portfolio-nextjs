@@ -2,6 +2,7 @@ import Button from "@/components/common/button";
 import { cn, hVariant, pVariant } from "@/lib/utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const imgVariant = {
   hidden: { opacity: 0 },
@@ -50,9 +51,9 @@ export const ProjectCard = ({
           className="w-full flex flex-col items-center justify-center gap-y-[32px] md:gap-y-[48px]"
         >
           <p className="paragraph opacity-75">{description}</p>
-          <a href={href}>
+          <Link href={href}>
             <Button variant="normal">{buttonText}</Button>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </motion.div>
