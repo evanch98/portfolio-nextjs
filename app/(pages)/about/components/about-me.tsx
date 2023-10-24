@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export const AboutMe = () => {
   return (
-    <Container className="py-[128px]">
-      <div className="w-full px-[104px] flex flex-col items-center justify-center gap-y-[128px] text-[--black]">
+    <Container className="py-[64px] md:py-[128px]">
+      <div className="w-full md:px-[104px] flex flex-col items-center justify-center gap-y-[32px] md:gap-y-[128px] text-[--black]">
         <Header
           title="Who I Am"
           description="I am pursuing a Bachelor of Science in Computer Science at the University of the People."
@@ -36,7 +36,7 @@ export const AboutMe = () => {
               through beautiful, modern-looking, and user-centered websites.
             </p>
           </div>
-          <div className="w-[380px] h-[520px] relative">
+          <div className="hidden md:block w-[380px] h-[520px] relative">
             <Image
               src={AboutImage}
               layout="fill"
