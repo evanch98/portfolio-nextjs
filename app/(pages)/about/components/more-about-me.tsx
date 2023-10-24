@@ -4,13 +4,13 @@ import { ValueBox } from "@/components/value-box";
 
 export const MoreAboutMe = () => {
   return (
-    <Container className="py-[128px]">
-      <div className="w-full flex flex-col items-center justify-center gap-y-[128px] text-[--black]">
+    <Container className="py-[64px] md:py-[128px]">
+      <div className="w-full flex flex-col items-center justify-center gap-y-[32px] md:gap-y-[128px] text-[--black]">
         <Header
           title="MORE ABOUT ME"
-          description="Things you don’t care to know. But I am telling you anyway."
+          description="Things you don't care to know. But I am telling you anyway."
         />
-        <div className="w-full flex items-center justify-start gap-x-[24px]">
+        <div className="w-full flex flex-col md:flex-row items-center justify-start gap-y-[16px] md:gap-x-[24px]">
           <ValueBox
             title="I love soccer ⚽"
             description="I grew up watching soccer. I spend most weekends evenings watching soccer."
