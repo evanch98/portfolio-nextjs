@@ -19,12 +19,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
-import {
-  FaDribbble,
-  FaInstagram,
-  FaRegEnvelope,
-  FaXTwitter,
-} from "react-icons/fa6";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
 import * as z from "zod";
 
 const formSchema = z.object({
@@ -73,8 +68,8 @@ export const ContactForm = () => {
   };
 
   return (
-    <Container className="py-[128px]">
-      <div className="w-full px-[104px] text-[--black] flex gap-x-[128px]">
+    <Container className="py-[64px] md:py-[128px]">
+      <div className="w-full md:px-[104px] text-[--black] flex gap-x-[128px]">
         <div className="w-[590px]">
           <Form {...form}>
             <form
@@ -142,18 +137,24 @@ export const ContactForm = () => {
                     )}
                   />
                 </div>
-                <div className="flex flex-col items-center justify-center gap-y-[24px]">
-                  <Link href="">
-                    <FaDribbble className="w-[32px] h-[32px]" />
+                <div className="hidden md:flex flex-col items-center justify-center gap-y-[24px]">
+                  <Link
+                    href="https://www.linkedin.com/in/kyaw-thu-0b3956212/"
+                    className="hover:animate-bounce"
+                  >
+                    <FaLinkedin className="w-[32px] h-[32px]" />
                   </Link>
-                  <Link href="">
-                    <FaInstagram className="w-[34px] h-[34px]" />
+                  <Link
+                    href="https://github.com/evanch98"
+                    className="hover:animate-bounce"
+                  >
+                    <FaGithub className="w-[34px] h-[34px]" />
                   </Link>
-                  <Link href="">
-                    <FaXTwitter className="w-[32px] h-[32px]" />
-                  </Link>
-                  <Link href="mailto:evanch98@gmail.com">
-                    <FaRegEnvelope className="w-[32px] h-[32px]" />
+                  <Link
+                    href="mailto:evanch98@gmail.com"
+                    className="hover:animate-bounce"
+                  >
+                    <FaEnvelope className="w-[32px] h-[32px]" />
                   </Link>
                 </div>
               </div>
