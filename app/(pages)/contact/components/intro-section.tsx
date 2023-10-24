@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 
 const IntroSection = () => {
   return (
-    <Container className="pt-[216px] pb-[128px] text-[--black]">
-      <div className="px-[104px] w-full">
+    <Container className="pt-[64px] md:pt-[216px] pb-[64px] md:pb-[128px] text-[--black]">
+      <div className="md:px-[104px] w-full">
         <motion.div
-          className="flex flex-col gap-y-[24px] w-[590px]"
+          className="flex flex-col gap-y-[24px] md:w-[590px]"
           initial="hidden"
           animate="visible"
         >
