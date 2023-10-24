@@ -102,7 +102,7 @@ body {
 }
 
 .button-text {
-  @apply text-lg font-bold;
+  @apply text-base md:text-lg font-bold;
   font-family: "Karla", sans-serif;
 }
 
