@@ -77,7 +77,7 @@ export const ContactForm = () => {
               className="w-full flex flex-col gap-y-[96px] items-start justify-center"
             >
               <div className="flex gap-x-[128px] w-full">
-                <div className="flex flex-col gap-y-[96px] w-full">
+                <div className="flex flex-col gap-y-[32px] md:gap-y-[96px] w-full">
                   <FormField
                     control={form.control}
                     name="name"
