@@ -49,12 +49,12 @@ body {
 }
 
 .heading-1 {
-  @apply md:text-[5.5rem] text-[3rem] md:leading-[7rem] leading-[5rem] font-bold;
+  @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold;
 }
 
 .heading-2,
 .heading-2-light {
-  @apply md:text-[4.125rem] text-[2.5rem] md:leading-[5rem] leading-[3rem];
+  @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
 }
 
 .heading-2 {
@@ -66,21 +66,21 @@ body {
 }
 
 .heading-3 {
-  @apply md:text-[3.125rem] text-[2rem] md:leading-[4rem] leading-[3rem];
+  @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
   font-weight: 300;
 }
 
 .heading-4 {
-  @apply md:text-[2.3125rem] text-[1.75rem] md:leading-[3rem] leading-[2.5rem] font-bold;
+  @apply text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold;
 }
 
 .heading-5 {
-  @apply md:text-[1.75rem] text-[1.3125rem] md:leading-[2.5rem] leading-[2rem] font-bold;
+  @apply text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold;
 }
 
 .heading-6,
 .heading-6-regular {
-  @apply md:text-[1.3125rem] md:leading-[2rem] text-[1rem];
+  @apply text-base md:text-lg lg:text-xl xl:text-2xl;
 }
 
 .heading-6 {
@@ -94,7 +94,7 @@ body {
 .paragraph,
 .paragraph-bold {
   font-family: "Karla", sans-serif;
-  @apply text-[1rem] leading-[1.875rem];
+  @apply text-base;
 }
 
 .paragraph-bold {
@@ -102,7 +102,7 @@ body {
 }
 
 .button-text {
-  @apply text-[1rem] leading-[1.875rem] font-bold;
+  @apply text-lg font-bold;
   font-family: "Karla", sans-serif;
 }
 
