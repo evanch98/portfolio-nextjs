@@ -12,7 +12,7 @@ import {
 export const TechnicalStack = () => {
   return (
     <Container className="py-[64px] md:py-[128px]">
-      <div className="flex w-full px-[104px] h-[615px] text-[--black] items-center justify-center">
+      <div className="flex w-full md:px-[104px] h-[615px] text-[--black] items-center justify-center">
         <div className="flex flex-col items-center justify-between h-full py-[96px]">
           <SiReact className="w-[64px] h-[64px] hover:text-[#149ECA] ease-in duration-300" />
           <SiTypescript className="w-[64px] h-[64px] hover:text-[#3178C6] ease-in duration-300" />
