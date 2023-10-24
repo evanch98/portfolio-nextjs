@@ -9,8 +9,8 @@ import {
 
 const Faq = () => {
   return (
-    <Container className="py-[128px]">
-      <div className="w-full px-[104px] text-[--black] flex flex-col items-center justify-center gap-y-[128px]">
+    <Container className="py-[64px] md:py-[128px]">
+      <div className="w-full md:px-[104px] text-[--black] flex flex-col items-center justify-center gap-y-[128px]">
         <Header
           title="F.A.Q"
           description="Here are some things you might want to know before sending me a message"
@@ -19,7 +19,7 @@ const Faq = () => {
           <Accordion
             type="single"
             collapsible
-            className="w-[590px] space-y-[24px]"
+            className="md:w-[590px] space-y-[24px]"
           >
             <AccordionItem value="item-1" className="space-y-[8px]">
               <AccordionTrigger className="heading-6">
