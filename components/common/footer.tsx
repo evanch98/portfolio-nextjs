@@ -2,12 +2,7 @@ import Image from "next/image";
 import { Container } from "./container";
 import Logo from "@/public/logo-black.svg";
 import Link from "next/link";
-import {
-  FaDribbble,
-  FaInstagram,
-  FaRegEnvelope,
-  FaXTwitter,
-} from "react-icons/fa6";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
@@ -27,21 +22,24 @@ export const Footer = () => {
               that helps empower startups with impactful and user-centered
               digital experiences.
             </p>
-            <div className="flex items-center gap-x-[24px]">
-              <Link href="" className="hover:animate-bounce">
-                <FaDribbble className="w-[32px] h-[32px]" />
+            <div className="flex gap-x-[24px]">
+              <Link
+                href="https://www.linkedin.com/in/kyaw-thu-0b3956212/"
+                className="hover:animate-bounce"
+              >
+                <FaLinkedin className="w-[32px] h-[32px]" />
               </Link>
-              <Link href="" className="hover:animate-bounce">
-                <FaInstagram className="w-[34px] h-[34px]" />
-              </Link>
-              <Link href="" className="hover:animate-bounce">
-                <FaXTwitter className="w-[32px] h-[32px]" />
+              <Link
+                href="https://github.com/evanch98"
+                className="hover:animate-bounce"
+              >
+                <FaGithub className="w-[34px] h-[34px]" />
               </Link>
               <Link
                 href="mailto:evanch98@gmail.com"
                 className="hover:animate-bounce"
               >
-                <FaRegEnvelope className="w-[32px] h-[32px]" />
+                <FaEnvelope className="w-[32px] h-[32px]" />
               </Link>
             </div>
           </div>
