@@ -85,14 +85,14 @@ export const WorkSection = () => {
                   title="Spotify Clone"
                   description="Developed a full-stack Spotify Clone website using Next.js, TypeScript, Zustand, Tailwind CSS, Supabase, and Stripe."
                   buttonText="Learn More"
-                  href=""
+                  href="/projects/spotify"
                   image={Spotify}
                 />
                 <ProjectCard
                   title="E-Commerce Admin Dashboard"
                   description="Built using cutting-edge technologies like Next JS, TypeScript, Tailwind CSS, Shadcn UI, Planet Scale, Prisma, Zustand, Clerk Auth, and Cloudinary."
                   buttonText="Learn More"
-                  href=""
+                  href="/projects/ecommerce"
                   imageSide="right"
                   image={Admin}
                 />
@@ -100,7 +100,7 @@ export const WorkSection = () => {
                   title="Discord Clone"
                   description="Built using cutting-edge technologies like Next JS, TypeScript, Tailwind CSS, Shadcn UI, Planet Scale, Prisma, Zustand, Clerk Auth, Socket.io and UploadThing."
                   buttonText="Learn More"
-                  href=""
+                  href="/projects/discord"
                   image={Discord}
                 />
               </>
